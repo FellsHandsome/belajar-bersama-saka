@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=3 uid="uid://bg8i25vlypkri"]
+
+[ext_resource type="Script" path="res://scripts/tampilan_awal.gd" id="1_ngbel"]
+[ext_resource type="Texture2D" uid="uid://dcrw3gg10o0x6" path="res://assets/Asset game/background/bg for godot.png" id="2_rmx7j"]
+[ext_resource type="Texture2D" uid="uid://cpgwti8lxhyn8" path="res://assets/Asset game/button/WhatsApp Image 2025-01-11 at 20.48.15.jpeg" id="3_66eac"]
+[ext_resource type="FontFile" uid="uid://coofe3naommww" path="res://assets/Asset game/font/chiezzy/Chieezy Burger.otf" id="4_maqdi"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_28cgd"]
+line_spacing = 5.0
+font = ExtResource("4_maqdi")
+font_size = 50
+font_color = Color(0.639216, 1, 0.498039, 1)
+outline_size = 26
+outline_color = Color(0, 0.407843, 0.215686, 1)
+shadow_size = 10
+shadow_color = Color(0.203922, 0.160784, 0.0196078, 0.607843)
+
+[node name="Tampilan awal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ngbel")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = 1.002
+anchor_bottom = 1.0
+offset_right = -2.30396
+texture = ExtResource("2_rmx7j")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 220.0
+offset_top = 355.0
+offset_right = -632.0
+offset_bottom = -197.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("3_66eac")
+flat = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 140.0
+offset_top = 123.0
+offset_right = -548.0
+offset_bottom = -293.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Belajar dan 
+Bermain 
+Bersama Saka"
+label_settings = SubResource("LabelSettings_28cgd")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm6ofa8d2jy8t"]
+
+[ext_resource type="Texture2D" uid="uid://b78cgrdqt7tei" path="res://assets/Asset game/background/bcrounpolos1-1.png" id="1_kcfnq"]
+[ext_resource type="Texture2D" uid="uid://bgg0ql6fmjsyt" path="res://assets/Asset game/background/assetsnillai-3.png" id="2_mqdqp"]
+
+[node name="nilai scenes" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_kcfnq")
+expand_mode = 1
+
+[node name="Assetsnillai-3" type="Sprite2D" parent="."]
+position = Vector2(568, 144)
+scale = Vector2(0.860902, 0.860902)
+texture = ExtResource("2_mqdqp")

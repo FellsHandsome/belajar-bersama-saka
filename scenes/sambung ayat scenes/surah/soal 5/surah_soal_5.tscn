@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdgcpv730khe4"]
+
+[ext_resource type="Texture2D" uid="uid://dnulwlvjdhagd" path="res://assets/Asset game/sambung ayat/surah/soal 5/a-4.png" id="1_txor1"]
+[ext_resource type="Texture2D" uid="uid://cgg7bn0cbnb2l" path="res://assets/Asset game/sambung ayat/surah/soal 5/b-4.png" id="2_cfiu8"]
+[ext_resource type="Texture2D" uid="uid://b58nfofj25tos" path="res://assets/Asset game/sambung ayat/surah/soal 5/C-4.png" id="3_covwj"]
+[ext_resource type="Texture2D" uid="uid://dyofb4o8duq8l" path="res://assets/Asset game/sambung ayat/surah/soal 5/d-4.png" id="4_d5st0"]
+[ext_resource type="Texture2D" uid="uid://bs5wwy1qxih13" path="res://assets/Asset game/sambung ayat/surah/soal 5/pertanyaan-2.png" id="5_t256h"]
+
+[node name="surah soal 5" type="Node2D"]
+
+[node name="A-4" type="Sprite2D" parent="."]
+position = Vector2(296, 304)
+texture = ExtResource("1_txor1")
+
+[node name="B-4" type="Sprite2D" parent="."]
+position = Vector2(816, 296)
+scale = Vector2(0.921907, 0.932927)
+texture = ExtResource("2_cfiu8")
+
+[node name="C-4" type="Sprite2D" parent="."]
+position = Vector2(296, 432)
+texture = ExtResource("3_covwj")
+
+[node name="D-4" type="Sprite2D" parent="."]
+position = Vector2(848, 428)
+texture = ExtResource("4_d5st0")
+
+[node name="Pertanyaan-2" type="Sprite2D" parent="."]
+position = Vector2(544, 170.5)
+texture = ExtResource("5_t256h")

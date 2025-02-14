@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://2hgddnn662rd"]
+
+[ext_resource type="Script" path="res://scripts/kuis scripts/kuis_menu.gd" id="1_s2xgu"]
+[ext_resource type="Texture2D" uid="uid://cjw408p26tjsb" path="res://assets/Asset game/background/bckroununtrm-1.png" id="2_ukq4u"]
+[ext_resource type="Texture2D" uid="uid://bvacncqf88a1c" path="res://assets/Asset game/button/MULAI-4.png" id="3_dtsnx"]
+[ext_resource type="FontFile" uid="uid://coofe3naommww" path="res://assets/Asset game/font/chiezzy/Chieezy Burger.otf" id="4_glmjd"]
+[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="5_s8c6q"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e83go"]
+font = ExtResource("4_glmjd")
+font_size = 75
+font_color = Color(0.972549, 1, 0.74902, 1)
+outline_size = 20
+outline_color = Color(0.780392, 0.568627, 0.333333, 1)
+
+[node name="kuis menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s2xgu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_ukq4u")
+expand_mode = 1
+
+[node name="Mulai Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 360.0
+offset_right = 681.0
+offset_bottom = 437.0
+icon = ExtResource("3_dtsnx")
+flat = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 224.0
+offset_right = 624.0
+offset_bottom = 300.0
+text = "Kuis"
+label_settings = SubResource("LabelSettings_e83go")
+
+[node name="Back Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 32.0
+offset_right = 120.0
+offset_bottom = 114.0
+icon = ExtResource("5_s8c6q")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="TextureRect/Mulai Button" to="." method="_on_mulai_button_pressed"]
+[connection signal="pressed" from="TextureRect/Back Button" to="." method="_on_back_button_pressed"]

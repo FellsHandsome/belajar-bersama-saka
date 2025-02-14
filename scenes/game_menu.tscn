@@ -1,0 +1,102 @@
+[gd_scene load_steps=8 format=3 uid="uid://r54qhwtnlbrg"]
+
+[ext_resource type="Script" path="res://scripts/game_menu.gd" id="1_hmna7"]
+[ext_resource type="Texture2D" uid="uid://b3qwxl0xkq3sk" path="res://assets/Asset game/button/TEBAK GAMBAR-4.png" id="2_nlq73"]
+[ext_resource type="Texture2D" uid="uid://dcrw3gg10o0x6" path="res://assets/Asset game/background/bg for godot.png" id="2_vkly8"]
+[ext_resource type="Texture2D" uid="uid://bjt1sp266lqow" path="res://assets/Asset game/button/SAMBUNG AYAT-4.png" id="3_qqc7u"]
+[ext_resource type="Texture2D" uid="uid://dyb78x3tgy6lg" path="res://assets/Asset game/button/KUIS-4.png" id="4_f5e0i"]
+[ext_resource type="Texture2D" uid="uid://ch0fia1ytc8ol" path="res://assets/Asset game/button/setings-3.png" id="6_go6rq"]
+[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="7_tqiah"]
+
+[node name="game menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hmna7")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_vkly8")
+expand_mode = 1
+
+[node name="Tebak gambar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 168.0
+offset_top = 122.0
+offset_right = -735.0
+offset_bottom = -449.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("2_nlq73")
+flat = true
+
+[node name="Sambung ayat" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 168.0
+offset_top = 234.0
+offset_right = -735.0
+offset_bottom = -337.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("3_qqc7u")
+flat = true
+
+[node name="Kuis" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 168.0
+offset_top = 337.0
+offset_right = -735.0
+offset_bottom = -234.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("4_f5e0i")
+flat = true
+
+[node name="Setting Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1064.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -560.0
+icon = ExtResource("6_go6rq")
+flat = true
+expand_icon = true
+
+[node name="Back Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.988
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -1064.0
+offset_bottom = -550.224
+icon = ExtResource("7_tqiah")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="Tebak gambar" to="." method="_on_tebak_gambar_pressed"]
+[connection signal="pressed" from="Sambung ayat" to="." method="_on_sambung_ayat_pressed"]
+[connection signal="pressed" from="Kuis" to="." method="_on_kuis_pressed"]
+[connection signal="pressed" from="Setting Button" to="." method="_on_setting_button_pressed"]
+[connection signal="pressed" from="Back Button" to="." method="_on_back_button_pressed"]

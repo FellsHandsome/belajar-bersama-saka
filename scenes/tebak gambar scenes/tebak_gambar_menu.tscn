@@ -1,0 +1,98 @@
+[gd_scene load_steps=9 format=3 uid="uid://81u788uykdft"]
+
+[ext_resource type="Script" path="res://scripts/tebak gambar scripts/tebak_gambar_menu.gd" id="1_6k4bu"]
+[ext_resource type="Texture2D" uid="uid://7nmmgf6brqjw" path="res://assets/Asset game/background/bckoundhiju5-1.png" id="1_ugeye"]
+[ext_resource type="FontFile" uid="uid://coofe3naommww" path="res://assets/Asset game/font/chiezzy/Chieezy Burger.otf" id="3_qt6ma"]
+[ext_resource type="Texture2D" uid="uid://bvacncqf88a1c" path="res://assets/Asset game/button/MULAI-4.png" id="3_yieed"]
+[ext_resource type="Texture2D" uid="uid://ch0fia1ytc8ol" path="res://assets/Asset game/button/setings-3.png" id="4_bubcq"]
+[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="5_4t5sd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jws3a"]
+font = ExtResource("3_qt6ma")
+font_size = 65
+font_color = Color(0.972549, 1, 0.74902, 1)
+outline_size = 20
+outline_color = Color(0.780392, 0.568627, 0.333333, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0oq7w"]
+font = ExtResource("3_qt6ma")
+font_size = 65
+font_color = Color(0.972549, 1, 0.74902, 1)
+outline_size = 20
+outline_color = Color(0.780392, 0.568627, 0.333333, 1)
+
+[node name="tebak gambar menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6k4bu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ugeye")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 256.0
+offset_right = 478.0
+offset_bottom = 329.0
+text = "Tebak"
+label_settings = SubResource("LabelSettings_jws3a")
+
+[node name="Label2" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 616.0
+offset_top = 256.0
+offset_right = 840.0
+offset_bottom = 329.0
+text = "Gambar"
+label_settings = SubResource("LabelSettings_0oq7w")
+
+[node name="Mulai Button" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 440.0
+offset_top = 384.0
+offset_right = -479.0
+offset_bottom = -192.0
+icon = ExtResource("3_yieed")
+flat = true
+expand_icon = true
+
+[node name="Setting Button" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.988
+offset_left = 1064.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -552.224
+icon = ExtResource("4_bubcq")
+flat = true
+expand_icon = true
+
+[node name="Back Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 90.0
+icon = ExtResource("5_4t5sd")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="TextureRect/Setting Button" to="." method="_on_setting_button_pressed"]
+[connection signal="pressed" from="TextureRect/Back Button" to="." method="_on_back_button_pressed"]

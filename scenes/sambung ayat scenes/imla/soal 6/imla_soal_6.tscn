@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=3 uid="uid://di5wrs55xjpa8"]
+
+[ext_resource type="Texture2D" uid="uid://b87qjpw6kmm0h" path="res://assets/Asset game/sambung ayat/imla/soal 6/a-4.png" id="1_srcgl"]
+[ext_resource type="Texture2D" uid="uid://njfana1yipw5" path="res://assets/Asset game/sambung ayat/imla/soal 6/b-4.png" id="2_rnacs"]
+[ext_resource type="Texture2D" uid="uid://cr42k1mtcurwp" path="res://assets/Asset game/sambung ayat/imla/soal 6/C-4.png" id="3_o281n"]
+[ext_resource type="Texture2D" uid="uid://b7jmwgpmtnhw" path="res://assets/Asset game/sambung ayat/imla/soal 6/d-4.png" id="4_318g6"]
+[ext_resource type="Texture2D" uid="uid://bps26wsa7achh" path="res://assets/Asset game/sambung ayat/imla/soal 6/pertanyaan-2.png" id="5_cttw2"]
+[ext_resource type="Script" path="res://scenes/sambung ayat scenes/imla/soal 6/main_button.gd" id="6_t0k2j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r7ba6"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="imla soal 6" type="Node2D"]
+
+[node name="A-4" type="Sprite2D" parent="."]
+position = Vector2(272, 368)
+texture = ExtResource("1_srcgl")
+
+[node name="B-4" type="Sprite2D" parent="."]
+position = Vector2(760, 368)
+texture = ExtResource("2_rnacs")
+
+[node name="C-4" type="Sprite2D" parent="."]
+position = Vector2(280, 496)
+texture = ExtResource("3_o281n")
+
+[node name="D-4" type="Sprite2D" parent="."]
+position = Vector2(744, 496)
+texture = ExtResource("4_318g6")
+
+[node name="Pertanyaan-2" type="Sprite2D" parent="."]
+position = Vector2(464, 176)
+texture = ExtResource("5_cttw2")
+
+[node name="MainButton" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("6_t0k2j")
+
+[node name="Button" type="Button" parent="MainButton"]
+offset_left = 136.0
+offset_top = 264.0
+offset_right = 184.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_r7ba6")
+
+[node name="Button2" type="Button" parent="MainButton"]
+offset_left = 136.0
+offset_top = 392.0
+offset_right = 184.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_r7ba6")
+
+[node name="Button3" type="Button" parent="MainButton"]
+layout_mode = 0
+offset_left = 584.0
+offset_top = 264.0
+offset_right = 632.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_r7ba6")
+
+[node name="Button4" type="Button" parent="MainButton"]
+offset_left = 584.0
+offset_top = 392.0
+offset_right = 632.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_r7ba6")

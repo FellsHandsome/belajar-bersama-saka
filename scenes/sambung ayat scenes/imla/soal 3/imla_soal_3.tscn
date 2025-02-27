@@ -1,10 +1,35 @@
-[gd_scene load_steps=6 format=3 uid="uid://dimq8qqkaa8tn"]
+[gd_scene load_steps=11 format=3 uid="uid://dimq8qqkaa8tn"]
 
 [ext_resource type="Texture2D" uid="uid://dmlsh41wkpdgq" path="res://assets/Asset game/sambung ayat/imla/soal 3/A-4.png" id="1_s3s12"]
 [ext_resource type="Texture2D" uid="uid://cyiwqoiomlbwg" path="res://assets/Asset game/sambung ayat/imla/soal 3/b-4.png" id="2_k6p1p"]
 [ext_resource type="Texture2D" uid="uid://cqlshxgb488aj" path="res://assets/Asset game/sambung ayat/imla/soal 3/C-4.png" id="3_88dfa"]
 [ext_resource type="Texture2D" uid="uid://cokhfc7533dra" path="res://assets/Asset game/sambung ayat/imla/soal 3/d-4.png" id="4_21vm2"]
 [ext_resource type="Texture2D" uid="uid://rwy3qr55ioak" path="res://assets/Asset game/sambung ayat/imla/soal 3/prtanyaan-2.png" id="5_rpjas"]
+[ext_resource type="Script" path="res://scenes/sambung ayat scenes/imla/soal 3/button.gd" id="6_hmvh4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exqug"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ht1wc"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bsbq2"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jx7tf"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [node name="imla soal 3" type="Node2D"]
 
@@ -29,34 +54,39 @@ texture = ExtResource("4_21vm2")
 position = Vector2(440, 176)
 texture = ExtResource("5_rpjas")
 
-[node name="Button" type="Button" parent="."]
+[node name="MainButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("6_hmvh4")
 
-[node name="Button" type="Button" parent="Button"]
+[node name="Button" type="Button" parent="MainButton"]
 layout_mode = 0
 offset_left = 136.0
 offset_top = 264.0
 offset_right = 184.0
 offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_exqug")
 
-[node name="Button2" type="Button" parent="Button"]
+[node name="Button2" type="Button" parent="MainButton"]
 layout_mode = 0
 offset_left = 584.0
 offset_top = 264.0
 offset_right = 632.0
 offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ht1wc")
 
-[node name="Button3" type="Button" parent="Button"]
+[node name="Button3" type="Button" parent="MainButton"]
 layout_mode = 0
 offset_left = 136.0
 offset_top = 392.0
 offset_right = 184.0
 offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bsbq2")
 
-[node name="Button4" type="Button" parent="Button"]
+[node name="Button4" type="Button" parent="MainButton"]
 layout_mode = 0
 offset_left = 584.0
 offset_top = 392.0
 offset_right = 632.0
 offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jx7tf")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://l8pg1k3b54cd"]
+[gd_scene load_steps=9 format=3 uid="uid://l8pg1k3b54cd"]
 
 [ext_resource type="Texture2D" uid="uid://coqh5r0wx8fwa" path="res://assets/Asset game/sambung ayat/surah/soal 1/pertanyaan no 1-2.png" id="1_qt05b"]
 [ext_resource type="Texture2D" uid="uid://qy1n3on0bjkc" path="res://assets/Asset game/sambung ayat/surah/soal 1/A-4.png" id="2_l4cyh"]
@@ -6,10 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://bqgts0uv3qpvj" path="res://assets/Asset game/sambung ayat/surah/soal 1/C-4.png" id="4_h8fhw"]
 [ext_resource type="Texture2D" uid="uid://b0gu1pbf5wk7w" path="res://assets/Asset game/sambung ayat/surah/soal 1/Untitled-4.png" id="5_c7ts0"]
 [ext_resource type="Script" path="res://scenes/sambung ayat scenes/surah/soal 1/main_button.gd" id="6_ea3ox"]
-[ext_resource type="Script" path="res://scenes/sambung ayat scenes/surah/soal 1/button.gd" id="7_o7gw3"]
-[ext_resource type="Script" path="res://scenes/sambung ayat scenes/surah/soal 1/button_2.gd" id="8_klfqc"]
-[ext_resource type="Script" path="res://scenes/sambung ayat scenes/surah/soal 1/button_3.gd" id="9_jc4m3"]
-[ext_resource type="Script" path="res://scenes/sambung ayat scenes/surah/soal 1/button_4.gd" id="10_4fvgs"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vhehk"]
 border_color = Color(0.8, 0.8, 0.8, 0)
@@ -26,6 +22,7 @@ corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
 [node name="surah soal1" type="Node2D"]
+position = Vector2(-4, -4)
 
 [node name="PertanyaanNo1-2" type="Sprite2D" parent="."]
 position = Vector2(576, 176)
@@ -47,12 +44,12 @@ position = Vector2(397, 448)
 scale = Vector2(0.980159, 0.980159)
 texture = ExtResource("4_h8fhw")
 
-[node name="Untitled-4" type="Sprite2D" parent="."]
+[node name="D-4" type="Sprite2D" parent="."]
 position = Vector2(816, 448)
 scale = Vector2(0.880952, 0.880952)
 texture = ExtResource("5_c7ts0")
 
-[node name="Main button" type="Button" parent="."]
+[node name="MainButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
@@ -60,7 +57,7 @@ expand_icon = true
 script = ExtResource("6_ea3ox")
 metadata/_edit_use_anchors_ = true
 
-[node name="A 1" type="Button" parent="Main button"]
+[node name="Button" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 2.0
@@ -72,10 +69,9 @@ offset_top = 240.0
 offset_right = 171.0
 offset_bottom = 290.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_vhehk")
-script = ExtResource("7_o7gw3")
 metadata/_edit_use_anchors_ = true
 
-[node name="B 1" type="Button" parent="Main button"]
+[node name="Button2" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 2.0
@@ -87,10 +83,9 @@ offset_top = 335.0
 offset_right = 171.0
 offset_bottom = 385.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_dusl1")
-script = ExtResource("8_klfqc")
 metadata/_edit_use_anchors_ = true
 
-[node name="C 1" type="Button" parent="Main button"]
+[node name="Button3" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 1.875
@@ -102,10 +97,9 @@ offset_top = 337.0
 offset_right = 684.0
 offset_bottom = 387.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_dusl1")
-script = ExtResource("9_jc4m3")
 metadata/_edit_use_anchors_ = true
 
-[node name="D 1" type="Button" parent="Main button"]
+[node name="Button4" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 1.875
@@ -117,5 +111,4 @@ offset_top = 242.0
 offset_right = 684.0
 offset_bottom = 292.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_dusl1")
-script = ExtResource("10_4fvgs")
 metadata/_edit_use_anchors_ = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmmvrrk2rgb60"]
+[gd_scene load_steps=7 format=3 uid="uid://dmmvrrk2rgb60"]
 
 [ext_resource type="Texture2D" uid="uid://br2pk2gt3kdr2" path="res://assets/Asset game/sambung ayat/surah/soal 3/a-4.png" id="1_8bhya"]
 [ext_resource type="Texture2D" uid="uid://brcy3j7sl1ydt" path="res://assets/Asset game/sambung ayat/surah/soal 3/b-4.png" id="2_c3ley"]
@@ -6,24 +6,95 @@
 [ext_resource type="Texture2D" uid="uid://dp3i3mct8fnox" path="res://assets/Asset game/sambung ayat/surah/soal 3/d-4.png" id="4_6fkgn"]
 [ext_resource type="Texture2D" uid="uid://pk0ajxy40hjb" path="res://assets/Asset game/sambung ayat/surah/soal 3/pertanyaan-2.png" id="5_xyb1t"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y0dv7"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
 [node name="surah soal 3" type="Node2D"]
+position = Vector2(-13, 1)
 
 [node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(280, 304)
+position = Vector2(290.421, 290.5)
+scale = Vector2(0.914634, 0.914634)
 texture = ExtResource("1_8bhya")
 
 [node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(864, 296)
+position = Vector2(800.628, 311.5)
+scale = Vector2(0.841463, 0.841463)
 texture = ExtResource("2_c3ley")
 
 [node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(336, 432)
+position = Vector2(339.896, 418.5)
+scale = Vector2(0.914634, 0.914634)
 texture = ExtResource("3_ra0jf")
 
 [node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(896, 424)
+position = Vector2(830.512, 418)
+scale = Vector2(0.853658, 0.853659)
 texture = ExtResource("4_6fkgn")
 
 [node name="Pertanyaan-2" type="Sprite2D" parent="."]
 position = Vector2(576, 176)
 texture = ExtResource("5_xyb1t")
+
+[node name="MainButton" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="MainButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.875
+anchor_top = -1.5
+anchor_right = 2.875
+anchor_bottom = -1.5
+offset_left = 67.0
+offset_top = 265.0
+offset_right = 120.0
+offset_bottom = 318.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_y0dv7")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="MainButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.75
+anchor_top = -2.25
+anchor_right = 2.75
+anchor_bottom = -2.25
+offset_left = 70.0
+offset_top = 394.0
+offset_right = 123.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_y0dv7")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="MainButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.5
+anchor_top = 3.375
+anchor_right = -2.5
+anchor_bottom = 3.375
+offset_left = 572.0
+offset_top = 245.0
+offset_right = 625.0
+offset_bottom = 298.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_y0dv7")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" type="Button" parent="MainButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.5
+anchor_top = 1.375
+anchor_right = -2.5
+anchor_bottom = 1.375
+offset_left = 574.0
+offset_top = 371.0
+offset_right = 627.0
+offset_bottom = 424.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_y0dv7")

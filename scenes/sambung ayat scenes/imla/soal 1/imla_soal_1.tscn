@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bp00kox3dq740"]
+[gd_scene load_steps=8 format=3 uid="uid://bp00kox3dq740"]
 
 [ext_resource type="Texture2D" uid="uid://4o63l1fr60xr" path="res://assets/Asset game/sambung ayat/imla/soal 1/prtnyaano1-2.png" id="2_35wie"]
 [ext_resource type="Texture2D" uid="uid://cjcjwvmf7s67w" path="res://assets/Asset game/sambung ayat/imla/soal 1/A-4.png" id="3_pkhvv"]
@@ -6,8 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://ddy6n8snw07a8" path="res://assets/Asset game/sambung ayat/imla/soal 1/C-4.png" id="5_yrk8q"]
 [ext_resource type="Texture2D" uid="uid://ekfh2yflqbn2" path="res://assets/Asset game/sambung ayat/imla/soal 1/D-4.png" id="6_ne45q"]
 [ext_resource type="Script" path="res://scenes/sambung ayat scenes/imla/soal 1/main_button.gd" id="7_60rx1"]
-[ext_resource type="Script" path="res://buttonImla.gd" id="7_xpufu"]
-[ext_resource type="Script" path="res://scenes/sambung ayat scenes/surah/soal 1/button.gd" id="8_ufmc8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3uvc2"]
 border_color = Color(0.8, 0.8, 0.8, 0)
@@ -29,15 +27,16 @@ position = Vector2(264, 336)
 texture = ExtResource("3_pkhvv")
 
 [node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(784, 368)
+position = Vector2(724, 368)
 texture = ExtResource("4_kr6bs")
 
 [node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(269, 537)
+position = Vector2(266, 530)
 texture = ExtResource("5_yrk8q")
 
 [node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(808, 536)
+position = Vector2(739.5, 530.25)
+scale = Vector2(0.97191, 0.998282)
 texture = ExtResource("6_ne45q")
 
 [node name="MainButton" type="Button" parent="."]
@@ -48,23 +47,22 @@ script = ExtResource("7_60rx1")
 [node name="Button" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.5
-anchor_top = 3.0
-anchor_right = 1.75
-anchor_bottom = 3.0
+anchor_left = -0.625
+anchor_top = 3.375
+anchor_right = 2.25
+anchor_bottom = 4.0
 offset_left = 140.0
 offset_top = 240.0
 offset_right = 171.0
 offset_bottom = 290.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_3uvc2")
-script = ExtResource("7_xpufu")
 metadata/_edit_use_anchors_ = true
 
 [node name="Button2" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.5
-anchor_top = 7.875
+anchor_left = -0.875
+anchor_top = 7.625
 anchor_right = -0.875
 anchor_bottom = 7.625
 offset_left = 140.0
@@ -72,35 +70,32 @@ offset_top = 328.0
 offset_right = 191.0
 offset_bottom = 378.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_3uvc2")
-script = ExtResource("8_ufmc8")
 metadata/_edit_use_anchors_ = true
 
 [node name="Button3" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 4.0
-anchor_right = 0.125
+anchor_left = -7.5
+anchor_top = 3.75
+anchor_right = -7.5
 anchor_bottom = 3.75
 offset_left = 644.0
 offset_top = 232.0
 offset_right = 695.0
 offset_bottom = 282.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_3uvc2")
-script = ExtResource("8_ufmc8")
 metadata/_edit_use_anchors_ = true
 
 [node name="Button4" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 9.5
-anchor_right = 0.125
+anchor_left = -7.5
+anchor_top = 9.25
+anchor_right = -7.5
 anchor_bottom = 9.25
 offset_left = 644.0
 offset_top = 316.0
 offset_right = 695.0
 offset_bottom = 366.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_3uvc2")
-script = ExtResource("8_ufmc8")
 metadata/_edit_use_anchors_ = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://l83768kegm3r"]
+[gd_scene load_steps=10 format=3 uid="uid://l83768kegm3r"]
 
 [ext_resource type="Texture2D" uid="uid://7nmmgf6brqjw" path="res://assets/Asset game/background/bckoundhiju5-1.png" id="1_ep5p2"]
 [ext_resource type="Script" path="res://scripts/sambung ayat scripts/sambunng_ayat_menu.gd" id="1_y4nsc"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://gxa6odlalipx" path="res://assets/Asset game/button/BUTTONSURAHTERBARUUUUUUUUU-2.png" id="3_on2f5"]
 [ext_resource type="Texture2D" uid="uid://c2i44i7lr1tku" path="res://assets/Asset game/button/buttonimla-2.png" id="4_ywctb"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="5_sjgng"]
+[ext_resource type="Script" path="res://scenes/sambung ayat scenes/imla.gd" id="6_ltf24"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_diewi"]
 font = ExtResource("3_gpd3u")
@@ -21,7 +22,7 @@ font_color = Color(0.972549, 1, 0.74902, 1)
 outline_size = 20
 outline_color = Color(0.780392, 0.568627, 0.333333, 1)
 
-[node name="sambunng ayat menu" type="Control"]
+[node name="sambung ayat menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -72,7 +73,7 @@ icon = ExtResource("3_on2f5")
 flat = true
 expand_icon = true
 
-[node name="Imla Button" type="Button" parent="TextureRect"]
+[node name="Imla" type="Button" parent="TextureRect"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -86,6 +87,7 @@ grow_vertical = 2
 icon = ExtResource("4_ywctb")
 flat = true
 expand_icon = true
+script = ExtResource("6_ltf24")
 
 [node name="Back Button" type="Button" parent="TextureRect"]
 layout_mode = 0

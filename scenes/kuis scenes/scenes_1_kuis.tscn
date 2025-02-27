@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://by5rp3gnqooh8"]
+[gd_scene load_steps=6 format=3 uid="uid://by5rp3gnqooh8"]
 
 [ext_resource type="Script" path="res://scripts/kuis scripts/scenes_1_kuis.gd" id="1_s81fi"]
 [ext_resource type="Texture2D" uid="uid://doq010nnp3b0y" path="res://assets/Asset game/background/linepapantulis-1.png" id="2_y1sh6"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_7ob38"]
 [ext_resource type="Texture2D" uid="uid://cww4pfveax6vg" path="res://assets/Asset game/button/buttonberikutnya-2.png" id="4_5g6pd"]
+[ext_resource type="PackedScene" uid="uid://bfh36lheu87d1" path="res://scenes/countdown_timer.tscn" id="5_a63w0"]
 
 [node name="scenes 1 kuis" type="Control"]
 layout_mode = 3
@@ -40,5 +41,7 @@ offset_bottom = 624.0
 icon = ExtResource("4_5g6pd")
 flat = true
 expand_icon = true
+
+[node name="CountdownTimer" parent="." instance=ExtResource("5_a63w0")]
 
 [connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

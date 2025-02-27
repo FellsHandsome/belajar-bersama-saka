@@ -1,10 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://djl683hxohglr"]
+[gd_scene load_steps=9 format=3 uid="uid://djl683hxohglr"]
 
 [ext_resource type="Texture2D" uid="uid://byxjs02jrsmu3" path="res://assets/Asset game/background/inepapanassettanpamja-10.png" id="1_qwr85"]
+[ext_resource type="Script" path="res://scenes/sambung ayat scenes/surah/soal_manager.gd" id="2_mf1mr"]
 [ext_resource type="Texture2D" uid="uid://dqquafwwf6vw8" path="res://assets/Asset game/button/buttonkirim-2.png" id="2_yib4b"]
-[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_xqlld"]
+[ext_resource type="PackedScene" uid="uid://l8pg1k3b54cd" path="res://scenes/sambung ayat scenes/surah/soal 1/surah_soal1.tscn" id="3_qqu8x"]
+[ext_resource type="PackedScene" uid="uid://dmmvrrk2rgb60" path="res://scenes/sambung ayat scenes/surah/soal 3/surah_soal_3.tscn" id="4_7yrmk"]
+[ext_resource type="PackedScene" uid="uid://bfh36lheu87d1" path="res://scenes/countdown_timer.tscn" id="4_f8xk5"]
+[ext_resource type="PackedScene" uid="uid://bplinb81nqekn" path="res://scenes/sambung ayat scenes/surah/soal 4/surah_soal_4.tscn" id="5_45wf7"]
+[ext_resource type="PackedScene" uid="uid://cdgcpv730khe4" path="res://scenes/sambung ayat scenes/surah/soal 5/surah_soal_5.tscn" id="6_1m25b"]
 
-[node name="surah background" type="Control"]
+[node name="Main_Surah" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,8 +24,19 @@ offset_bottom = 648.0
 texture = ExtResource("1_qwr85")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="TextureRect"]
-layout_mode = 0
+[node name="MainSurah" type="Node2D" parent="."]
+
+[node name="CanvasGroup" type="Node2D" parent="MainSurah"]
+
+[node name="surah soal 1" parent="MainSurah/CanvasGroup" instance=ExtResource("3_qqu8x")]
+
+[node name="surah soal 3" parent="MainSurah/CanvasGroup" instance=ExtResource("4_7yrmk")]
+
+[node name="surah soal 4" parent="MainSurah/CanvasGroup" instance=ExtResource("5_45wf7")]
+
+[node name="surah soal 5" parent="MainSurah/CanvasGroup" instance=ExtResource("6_1m25b")]
+
+[node name="Button" type="Button" parent="MainSurah"]
 offset_left = 824.0
 offset_top = 520.0
 offset_right = 1116.0
@@ -29,12 +45,10 @@ icon = ExtResource("2_yib4b")
 flat = true
 expand_icon = true
 
-[node name="Button2" type="Button" parent="TextureRect"]
-layout_mode = 0
-offset_left = 72.0
-offset_top = 56.0
-offset_right = 152.0
-offset_bottom = 136.0
-icon = ExtResource("3_xqlld")
-flat = true
-expand_icon = true
+[node name="CountdownTimer" parent="MainSurah" instance=ExtResource("4_f8xk5")]
+
+[node name="SoalManager" type="Node" parent="MainSurah"]
+script = ExtResource("2_mf1mr")
+
+[connection signal="pressed" from="MainSurah/Button" to="MainSurah/SoalManager" method="_on_next_question_button_pressed"]
+[connection signal="pressed" from="MainSurah/Button" to="MainSurah/SoalManager" method="_on_KirimButton_pressed"]

@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bh8bj6bjtbt5q"]
+[gd_scene load_steps=8 format=3 uid="uid://bh8bj6bjtbt5q"]
 
 [ext_resource type="Texture2D" uid="uid://jwp0qt0josf8" path="res://assets/Asset game/sambung ayat/imla/soal 8/a-4.png" id="1_ff6dn"]
 [ext_resource type="Texture2D" uid="uid://cq1jje47ih4cd" path="res://assets/Asset game/sambung ayat/imla/soal 8/B-4.png" id="2_qs7tc"]
 [ext_resource type="Texture2D" uid="uid://ci4tl061j8i0t" path="res://assets/Asset game/sambung ayat/imla/soal 8/C-4.png" id="3_kd80o"]
 [ext_resource type="Texture2D" uid="uid://fy06pr45acgk" path="res://assets/Asset game/sambung ayat/imla/soal 8/d-4.png" id="4_hh4es"]
 [ext_resource type="Texture2D" uid="uid://bip1wwyms65co" path="res://assets/Asset game/sambung ayat/imla/soal 8/pertanyaan-2.png" id="5_bc6ws"]
+[ext_resource type="Script" path="res://scenes/sambung ayat scenes/imla/soal 8/main_button.gd" id="6_q43q2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r3wat"]
 corner_radius_top_left = 50
@@ -37,6 +38,7 @@ texture = ExtResource("5_bc6ws")
 [node name="MainButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("6_q43q2")
 
 [node name="Button" type="Button" parent="MainButton"]
 layout_mode = 0

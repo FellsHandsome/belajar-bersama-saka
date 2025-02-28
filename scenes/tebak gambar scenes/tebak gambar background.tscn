@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0mfn7h4teupa"]
+
+[ext_resource type="Script" path="res://scenes/tebak gambar scenes/tebak_gambar_background.gd" id="1_rjy88"]
+[ext_resource type="Texture2D" uid="uid://7nmmgf6brqjw" path="res://assets/Asset game/background/bckoundhiju5-1.png" id="1_x8s24"]
+[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_x8mll"]
+[ext_resource type="Texture2D" uid="uid://cww4pfveax6vg" path="res://assets/Asset game/button/buttonberikutnya-2.png" id="4_yg55v"]
+
+[node name="TebakGambarBackground" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rjy88")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_x8s24")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 96.0
+offset_bottom = 97.0
+icon = ExtResource("3_x8mll")
+flat = true
+expand_icon = true
+
+[node name="Button2" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 808.0
+offset_top = 544.0
+offset_right = 1096.0
+offset_bottom = 632.0
+icon = ExtResource("4_yg55v")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

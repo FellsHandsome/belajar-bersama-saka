@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgrno57bisbdf"]
+
+[ext_resource type="Texture2D" uid="uid://dp7a08152exgp" path="res://assets/Asset game/tebak gambar/Peristiwa Isra Mi'raj Nabi Muhammad.png" id="1_gjs56"]
+
+[node name="Soal8" type="Node2D"]
+
+[node name="PeristiwaIsraMi\'rajNabiMuhammad" type="Sprite2D" parent="."]
+position = Vector2(576, 320)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_gjs56")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwb8yjwd8fur6"]
+
+[ext_resource type="Texture2D" uid="uid://12yjxk6xkys2" path="res://assets/Asset game/tebak gambar/Nabi Yunus.png" id="1_t3ttk"]
+
+[node name="Soal7" type="Node2D"]
+
+[node name="NabiYunus" type="Sprite2D" parent="."]
+position = Vector2(576, 320)
+scale = Vector2(0.688889, 0.688889)
+texture = ExtResource("1_t3ttk")

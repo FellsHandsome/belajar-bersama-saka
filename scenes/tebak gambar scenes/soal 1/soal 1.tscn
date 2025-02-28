@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgeor8hcbblsc"]
+
+[ext_resource type="Texture2D" uid="uid://de10fr6my11hd" path="res://assets/Asset game/tebak gambar/Nabi Adam.png" id="1_rdc1t"]
+
+[node name="Soal1" type="Node2D"]
+
+[node name="NabiAdam" type="Sprite2D" parent="."]
+position = Vector2(555, 310)
+scale = Vector2(0.651042, 0.651042)
+texture = ExtResource("1_rdc1t")

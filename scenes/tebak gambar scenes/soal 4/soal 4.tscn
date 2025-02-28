@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcujwn1x55mfj"]
+
+[ext_resource type="Texture2D" uid="uid://eghn5ikay3kr" path="res://assets/Asset game/tebak gambar/Nabi Nuh.png" id="1_8e373"]
+
+[node name="Soal4" type="Node2D"]
+
+[node name="NabiNuh" type="Sprite2D" parent="."]
+position = Vector2(568, 312)
+scale = Vector2(0.655556, 0.655556)
+texture = ExtResource("1_8e373")

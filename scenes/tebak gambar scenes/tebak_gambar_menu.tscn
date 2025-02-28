@@ -94,5 +94,6 @@ icon = ExtResource("5_4t5sd")
 flat = true
 expand_icon = true
 
+[connection signal="pressed" from="TextureRect/Mulai Button" to="." method="_on_mulai_button_pressed"]
 [connection signal="pressed" from="TextureRect/Setting Button" to="." method="_on_setting_button_pressed"]
 [connection signal="pressed" from="TextureRect/Back Button" to="." method="_on_back_button_pressed"]

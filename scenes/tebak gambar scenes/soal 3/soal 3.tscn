@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmy7237s67hto"]
+
+[ext_resource type="Texture2D" uid="uid://dbjl20rqryqj4" path="res://assets/Asset game/tebak gambar/Nabi Musa.png" id="1_0a1o6"]
+
+[node name="Soal3" type="Node2D"]
+
+[node name="NabiMusa" type="Sprite2D" parent="."]
+position = Vector2(576, 312)
+scale = Vector2(0.677778, 0.677778)
+texture = ExtResource("1_0a1o6")

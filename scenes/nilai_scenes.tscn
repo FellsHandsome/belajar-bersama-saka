@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dm6ofa8d2jy8t"]
+[gd_scene load_steps=5 format=3 uid="uid://dm6ofa8d2jy8t"]
 
+[ext_resource type="Script" path="res://scenes/nilai_scenes.gd" id="1_8re0k"]
 [ext_resource type="Texture2D" uid="uid://b78cgrdqt7tei" path="res://assets/Asset game/background/bcrounpolos1-1.png" id="1_kcfnq"]
 [ext_resource type="Texture2D" uid="uid://bgg0ql6fmjsyt" path="res://assets/Asset game/background/assetsnillai-3.png" id="2_mqdqp"]
+[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="4_k7l8o"]
 
 [node name="nilai scenes" type="Control"]
 layout_mode = 3
@@ -10,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8re0k")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -22,3 +25,15 @@ expand_mode = 1
 position = Vector2(568, 144)
 scale = Vector2(0.860902, 0.860902)
 texture = ExtResource("2_mqdqp")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 13.0
+offset_right = 94.0
+offset_bottom = 94.0
+icon = ExtResource("4_k7l8o")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

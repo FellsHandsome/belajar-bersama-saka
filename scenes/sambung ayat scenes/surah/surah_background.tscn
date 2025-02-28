@@ -31,10 +31,13 @@ expand_mode = 1
 [node name="surah soal 1" parent="MainSurah/CanvasGroup" instance=ExtResource("3_qqu8x")]
 
 [node name="surah soal 3" parent="MainSurah/CanvasGroup" instance=ExtResource("4_7yrmk")]
+visible = false
 
 [node name="surah soal 4" parent="MainSurah/CanvasGroup" instance=ExtResource("5_45wf7")]
+visible = false
 
 [node name="surah soal 5" parent="MainSurah/CanvasGroup" instance=ExtResource("6_1m25b")]
+visible = false
 
 [node name="Button" type="Button" parent="MainSurah"]
 offset_left = 824.0
@@ -50,5 +53,5 @@ expand_icon = true
 [node name="SoalManager" type="Node" parent="MainSurah"]
 script = ExtResource("2_mf1mr")
 
-[connection signal="pressed" from="MainSurah/Button" to="MainSurah/SoalManager" method="_on_next_question_button_pressed"]
 [connection signal="pressed" from="MainSurah/Button" to="MainSurah/SoalManager" method="_on_KirimButton_pressed"]
+[connection signal="pressed" from="MainSurah/Button" to="MainSurah/SoalManager" method="_on_next_question_button_pressed"]

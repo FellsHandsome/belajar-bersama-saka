@@ -28,34 +28,33 @@ offset_bottom = 648.0
 texture = ExtResource("1_yym14")
 expand_mode = 1
 
-[node name="MainImla" type="Node2D" parent="."]
+[node name="CanvasGroup" type="Node2D" parent="."]
 
-[node name="CanvasGroup" type="Node2D" parent="MainImla"]
+[node name="imla soal 1" parent="CanvasGroup" instance=ExtResource("6_rled6")]
 
-[node name="imla soal 1" parent="MainImla/CanvasGroup" instance=ExtResource("6_rled6")]
-
-[node name="imla soal 2" parent="MainImla/CanvasGroup" instance=ExtResource("7_5adpw")]
+[node name="imla soal 2" parent="CanvasGroup" instance=ExtResource("7_5adpw")]
 visible = false
 
-[node name="imla soal 3" parent="MainImla/CanvasGroup" instance=ExtResource("7_ipgq4")]
+[node name="imla soal 3" parent="CanvasGroup" instance=ExtResource("7_ipgq4")]
 visible = false
 
-[node name="imla soal 4" parent="MainImla/CanvasGroup" instance=ExtResource("7_be2ij")]
+[node name="imla soal 4" parent="CanvasGroup" instance=ExtResource("7_be2ij")]
 visible = false
 
-[node name="imla soal 5" parent="MainImla/CanvasGroup" instance=ExtResource("8_ftgff")]
+[node name="imla soal 5" parent="CanvasGroup" instance=ExtResource("8_ftgff")]
 visible = false
 
-[node name="imla soal 6" parent="MainImla/CanvasGroup" instance=ExtResource("10_uii2g")]
+[node name="imla soal 6" parent="CanvasGroup" instance=ExtResource("10_uii2g")]
 visible = false
 
-[node name="imla soal 7" parent="MainImla/CanvasGroup" instance=ExtResource("11_g8aos")]
+[node name="imla soal 7" parent="CanvasGroup" instance=ExtResource("11_g8aos")]
 visible = false
 
-[node name="imla soal 8" parent="MainImla/CanvasGroup" instance=ExtResource("12_bt06l")]
+[node name="imla soal 8" parent="CanvasGroup" instance=ExtResource("12_bt06l")]
 visible = false
 
-[node name="Button" type="Button" parent="MainImla"]
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 816.0
 offset_top = 520.0
 offset_right = 1108.0
@@ -65,10 +64,10 @@ flat = true
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
-[node name="CountdownTimer" parent="MainImla" instance=ExtResource("4_7atal")]
+[node name="CountdownTimer" parent="." instance=ExtResource("4_7atal")]
 
-[node name="SoalManager" type="Node" parent="MainImla"]
+[node name="SoalManager" type="Node" parent="."]
 script = ExtResource("1_koqc8")
 
-[connection signal="pressed" from="MainImla/Button" to="MainImla/SoalManager" method="_on_next_question_button_pressed"]
-[connection signal="tree_entered" from="MainImla/SoalManager" to="MainImla/CanvasGroup" method="_on_soal_manager_tree_entered"]
+[connection signal="pressed" from="Button" to="SoalManager" method="go_to_next_question"]
+[connection signal="tree_entered" from="SoalManager" to="CanvasGroup" method="_on_soal_manager_tree_entered"]

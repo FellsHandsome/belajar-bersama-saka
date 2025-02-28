@@ -1,0 +1,97 @@
+[gd_scene load_steps=16 format=3 uid="uid://dwhhv6klxmdrr"]
+
+[ext_resource type="Script" path="res://scenes/sambung ayat scenes/imla/soal_manager.gd" id="1_koqc8"]
+[ext_resource type="Texture2D" uid="uid://byxjs02jrsmu3" path="res://assets/Asset game/background/inepapanassettanpamja-10.png" id="1_yym14"]
+[ext_resource type="Texture2D" uid="uid://dqquafwwf6vw8" path="res://assets/Asset game/button/buttonkirim-2.png" id="2_105l2"]
+[ext_resource type="PackedScene" uid="uid://bfh36lheu87d1" path="res://scenes/countdown_timer.tscn" id="4_7atal"]
+[ext_resource type="PackedScene" uid="uid://bp00kox3dq740" path="res://scenes/sambung ayat scenes/imla/soal 1/imla_soal_1.tscn" id="6_rled6"]
+[ext_resource type="PackedScene" uid="uid://8v3abkmw6hsv" path="res://scenes/sambung ayat scenes/imla/soal 2/imla_soal_2.tscn" id="7_5adpw"]
+[ext_resource type="PackedScene" uid="uid://dooyxciaod7tm" path="res://scenes/sambung ayat scenes/imla/soal 4/imla_soal_4.tscn" id="7_be2ij"]
+[ext_resource type="PackedScene" uid="uid://dimq8qqkaa8tn" path="res://scenes/sambung ayat scenes/imla/soal 3/imla_soal_3.tscn" id="7_ipgq4"]
+[ext_resource type="PackedScene" uid="uid://doiiky1g3iagv" path="res://scenes/sambung ayat scenes/imla/soal 5/imla_soal_5.tscn" id="8_ftgff"]
+[ext_resource type="PackedScene" uid="uid://di5wrs55xjpa8" path="res://scenes/sambung ayat scenes/imla/soal 6/imla_soal_6.tscn" id="10_uii2g"]
+[ext_resource type="PackedScene" uid="uid://b12vjxr821vkt" path="res://scenes/sambung ayat scenes/imla/soal 7/imla_soal_7.tscn" id="11_g8aos"]
+[ext_resource type="PackedScene" uid="uid://bh8bj6bjtbt5q" path="res://scenes/sambung ayat scenes/imla/soal 8/imla_soal_8.tscn" id="12_bt06l"]
+[ext_resource type="PackedScene" uid="uid://coh0w6u6vlqgw" path="res://scenes/notification scenes/notification_coba_lagi.tscn" id="13_36csr"]
+[ext_resource type="PackedScene" uid="uid://cv7k37dv0mwfk" path="res://scenes/notification scenes/notification_pintar.tscn" id="14_7wdo0"]
+[ext_resource type="PackedScene" uid="uid://devbn6720wp3b" path="res://scenes/notification scenes/notification_hebat.tscn" id="15_gkoqv"]
+
+[node name="Main_Imla" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_yym14")
+expand_mode = 1
+
+[node name="MainImla" type="Node2D" parent="."]
+
+[node name="CanvasGroup" type="Node2D" parent="MainImla"]
+
+[node name="imla soal 1" parent="MainImla/CanvasGroup" instance=ExtResource("6_rled6")]
+
+[node name="imla soal 2" parent="MainImla/CanvasGroup" instance=ExtResource("7_5adpw")]
+visible = false
+
+[node name="imla soal 3" parent="MainImla/CanvasGroup" instance=ExtResource("7_ipgq4")]
+visible = false
+
+[node name="imla soal 4" parent="MainImla/CanvasGroup" instance=ExtResource("7_be2ij")]
+visible = false
+
+[node name="imla soal 5" parent="MainImla/CanvasGroup" instance=ExtResource("8_ftgff")]
+visible = false
+
+[node name="imla soal 6" parent="MainImla/CanvasGroup" instance=ExtResource("10_uii2g")]
+visible = false
+
+[node name="imla soal 7" parent="MainImla/CanvasGroup" instance=ExtResource("11_g8aos")]
+visible = false
+
+[node name="imla soal 8" parent="MainImla/CanvasGroup" instance=ExtResource("12_bt06l")]
+visible = false
+
+[node name="Button" type="Button" parent="MainImla"]
+offset_left = 816.0
+offset_top = 520.0
+offset_right = 1108.0
+offset_bottom = 608.0
+icon = ExtResource("2_105l2")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="CountdownTimer" parent="MainImla" instance=ExtResource("4_7atal")]
+
+[node name="SoalManager" type="Node" parent="MainImla"]
+script = ExtResource("1_koqc8")
+
+[node name="Notification" type="Node2D" parent="."]
+
+[node name="Coba lagi" parent="Notification" instance=ExtResource("13_36csr")]
+visible = false
+position = Vector2(573, 295)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Notification/Coba lagi"]
+
+[node name="Pintar" parent="Notification" instance=ExtResource("14_7wdo0")]
+visible = false
+position = Vector2(556, 300)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Notification/Pintar"]
+
+[node name="Hebat" parent="Notification" instance=ExtResource("15_gkoqv")]
+visible = false
+position = Vector2(560, 287)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Notification/Hebat"]
+
+[connection signal="pressed" from="MainImla/Button" to="MainImla/SoalManager" method="_on_next_question_button_pressed"]
+[connection signal="tree_entered" from="MainImla/SoalManager" to="MainImla/CanvasGroup" method="_on_soal_manager_tree_entered"]

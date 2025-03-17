@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://r54qhwtnlbrg"]
 
-[ext_resource type="Script" path="res://scripts/game_menu.gd" id="1_hmna7"]
-[ext_resource type="Texture2D" uid="uid://b3qwxl0xkq3sk" path="res://assets/Asset game/button/TEBAK GAMBAR-4.png" id="2_nlq73"]
+[ext_resource type="Script" uid="uid://dqjpsy83j4vni" path="res://scripts/game_menu.gd" id="1_hmna7"]
 [ext_resource type="Texture2D" uid="uid://dcrw3gg10o0x6" path="res://assets/Asset game/background/bg for godot.png" id="2_vkly8"]
-[ext_resource type="Texture2D" uid="uid://bjt1sp266lqow" path="res://assets/Asset game/button/SAMBUNG AYAT-4.png" id="3_qqc7u"]
-[ext_resource type="Texture2D" uid="uid://dyb78x3tgy6lg" path="res://assets/Asset game/button/KUIS-4.png" id="4_f5e0i"]
+[ext_resource type="Texture2D" uid="uid://dvy010xih8ald" path="res://assets/Asset game/New Button Update/buttontebakgambar-4.png" id="3_aru3y"]
+[ext_resource type="Texture2D" uid="uid://bhqq82sydnrct" path="res://assets/Asset game/New Button Update/buttonsambungayat-4.png" id="4_0b27c"]
+[ext_resource type="Texture2D" uid="uid://bhpyqwgiycqs5" path="res://assets/Asset game/New Button Update/buttonkuis-4.png" id="5_yr8n5"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="7_tqiah"]
 
 [node name="game menu" type="Control"]
@@ -32,13 +32,14 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 168.0
-offset_top = 122.0
-offset_right = -735.0
-offset_bottom = -449.0
+offset_top = 128.0
+offset_right = -736.0
+offset_bottom = -440.0
 grow_horizontal = 2
 grow_vertical = 2
-icon = ExtResource("2_nlq73")
+icon = ExtResource("3_aru3y")
 flat = true
+expand_icon = true
 
 [node name="Sambung ayat" type="Button" parent="."]
 layout_mode = 1
@@ -46,13 +47,14 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 168.0
-offset_top = 234.0
-offset_right = -735.0
-offset_bottom = -337.0
+offset_top = 232.0
+offset_right = -736.0
+offset_bottom = -336.0
 grow_horizontal = 2
 grow_vertical = 2
-icon = ExtResource("3_qqc7u")
+icon = ExtResource("4_0b27c")
 flat = true
+expand_icon = true
 
 [node name="Kuis" type="Button" parent="."]
 layout_mode = 1
@@ -60,13 +62,14 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 168.0
-offset_top = 337.0
-offset_right = -735.0
-offset_bottom = -234.0
+offset_top = 336.0
+offset_right = -736.0
+offset_bottom = -232.0
 grow_horizontal = 2
 grow_vertical = 2
-icon = ExtResource("4_f5e0i")
+icon = ExtResource("5_yr8n5")
 flat = true
+expand_icon = true
 
 [node name="Back Button" type="Button" parent="."]
 layout_mode = 1

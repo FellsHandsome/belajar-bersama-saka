@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://dm6ofa8d2jy8t"]
+
+[ext_resource type="Script" uid="uid://dnbn0p8n1j4dh" path="res://scenes/nilai/nilai_scenes.gd" id="1_8re0k"]
+[ext_resource type="Texture2D" uid="uid://b78cgrdqt7tei" path="res://assets/Asset game/background/bcrounpolos1-1.png" id="1_kcfnq"]
+[ext_resource type="Texture2D" uid="uid://bgg0ql6fmjsyt" path="res://assets/Asset game/background/assetsnillai-3.png" id="2_mqdqp"]
+[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="4_k7l8o"]
+[ext_resource type="Texture2D" uid="uid://jkwrhd8qafru" path="res://assets/Asset game/Bintang/bintg2-1.png" id="5_fn27n"]
+
+[node name="nilai scenes" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8re0k")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_kcfnq")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 13.0
+offset_right = 94.0
+offset_bottom = 94.0
+icon = ExtResource("4_k7l8o")
+flat = true
+expand_icon = true
+
+[node name="Assetsnillai-3" type="Sprite2D" parent="TextureRect"]
+position = Vector2(578, 160)
+scale = Vector2(1.03195, 1.03195)
+texture = ExtResource("2_mqdqp")
+
+[node name="Bintg2-1" type="Sprite2D" parent="TextureRect"]
+position = Vector2(576, 368)
+scale = Vector2(0.221257, 0.221257)
+texture = ExtResource("5_fn27n")
+
+[node name="Bintg2-2" type="Sprite2D" parent="TextureRect"]
+position = Vector2(784, 432)
+scale = Vector2(0.179144, 0.179144)
+texture = ExtResource("5_fn27n")
+
+[node name="Bintg2-3" type="Sprite2D" parent="TextureRect"]
+position = Vector2(384, 432)
+scale = Vector2(0.181484, 0.181484)
+texture = ExtResource("5_fn27n")
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

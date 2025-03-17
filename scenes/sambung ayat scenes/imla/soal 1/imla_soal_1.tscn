@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://tyqsf0am277" path="res://assets/Asset game/sambung ayat/imla/soal 1/b-4.png" id="4_kr6bs"]
 [ext_resource type="Texture2D" uid="uid://ddy6n8snw07a8" path="res://assets/Asset game/sambung ayat/imla/soal 1/C-4.png" id="5_yrk8q"]
 [ext_resource type="Texture2D" uid="uid://ekfh2yflqbn2" path="res://assets/Asset game/sambung ayat/imla/soal 1/D-4.png" id="6_ne45q"]
-[ext_resource type="Script" path="res://scenes/sambung ayat scenes/imla/soal 1/main_button.gd" id="7_60rx1"]
+[ext_resource type="Script" uid="uid://dxj88lq52p7bo" path="res://scenes/sambung ayat scenes/imla/soal 1/main_button.gd" id="7_60rx1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3uvc2"]
 border_color = Color(0.8, 0.8, 0.8, 0)

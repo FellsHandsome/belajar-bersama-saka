@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://crt5n5qk8kruc"]
+
+[ext_resource type="Texture2D" uid="uid://bcv4xdjhn6ww7" path="res://assets/Asset game/Bintang/bintng1-1.png" id="1_rwfsp"]
+
+[node name="B3" type="Node2D"]
+
+[node name="Bintng1-1" type="Sprite2D" parent="."]
+position = Vector2(384, 432)
+scale = Vector2(0.181484, 0.181484)
+texture = ExtResource("1_rwfsp")
+
+[node name="Bintng1-2" type="Sprite2D" parent="."]
+position = Vector2(784, 432)
+scale = Vector2(0.177473, 0.177473)
+texture = ExtResource("1_rwfsp")
+
+[node name="Bintng1-3" type="Sprite2D" parent="."]
+position = Vector2(576, 368)
+scale = Vector2(0.224056, 0.224056)
+texture = ExtResource("1_rwfsp")

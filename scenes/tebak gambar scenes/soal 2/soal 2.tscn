@@ -5,6 +5,6 @@
 [node name="Soal2" type="Node2D"]
 
 [node name="NabiIsa" type="Sprite2D" parent="."]
-position = Vector2(565, 320)
-scale = Vector2(0.656945, 0.656945)
+position = Vector2(576, 288)
+scale = Vector2(0.715084, 0.622222)
 texture = ExtResource("1_li80j")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://l83768kegm3r"]
 
-[ext_resource type="Texture2D" uid="uid://7nmmgf6brqjw" path="res://assets/Asset game/background/bckoundhiju5-1.png" id="1_ep5p2"]
-[ext_resource type="Script" path="res://scripts/sambung ayat scripts/sambunng_ayat_menu.gd" id="1_y4nsc"]
+[ext_resource type="Script" uid="uid://dcnuaj3au1l1q" path="res://scripts/sambung ayat scripts/sambunng_ayat_menu.gd" id="1_y4nsc"]
+[ext_resource type="Texture2D" uid="uid://c76uwj6o2sal8" path="res://assets/Asset game/New Background/Background 3 (with saka) .png" id="2_wf6k8"]
 [ext_resource type="FontFile" uid="uid://coofe3naommww" path="res://assets/Asset game/font/chiezzy/Chieezy Burger.otf" id="3_gpd3u"]
 [ext_resource type="Texture2D" uid="uid://gxa6odlalipx" path="res://assets/Asset game/button/BUTTONSURAHTERBARUUUUUUUUU-2.png" id="3_on2f5"]
 [ext_resource type="Texture2D" uid="uid://c2i44i7lr1tku" path="res://assets/Asset game/button/buttonimla-2.png" id="4_ywctb"]
@@ -37,7 +37,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_ep5p2")
+texture = ExtResource("2_wf6k8")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="TextureRect"]

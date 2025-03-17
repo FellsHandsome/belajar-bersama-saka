@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bg8i25vlypkri"]
 
-[ext_resource type="Script" path="res://scripts/tampilan_awal.gd" id="1_ngbel"]
+[ext_resource type="Script" uid="uid://mgqv56055dbi" path="res://scripts/tampilan_awal.gd" id="1_ngbel"]
 [ext_resource type="Texture2D" uid="uid://dcrw3gg10o0x6" path="res://assets/Asset game/background/bg for godot.png" id="2_rmx7j"]
 [ext_resource type="Texture2D" uid="uid://cpgwti8lxhyn8" path="res://assets/Asset game/button/WhatsApp Image 2025-01-11 at 20.48.15.jpeg" id="3_66eac"]
 [ext_resource type="FontFile" uid="uid://coofe3naommww" path="res://assets/Asset game/font/chiezzy/Chieezy Burger.otf" id="4_maqdi"]

@@ -1,11 +1,10 @@
-[gd_scene load_steps=17 format=3 uid="uid://crv05am2qbeqw"]
+[gd_scene load_steps=15 format=3 uid="uid://crv05am2qbeqw"]
 
-[ext_resource type="Texture2D" uid="uid://7nmmgf6brqjw" path="res://assets/Asset game/background/bckoundhiju5-1.png" id="1_b7pe7"]
-[ext_resource type="Script" path="res://scripts/tampilan_setting.gd" id="1_hs5l1"]
+[ext_resource type="Script" uid="uid://chxfnx1b4d06w" path="res://scripts/tampilan_setting.gd" id="1_hs5l1"]
 [ext_resource type="Texture2D" uid="uid://bfrkeo1rqb30x" path="res://assets/Asset game/background/backrounddd pengaturan-2.png" id="2_dwcpo"]
+[ext_resource type="Texture2D" uid="uid://byca5wl1somtw" path="res://assets/Asset game/New Background/Background 3.png" id="2_jky0s"]
 [ext_resource type="Texture2D" uid="uid://bsqsf8c82vess" path="res://assets/Asset game/button/buttonsuara-2.png" id="3_xap4c"]
 [ext_resource type="Texture2D" uid="uid://h8oo2yi62gfc" path="res://assets/Asset game/button/button muic-6.png" id="4_a2qbh"]
-[ext_resource type="Texture2D" uid="uid://c6x2gfwmbolco" path="res://assets/Asset game/button/button inffffo-2.png" id="5_3yvsw"]
 [ext_resource type="Texture2D" uid="uid://duu06abhaaywt" path="res://assets/Asset game/button/iconintagram-4.png" id="6_dc06o"]
 [ext_resource type="Texture2D" uid="uid://dij7jw7k7h33e" path="res://assets/Asset game/button/button nilaai-4.png" id="7_1kd8d"]
 [ext_resource type="Texture2D" uid="uid://b6ljx6f0e63r8" path="res://assets/Asset game/button/button gmil-5.png" id="8_8yp1b"]
@@ -15,9 +14,6 @@
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_g1d8u"]
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_jopok"]
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_ah0tl"]
@@ -46,7 +42,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.00123529
-texture = ExtResource("1_b7pe7")
+texture = ExtResource("2_jky0s")
 expand_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="TextureRect2"]
@@ -117,38 +113,12 @@ text = "Musik
 "
 label_settings = SubResource("LabelSettings_g1d8u")
 
-[node name="Info button" type="Button" parent="TextureRect2"]
-layout_mode = 0
-offset_left = 331.0
-offset_top = 388.0
-offset_right = 421.0
-offset_bottom = 485.0
-icon = ExtResource("5_3yvsw")
-flat = true
-expand_icon = true
-
-[node name="Label" type="Label" parent="TextureRect2/Info button"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 21.0
-offset_top = 100.0
-offset_right = -29.0
-offset_bottom = 26.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "Info
-"
-label_settings = SubResource("LabelSettings_jopok")
-horizontal_alignment = 1
-
 [node name="Sosial media button" type="Button" parent="TextureRect2"]
 layout_mode = 0
-offset_left = 464.0
-offset_top = 384.0
-offset_right = 555.0
-offset_bottom = 483.0
+offset_left = 344.474
+offset_top = 383.575
+offset_right = 435.474
+offset_bottom = 482.575
 icon = ExtResource("6_dc06o")
 flat = true
 expand_icon = true
@@ -167,10 +137,10 @@ horizontal_alignment = 1
 
 [node name="Nilai button" type="Button" parent="TextureRect2"]
 layout_mode = 0
-offset_left = 595.0
-offset_top = 387.0
-offset_right = 685.0
-offset_bottom = 484.0
+offset_left = 520.474
+offset_top = 383.357
+offset_right = 610.474
+offset_bottom = 480.357
 icon = ExtResource("7_1kd8d")
 flat = true
 expand_icon = true
@@ -180,10 +150,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 13.0
-offset_top = 101.0
-offset_right = -5.0
-offset_bottom = 27.0
+offset_left = 8.12845
+offset_top = 103.99
+offset_right = -9.87155
+offset_bottom = 29.99
 grow_horizontal = 2
 grow_vertical = 2
 text = "Penilaian"
@@ -191,10 +161,10 @@ label_settings = SubResource("LabelSettings_0pfkv")
 
 [node name="Gmail button" type="Button" parent="TextureRect2"]
 layout_mode = 0
-offset_left = 725.0
-offset_top = 390.0
-offset_right = 811.0
-offset_bottom = 484.0
+offset_left = 696.474
+offset_top = 383.14
+offset_right = 782.474
+offset_bottom = 477.14
 icon = ExtResource("8_8yp1b")
 flat = true
 expand_icon = true

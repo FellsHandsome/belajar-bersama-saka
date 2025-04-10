@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://2hgddnn662rd"]
 
-[ext_resource type="Script" path="res://scripts/kuis scripts/kuis_menu.gd" id="1_s2xgu"]
+[ext_resource type="Script" uid="uid://unxwjvh75vqh" path="res://scripts/kuis scripts/kuis_menu.gd" id="1_s2xgu"]
 [ext_resource type="Texture2D" uid="uid://cjw408p26tjsb" path="res://assets/Asset game/background/bckroununtrm-1.png" id="2_ukq4u"]
 [ext_resource type="Texture2D" uid="uid://bvacncqf88a1c" path="res://assets/Asset game/button/MULAI-4.png" id="3_dtsnx"]
 [ext_resource type="FontFile" uid="uid://coofe3naommww" path="res://assets/Asset game/font/chiezzy/Chieezy Burger.otf" id="4_glmjd"]

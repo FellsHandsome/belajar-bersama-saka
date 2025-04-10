@@ -97,5 +97,6 @@ icon = ExtResource("5_sjgng")
 flat = true
 expand_icon = true
 
+[connection signal="pressed" from="TextureRect/Surah Button" to="." method="_on_surah_button_pressed"]
 [connection signal="pressed" from="TextureRect/Imla" to="." method="_on_imla_pressed"]
 [connection signal="pressed" from="TextureRect/Back Button" to="." method="_on_back_button_pressed"]

@@ -1,30 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://devbn6720wp3b"]
+[gd_scene load_steps=2 format=3 uid="uid://devbn6720wp3b"]
 
-[ext_resource type="Texture2D" uid="uid://bx0dymb1pbwvm" path="res://assets/Asset game/items/YEYYYYYYYYYYY.png" id="1_p08v3"]
-[ext_resource type="FontFile" uid="uid://cilj4hupsxopu" path="res://assets/Asset game/font/more_sugar/MoreSugar-Regular.otf" id="2_4rd68"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_hu26x"]
-font = ExtResource("2_4rd68")
-font_size = 75
-font_color = Color(0.639216, 1, 0.498039, 1)
-outline_size = 15
-outline_color = Color(0, 0.407843, 0.215686, 1)
-shadow_size = 20
-shadow_color = Color(0.637843, 0.637843, 0.637843, 0.854902)
-shadow_offset = Vector2(0, 2)
+[ext_resource type="Texture2D" uid="uid://c5qyuuyevs7au" path="res://assets/Asset game/new notification/HEBAT bubble.png" id="1_aweoj"]
 
 [node name="notification hebat" type="Node2D"]
 
-[node name="HEBAT" type="Sprite2D" parent="."]
-position = Vector2(4.76837e-06, -7.15256e-06)
-scale = Vector2(1.024, 1.04918)
-texture = ExtResource("1_p08v3")
-
-[node name="Label" type="Label" parent="HEBAT"]
-offset_left = -117.188
-offset_top = 53.375
-offset_right = 129.813
-offset_bottom = 143.375
-text = "Hebat!"
-label_settings = SubResource("LabelSettings_hu26x")
-vertical_alignment = 1
+[node name="HebatBubble" type="Sprite2D" parent="."]
+position = Vector2(1.69277e-05, -4.76837e-07)
+scale = Vector2(0.134615, 0.13617)
+texture = ExtResource("1_aweoj")

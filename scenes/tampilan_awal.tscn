@@ -1,17 +1,17 @@
 [gd_scene load_steps=6 format=3 uid="uid://bg8i25vlypkri"]
 
 [ext_resource type="Script" uid="uid://mgqv56055dbi" path="res://scripts/tampilan_awal.gd" id="1_ngbel"]
-[ext_resource type="Texture2D" uid="uid://dcrw3gg10o0x6" path="res://assets/Asset game/background/bg for godot.png" id="2_rmx7j"]
+[ext_resource type="Texture2D" uid="uid://d13nf8wafdnkm" path="res://assets/Asset game/New Background/openingg-3.png" id="2_5ko2w"]
 [ext_resource type="Texture2D" uid="uid://cpgwti8lxhyn8" path="res://assets/Asset game/button/WhatsApp Image 2025-01-11 at 20.48.15.jpeg" id="3_66eac"]
 [ext_resource type="FontFile" uid="uid://coofe3naommww" path="res://assets/Asset game/font/chiezzy/Chieezy Burger.otf" id="4_maqdi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_28cgd"]
 line_spacing = 5.0
 font = ExtResource("4_maqdi")
-font_size = 50
-font_color = Color(0.639216, 1, 0.498039, 1)
+font_size = 64
+font_color = Color(0.937255, 0.835294, 0.647059, 1)
 outline_size = 26
-outline_color = Color(0, 0.407843, 0.215686, 1)
+outline_color = Color(0.447059, 0.239216, 0.133333, 1)
 shadow_size = 10
 shadow_color = Color(0.203922, 0.160784, 0.0196078, 0.607843)
 
@@ -31,17 +31,17 @@ anchors_preset = -1
 anchor_right = 1.002
 anchor_bottom = 1.0
 offset_right = -2.30396
-texture = ExtResource("2_rmx7j")
+texture = ExtResource("2_5ko2w")
 expand_mode = 1
 
 [node name="Button" type="Button" parent="CanvasLayer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 220.0
-offset_top = 355.0
-offset_right = -632.0
-offset_bottom = -197.0
+offset_left = 152.0
+offset_top = 368.0
+offset_right = -700.0
+offset_bottom = -184.0
 grow_horizontal = 2
 grow_vertical = 2
 icon = ExtResource("3_66eac")
@@ -52,10 +52,10 @@ expand_icon = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 140.0
-offset_top = 123.0
-offset_right = -548.0
-offset_bottom = -293.0
+offset_left = 88.0
+offset_top = 136.0
+offset_right = -620.0
+offset_bottom = -310.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Belajar dan 

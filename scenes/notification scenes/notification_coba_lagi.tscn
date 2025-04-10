@@ -1,30 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://coh0w6u6vlqgw"]
+[gd_scene load_steps=2 format=3 uid="uid://coh0w6u6vlqgw"]
 
-[ext_resource type="Texture2D" uid="uid://bfamc3xvjpgfv" path="res://assets/Asset game/items/COBA LAAGI-2.png" id="1_2p0vf"]
-[ext_resource type="FontFile" uid="uid://cilj4hupsxopu" path="res://assets/Asset game/font/more_sugar/MoreSugar-Regular.otf" id="2_o3r1f"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_f7n1g"]
-font = ExtResource("2_o3r1f")
-font_size = 55
-font_color = Color(0.639216, 1, 0.498039, 1)
-outline_size = 15
-outline_color = Color(0, 0.407843, 0.215686, 1)
-shadow_size = 20
-shadow_color = Color(0.637843, 0.637843, 0.637843, 0.854902)
-shadow_offset = Vector2(0, 2)
+[ext_resource type="Texture2D" uid="uid://3x8voh5s4sne" path="res://assets/Asset game/new notification/SALAH bubble.png" id="1_lbev8"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="COBA LAGI" type="Sprite2D" parent="."]
-position = Vector2(-1.16825e-05, 3.8147e-06)
-scale = Vector2(1.02605, 1.1449)
-texture = ExtResource("1_2p0vf")
-
-[node name="Label" type="Label" parent="COBA LAGI"]
-offset_left = -140.344
-offset_top = 55.9
-offset_right = 132.656
-offset_bottom = 145.9
-text = "Coba Lagi"
-label_settings = SubResource("LabelSettings_f7n1g")
-vertical_alignment = 1
+[node name="SalahBubble" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, 3.62396e-05)
+scale = Vector2(0.134615, 0.13617)
+texture = ExtResource("1_lbev8")

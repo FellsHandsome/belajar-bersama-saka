@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dm6ofa8d2jy8t"]
+[gd_scene load_steps=7 format=3 uid="uid://dm6ofa8d2jy8t"]
 
 [ext_resource type="Script" uid="uid://dnbn0p8n1j4dh" path="res://scenes/nilai/nilai_scenes.gd" id="1_8re0k"]
 [ext_resource type="Texture2D" uid="uid://b78cgrdqt7tei" path="res://assets/Asset game/background/bcrounpolos1-1.png" id="1_kcfnq"]
-[ext_resource type="Texture2D" uid="uid://bgg0ql6fmjsyt" path="res://assets/Asset game/background/assetsnillai-3.png" id="2_mqdqp"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="4_k7l8o"]
-[ext_resource type="Texture2D" uid="uid://jkwrhd8qafru" path="res://assets/Asset game/Bintang/bintg2-1.png" id="5_fn27n"]
+[ext_resource type="Texture2D" uid="uid://btuv12i2evkm7" path="res://assets/Asset game/nilai/PUTIH TULANG BUTTON NILAI-2.png" id="4_sqc0p"]
+[ext_resource type="Texture2D" uid="uid://pv3ycndiwrw7" path="res://assets/Asset game/Bintang/bintgaburevisi-1.png" id="5_f7kjn"]
+[ext_resource type="Texture2D" uid="uid://5slnoba3o3tj" path="res://assets/Asset game/nilai/buttonillai-1.png" id="6_0twbr"]
 
 [node name="nilai scenes" type="Control"]
 layout_mode = 3
@@ -33,23 +34,28 @@ flat = true
 expand_icon = true
 
 [node name="Assetsnillai-3" type="Sprite2D" parent="TextureRect"]
-position = Vector2(578, 160)
-scale = Vector2(1.03195, 1.03195)
-texture = ExtResource("2_mqdqp")
+position = Vector2(576, 136)
+scale = Vector2(0.22081, 0.22081)
+texture = ExtResource("4_sqc0p")
 
-[node name="Bintg2-1" type="Sprite2D" parent="TextureRect"]
+[node name="Bintang 1" type="Sprite2D" parent="TextureRect"]
 position = Vector2(576, 368)
-scale = Vector2(0.221257, 0.221257)
-texture = ExtResource("5_fn27n")
+scale = Vector2(0.190611, 0.190611)
+texture = ExtResource("5_f7kjn")
 
-[node name="Bintg2-2" type="Sprite2D" parent="TextureRect"]
-position = Vector2(784, 432)
-scale = Vector2(0.179144, 0.179144)
-texture = ExtResource("5_fn27n")
-
-[node name="Bintg2-3" type="Sprite2D" parent="TextureRect"]
+[node name="Bintang 2" type="Sprite2D" parent="TextureRect"]
 position = Vector2(384, 432)
-scale = Vector2(0.181484, 0.181484)
-texture = ExtResource("5_fn27n")
+scale = Vector2(0.156674, 0.156674)
+texture = ExtResource("5_f7kjn")
+
+[node name="Bintang 3" type="Sprite2D" parent="TextureRect"]
+position = Vector2(784, 432)
+scale = Vector2(0.151159, 0.151159)
+texture = ExtResource("5_f7kjn")
+
+[node name="Buttonillai-1" type="Sprite2D" parent="."]
+position = Vector2(576, 120)
+scale = Vector2(0.206467, 0.206467)
+texture = ExtResource("6_0twbr")
 
 [connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://bv2tiw5ops3ed"]
 
-[ext_resource type="Script" path="res://scenes/item.gd" id="1_8ei28"]
+[ext_resource type="Script" uid="uid://mq8eqxer4i7l" path="res://scenes/item.gd" id="1_8ei28"]
 [ext_resource type="FontFile" uid="uid://d1jxi0qrsaigh" path="res://scenes/sambung ayat scenes/Lonely Coffee.ttf" id="2_y4sow"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3wf6s"]

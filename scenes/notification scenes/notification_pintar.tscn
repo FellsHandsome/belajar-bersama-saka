@@ -1,30 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cv7k37dv0mwfk"]
+[gd_scene load_steps=2 format=3 uid="uid://cv7k37dv0mwfk"]
 
-[ext_resource type="Texture2D" uid="uid://depauc8s23cdy" path="res://assets/Asset game/items/HEBAT-2.png" id="1_lkt43"]
-[ext_resource type="FontFile" uid="uid://cilj4hupsxopu" path="res://assets/Asset game/font/more_sugar/MoreSugar-Regular.otf" id="2_apsas"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_0ulme"]
-font = ExtResource("2_apsas")
-font_size = 75
-font_color = Color(0.639216, 1, 0.498039, 1)
-outline_size = 15
-outline_color = Color(0, 0.407843, 0.215686, 1)
-shadow_size = 20
-shadow_color = Color(0.637843, 0.637843, 0.637843, 0.854902)
-shadow_offset = Vector2(0, 2)
+[ext_resource type="Texture2D" uid="uid://bp0e4nf66ocp1" path="res://assets/Asset game/new notification/PINTAR bubble.png" id="1_np30u"]
 
 [node name="Notification Pintar" type="Node2D"]
 
-[node name="PINTAR" type="Sprite2D" parent="."]
-position = Vector2(-3.05176e-05, 0)
-texture = ExtResource("1_lkt43")
-
-[node name="Label" type="Label" parent="PINTAR"]
-offset_left = -112.0
-offset_top = 48.0
-offset_right = 135.0
-offset_bottom = 138.0
-text = "Pintar!
-"
-label_settings = SubResource("LabelSettings_0ulme")
-vertical_alignment = 1
+[node name="PintarBubble" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, -3.32447e-05)
+scale = Vector2(0.134615, 0.13617)
+texture = ExtResource("1_np30u")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bfh36lheu87d1"]
 
-[ext_resource type="Script" path="res://scenes/countdown_timer.gd" id="1_or607"]
+[ext_resource type="Script" uid="uid://c1m6apn67rmju" path="res://scenes/countdown_timer.gd" id="1_or607"]
 
 [node name="CountdownTimer" type="Node"]
 script = ExtResource("1_or607")

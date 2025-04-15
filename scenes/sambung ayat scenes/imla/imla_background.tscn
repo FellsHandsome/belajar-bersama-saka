@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dwhhv6klxmdrr"]
+[gd_scene load_steps=19 format=3 uid="uid://dwhhv6klxmdrr"]
 
 [ext_resource type="Script" uid="uid://bv7qi0dbksfe2" path="res://scenes/sambung ayat scenes/imla/soal_manager.gd" id="1_koqc8"]
 [ext_resource type="Texture2D" uid="uid://byxjs02jrsmu3" path="res://assets/Asset game/background/inepapanassettanpamja-10.png" id="1_yym14"]
@@ -12,6 +12,12 @@
 [ext_resource type="PackedScene" uid="uid://di5wrs55xjpa8" path="res://scenes/sambung ayat scenes/imla/soal 6/imla_soal_6.tscn" id="10_uii2g"]
 [ext_resource type="PackedScene" uid="uid://b12vjxr821vkt" path="res://scenes/sambung ayat scenes/imla/soal 7/imla_soal_7.tscn" id="11_g8aos"]
 [ext_resource type="PackedScene" uid="uid://bh8bj6bjtbt5q" path="res://scenes/sambung ayat scenes/imla/soal 8/imla_soal_8.tscn" id="12_bt06l"]
+[ext_resource type="Script" uid="uid://ch01plorjx0xa" path="res://scenes/sambung ayat scenes/imla/nilai_scene.gd" id="13_208hl"]
+[ext_resource type="Texture2D" uid="uid://b78cgrdqt7tei" path="res://assets/Asset game/background/bcrounpolos1-1.png" id="14_wseyb"]
+[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="15_441tx"]
+[ext_resource type="Texture2D" uid="uid://btuv12i2evkm7" path="res://assets/Asset game/nilai/PUTIH TULANG BUTTON NILAI-2.png" id="16_i1ilx"]
+[ext_resource type="Texture2D" uid="uid://pv3ycndiwrw7" path="res://assets/Asset game/Bintang/bintgaburevisi-1.png" id="17_03xdd"]
+[ext_resource type="Texture2D" uid="uid://5slnoba3o3tj" path="res://assets/Asset game/nilai/buttonillai-1.png" id="18_vnkkn"]
 
 [node name="Main_Imla" type="Control"]
 layout_mode = 3
@@ -53,8 +59,59 @@ visible = false
 [node name="imla soal 8" parent="CanvasGroup" instance=ExtResource("12_bt06l")]
 visible = false
 
-[node name="Button" type="Button" parent="."]
+[node name="Nilai Scene" type="Control" parent="CanvasGroup"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("13_208hl")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasGroup/Nilai Scene"]
 layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("14_wseyb")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="CanvasGroup/Nilai Scene/TextureRect"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 13.0
+offset_right = 94.0
+offset_bottom = 94.0
+icon = ExtResource("15_441tx")
+flat = true
+expand_icon = true
+
+[node name="Assetsnillai-3" type="Sprite2D" parent="CanvasGroup/Nilai Scene/TextureRect"]
+position = Vector2(576, 136)
+scale = Vector2(0.22081, 0.22081)
+texture = ExtResource("16_i1ilx")
+
+[node name="Bintang 1" type="Sprite2D" parent="CanvasGroup/Nilai Scene/TextureRect"]
+position = Vector2(576, 368)
+scale = Vector2(0.190611, 0.190611)
+texture = ExtResource("17_03xdd")
+
+[node name="Bintang 2" type="Sprite2D" parent="CanvasGroup/Nilai Scene/TextureRect"]
+position = Vector2(384, 432)
+scale = Vector2(0.156674, 0.156674)
+texture = ExtResource("17_03xdd")
+
+[node name="Bintang 3" type="Sprite2D" parent="CanvasGroup/Nilai Scene/TextureRect"]
+position = Vector2(784, 432)
+scale = Vector2(0.151159, 0.151159)
+texture = ExtResource("17_03xdd")
+
+[node name="Buttonillai-1" type="Sprite2D" parent="CanvasGroup/Nilai Scene"]
+position = Vector2(576, 120)
+scale = Vector2(0.206467, 0.206467)
+texture = ExtResource("18_vnkkn")
+
+[node name="CountdownTimer" parent="CanvasGroup" instance=ExtResource("4_7atal")]
+
+[node name="Button" type="Button" parent="CanvasGroup"]
 offset_left = 816.0
 offset_top = 520.0
 offset_right = 1108.0
@@ -64,10 +121,8 @@ flat = true
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
-[node name="CountdownTimer" parent="." instance=ExtResource("4_7atal")]
-
 [node name="SoalManager" type="Node" parent="."]
 script = ExtResource("1_koqc8")
 
-[connection signal="pressed" from="Button" to="SoalManager" method="go_to_next_question"]
+[connection signal="pressed" from="CanvasGroup/Button" to="SoalManager" method="go_to_next_question"]
 [connection signal="tree_entered" from="SoalManager" to="CanvasGroup" method="_on_soal_manager_tree_entered"]

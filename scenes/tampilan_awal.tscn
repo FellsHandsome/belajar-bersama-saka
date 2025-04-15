@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bg8i25vlypkri"]
 
 [ext_resource type="Script" uid="uid://mgqv56055dbi" path="res://scripts/tampilan_awal.gd" id="1_ngbel"]
-[ext_resource type="Texture2D" uid="uid://d13nf8wafdnkm" path="res://assets/Asset game/New Background/openingg-3.png" id="2_5ko2w"]
-[ext_resource type="Texture2D" uid="uid://cpgwti8lxhyn8" path="res://assets/Asset game/button/WhatsApp Image 2025-01-11 at 20.48.15.jpeg" id="3_66eac"]
+[ext_resource type="Texture2D" uid="uid://5ey087v301rf" path="res://assets/Asset game/lagi lagi background/Background 5.png" id="2_5ko2w"]
+[ext_resource type="Texture2D" uid="uid://kvn5ncnn4w0u" path="res://assets/Asset game/New Button Update/BUTOONMULAI-4.png" id="3_5ko2w"]
 [ext_resource type="FontFile" uid="uid://coofe3naommww" path="res://assets/Asset game/font/chiezzy/Chieezy Burger.otf" id="4_maqdi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_28cgd"]
@@ -44,7 +44,7 @@ offset_right = -700.0
 offset_bottom = -184.0
 grow_horizontal = 2
 grow_vertical = 2
-icon = ExtResource("3_66eac")
+icon = ExtResource("3_5ko2w")
 flat = true
 expand_icon = true
 

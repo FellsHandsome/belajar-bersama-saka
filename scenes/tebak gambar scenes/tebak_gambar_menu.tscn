@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://81u788uykdft"]
 
 [ext_resource type="Script" uid="uid://criwjyinrf65o" path="res://scripts/tebak gambar scripts/tebak_gambar_menu.gd" id="1_6k4bu"]
-[ext_resource type="Texture2D" uid="uid://btnrq174qyq1t" path="res://assets/Asset game/New Background/Background 2.png" id="2_utnd6"]
+[ext_resource type="Texture2D" uid="uid://bhr1f2bdggfls" path="res://assets/Asset game/lagi lagi background/Background 4.png" id="2_2ihh8"]
 [ext_resource type="FontFile" uid="uid://coofe3naommww" path="res://assets/Asset game/font/chiezzy/Chieezy Burger.otf" id="3_qt6ma"]
 [ext_resource type="Texture2D" uid="uid://bvacncqf88a1c" path="res://assets/Asset game/button/MULAI-4.png" id="3_yieed"]
 [ext_resource type="Texture2D" uid="uid://ch0fia1ytc8ol" path="res://assets/Asset game/button/setings-3.png" id="4_bubcq"]
@@ -37,7 +37,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_utnd6")
+texture = ExtResource("2_2ihh8")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="TextureRect"]

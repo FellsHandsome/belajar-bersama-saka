@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://r54qhwtnlbrg"]
+[gd_scene load_steps=8 format=3 uid="uid://r54qhwtnlbrg"]
 
 [ext_resource type="Script" uid="uid://dqjpsy83j4vni" path="res://scripts/game_menu.gd" id="1_hmna7"]
-[ext_resource type="Texture2D" uid="uid://cshismxjvwmsl" path="res://assets/Asset game/New Background/bccrounsorerevisi-1.png" id="2_aru3y"]
+[ext_resource type="Texture2D" uid="uid://btnrq174qyq1t" path="res://assets/Asset game/New Background/Background 2.png" id="2_0b27c"]
 [ext_resource type="Texture2D" uid="uid://dvy010xih8ald" path="res://assets/Asset game/New Button Update/buttontebakgambar-4.png" id="3_aru3y"]
 [ext_resource type="Texture2D" uid="uid://bhqq82sydnrct" path="res://assets/Asset game/New Button Update/buttonsambungayat-4.png" id="4_0b27c"]
+[ext_resource type="AudioStream" uid="uid://fercpfq1dbmp" path="res://assets/Asset game/Musik/button-305770.mp3" id="4_yr8n5"]
 [ext_resource type="Texture2D" uid="uid://bhpyqwgiycqs5" path="res://assets/Asset game/New Button Update/buttonkuis-4.png" id="5_yr8n5"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="7_tqiah"]
 
@@ -23,7 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_aru3y")
+texture = ExtResource("2_0b27c")
 expand_mode = 1
 
 [node name="Tebak gambar" type="Button" parent="."]
@@ -31,45 +32,55 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 336.0
-offset_top = 208.0
-offset_right = -493.0
-offset_bottom = -336.0
+offset_left = 408.0
+offset_top = 200.0
+offset_right = -421.0
+offset_bottom = -344.0
 grow_horizontal = 2
 grow_vertical = 2
 icon = ExtResource("3_aru3y")
 flat = true
 expand_icon = true
 
+[node name="Click" type="AudioStreamPlayer" parent="Tebak gambar"]
+stream = ExtResource("4_yr8n5")
+stream_paused = true
+
 [node name="Sambung ayat" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 336.0
-offset_top = 328.0
-offset_right = -493.0
-offset_bottom = -216.0
+offset_left = 408.0
+offset_top = 320.0
+offset_right = -421.0
+offset_bottom = -224.0
 grow_horizontal = 2
 grow_vertical = 2
 icon = ExtResource("4_0b27c")
 flat = true
 expand_icon = true
 
+[node name="Click" type="AudioStreamPlayer" parent="Sambung ayat"]
+stream = ExtResource("4_yr8n5")
+
 [node name="Kuis" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 336.0
-offset_top = 448.0
-offset_right = -493.0
-offset_bottom = -96.0
+offset_left = 408.0
+offset_top = 440.0
+offset_right = -421.0
+offset_bottom = -104.0
 grow_horizontal = 2
 grow_vertical = 2
 icon = ExtResource("5_yr8n5")
 flat = true
 expand_icon = true
+
+[node name="Click" type="AudioStreamPlayer" parent="Kuis"]
+stream = ExtResource("4_yr8n5")
 
 [node name="Back Button" type="Button" parent="."]
 layout_mode = 1
@@ -83,6 +94,9 @@ offset_bottom = -550.224
 icon = ExtResource("7_tqiah")
 flat = true
 expand_icon = true
+
+[node name="Click" type="AudioStreamPlayer" parent="Back Button"]
+stream = ExtResource("4_yr8n5")
 
 [connection signal="pressed" from="Tebak gambar" to="." method="_on_tebak_gambar_pressed"]
 [connection signal="pressed" from="Sambung ayat" to="." method="_on_sambung_ayat_pressed"]

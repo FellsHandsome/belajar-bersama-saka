@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://bp00kox3dq740"]
+[gd_scene load_steps=9 format=3 uid="uid://bp00kox3dq740"]
 
+[ext_resource type="Texture2D" uid="uid://csps87rea3rxg" path="res://assets/Asset game/lagi lagi background/Papan 1.png" id="1_07ay1"]
 [ext_resource type="Texture2D" uid="uid://4o63l1fr60xr" path="res://assets/Asset game/sambung ayat/imla/soal 1/prtnyaano1-2.png" id="2_35wie"]
 [ext_resource type="Texture2D" uid="uid://cjcjwvmf7s67w" path="res://assets/Asset game/sambung ayat/imla/soal 1/A-4.png" id="3_pkhvv"]
 [ext_resource type="Texture2D" uid="uid://tyqsf0am277" path="res://assets/Asset game/sambung ayat/imla/soal 1/b-4.png" id="4_kr6bs"]
@@ -17,25 +18,30 @@ anti_aliasing = false
 
 [node name="imla soal1" type="Node2D"]
 
+[node name="Papan1" type="Sprite2D" parent="."]
+position = Vector2(-1032, 416)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_07ay1")
+
 [node name="Prtnyaano1-2" type="Sprite2D" parent="."]
-position = Vector2(576, 152)
+position = Vector2(592, 216)
 scale = Vector2(1.1537, 1.3254)
 texture = ExtResource("2_35wie")
 
 [node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(264, 336)
+position = Vector2(392, 328)
 texture = ExtResource("3_pkhvv")
 
 [node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(724, 368)
+position = Vector2(848, 368)
 texture = ExtResource("4_kr6bs")
 
 [node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(266, 530)
+position = Vector2(400, 528)
 texture = ExtResource("5_yrk8q")
 
 [node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(739.5, 530.25)
+position = Vector2(872, 528)
 scale = Vector2(0.97191, 0.998282)
 texture = ExtResource("6_ne45q")
 
@@ -47,10 +53,10 @@ script = ExtResource("7_60rx1")
 [node name="Button" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.625
-anchor_top = 3.375
-anchor_right = 2.25
-anchor_bottom = 4.0
+anchor_left = 15.5
+anchor_top = 3.0
+anchor_right = 17.625
+anchor_bottom = 2.75
 offset_left = 140.0
 offset_top = 240.0
 offset_right = 171.0
@@ -61,10 +67,10 @@ metadata/_edit_use_anchors_ = true
 [node name="Button2" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.875
-anchor_top = 7.625
-anchor_right = -0.875
-anchor_bottom = 7.625
+anchor_left = 15.5
+anchor_top = 8.0
+anchor_right = 15.125
+anchor_bottom = 7.75
 offset_left = 140.0
 offset_top = 328.0
 offset_right = 191.0
@@ -75,9 +81,9 @@ metadata/_edit_use_anchors_ = true
 [node name="Button3" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -7.5
-anchor_top = 3.75
-anchor_right = -7.5
+anchor_left = 8.5
+anchor_top = 4.0
+anchor_right = 8.125
 anchor_bottom = 3.75
 offset_left = 644.0
 offset_top = 232.0
@@ -89,9 +95,9 @@ metadata/_edit_use_anchors_ = true
 [node name="Button4" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -7.5
-anchor_top = 9.25
-anchor_right = -7.5
+anchor_left = 8.5
+anchor_top = 9.5
+anchor_right = 8.125
 anchor_bottom = 9.25
 offset_left = 644.0
 offset_top = 316.0

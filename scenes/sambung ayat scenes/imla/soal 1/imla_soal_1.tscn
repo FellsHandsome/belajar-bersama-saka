@@ -1,6 +1,5 @@
-[gd_scene load_steps=9 format=3 uid="uid://bp00kox3dq740"]
+[gd_scene load_steps=8 format=3 uid="uid://bp00kox3dq740"]
 
-[ext_resource type="Texture2D" uid="uid://csps87rea3rxg" path="res://assets/Asset game/lagi lagi background/Papan 1.png" id="1_07ay1"]
 [ext_resource type="Texture2D" uid="uid://4o63l1fr60xr" path="res://assets/Asset game/sambung ayat/imla/soal 1/prtnyaano1-2.png" id="2_35wie"]
 [ext_resource type="Texture2D" uid="uid://cjcjwvmf7s67w" path="res://assets/Asset game/sambung ayat/imla/soal 1/A-4.png" id="3_pkhvv"]
 [ext_resource type="Texture2D" uid="uid://tyqsf0am277" path="res://assets/Asset game/sambung ayat/imla/soal 1/b-4.png" id="4_kr6bs"]
@@ -17,11 +16,6 @@ corner_radius_bottom_left = 50
 anti_aliasing = false
 
 [node name="imla soal1" type="Node2D"]
-
-[node name="Papan1" type="Sprite2D" parent="."]
-position = Vector2(-1032, 416)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("1_07ay1")
 
 [node name="Prtnyaano1-2" type="Sprite2D" parent="."]
 position = Vector2(592, 216)
@@ -54,7 +48,7 @@ script = ExtResource("7_60rx1")
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 15.5
-anchor_top = 3.0
+anchor_top = 2.75
 anchor_right = 17.625
 anchor_bottom = 2.75
 offset_left = 140.0
@@ -67,8 +61,8 @@ metadata/_edit_use_anchors_ = true
 [node name="Button2" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 15.5
-anchor_top = 8.0
+anchor_left = 15.125
+anchor_top = 7.75
 anchor_right = 15.125
 anchor_bottom = 7.75
 offset_left = 140.0
@@ -81,8 +75,8 @@ metadata/_edit_use_anchors_ = true
 [node name="Button3" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 8.5
-anchor_top = 4.0
+anchor_left = 8.125
+anchor_top = 3.75
 anchor_right = 8.125
 anchor_bottom = 3.75
 offset_left = 644.0
@@ -95,8 +89,8 @@ metadata/_edit_use_anchors_ = true
 [node name="Button4" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 8.5
-anchor_top = 9.5
+anchor_left = 8.125
+anchor_top = 9.25
 anchor_right = 8.125
 anchor_bottom = 9.25
 offset_left = 644.0

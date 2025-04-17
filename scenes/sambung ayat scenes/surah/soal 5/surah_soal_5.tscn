@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b58nfofj25tos" path="res://assets/Asset game/sambung ayat/surah/soal 5/C-4.png" id="3_covwj"]
 [ext_resource type="Texture2D" uid="uid://dyofb4o8duq8l" path="res://assets/Asset game/sambung ayat/surah/soal 5/d-4.png" id="4_d5st0"]
 [ext_resource type="Texture2D" uid="uid://bs5wwy1qxih13" path="res://assets/Asset game/sambung ayat/surah/soal 5/pertanyaan-2.png" id="5_t256h"]
-[ext_resource type="Script" path="res://scenes/sambung ayat scenes/surah/soal 5/main_button.gd" id="6_ne181"]
+[ext_resource type="Script" uid="uid://chtogmdqw3onu" path="res://scenes/sambung ayat scenes/surah/soal 5/main_button.gd" id="6_ne181"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ggpjv"]
 corner_radius_top_left = 50
@@ -34,29 +34,33 @@ corner_radius_bottom_left = 50
 [node name="surah soal 5" type="Node2D"]
 
 [node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(296, 304)
+position = Vector2(404.875, 296)
+scale = Vector2(0.888978, 1)
 texture = ExtResource("1_txor1")
 
 [node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(816, 296)
-scale = Vector2(0.921907, 0.932927)
+position = Vector2(820.813, 296)
+scale = Vector2(0.798428, 0.932927)
 texture = ExtResource("2_cfiu8")
 
 [node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(296, 432)
+position = Vector2(400, 432)
+scale = Vector2(0.846154, 1)
 texture = ExtResource("3_covwj")
 
 [node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(848, 428)
+position = Vector2(820.25, 424)
+scale = Vector2(0.763619, 1)
 texture = ExtResource("4_d5st0")
 
 [node name="Pertanyaan-2" type="Sprite2D" parent="."]
-position = Vector2(544, 170.5)
+position = Vector2(544, 224)
 texture = ExtResource("5_t256h")
 
 [node name="MainButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
+flat = true
 script = ExtResource("6_ne181")
 
 [node name="Button" type="Button" parent="MainButton"]
@@ -66,19 +70,19 @@ anchor_left = 2.875
 anchor_top = -1.5
 anchor_right = 2.875
 anchor_bottom = -1.5
-offset_left = 44.0
-offset_top = 277.0
-offset_right = 97.0
-offset_bottom = 330.0
+offset_left = 185.0
+offset_top = 268.0
+offset_right = 238.0
+offset_bottom = 321.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_ggpjv")
 
 [node name="Button2" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.375
-anchor_top = -0.625
-anchor_right = -0.375
-anchor_bottom = -0.625
+anchor_left = 17.25
+anchor_top = -0.25
+anchor_right = 17.25
+anchor_bottom = -0.25
 offset_left = 70.0
 offset_top = 394.0
 offset_right = 123.0
@@ -89,10 +93,10 @@ metadata/_edit_use_anchors_ = true
 [node name="Button3" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -7.375
-anchor_top = 2.625
-anchor_right = -7.375
-anchor_bottom = 2.625
+anchor_left = -1.5
+anchor_top = 1.375
+anchor_right = -1.5
+anchor_bottom = 1.375
 offset_left = 572.0
 offset_top = 245.0
 offset_right = 625.0
@@ -107,8 +111,8 @@ anchor_left = -2.5
 anchor_top = 1.375
 anchor_right = -2.5
 anchor_bottom = 1.375
-offset_left = 536.0
-offset_top = 371.0
-offset_right = 589.0
-offset_bottom = 424.0
+offset_left = 580.0
+offset_top = 373.0
+offset_right = 633.0
+offset_bottom = 426.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_xsmbv")

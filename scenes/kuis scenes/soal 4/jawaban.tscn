@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://cosmppocrb07o"]
+
+[ext_resource type="Texture2D" uid="uid://cv3ygpj12g8sv" path="res://assets/Asset game/Soal Kuis/soal 4/1-4.png" id="1_tg0qw"]
+[ext_resource type="Texture2D" uid="uid://b2dewlmx2scxg" path="res://assets/Asset game/Soal Kuis/soal 4/2-4.png" id="2_51co5"]
+[ext_resource type="Texture2D" uid="uid://dmq3risrw5vis" path="res://assets/Asset game/Soal Kuis/soal 4/3-4.png" id="3_wcnkc"]
+[ext_resource type="Texture2D" uid="uid://dbi2l7ni4b3yt" path="res://assets/Asset game/Soal Kuis/soal 4/4-4.png" id="4_87cm1"]
+[ext_resource type="Texture2D" uid="uid://bc2it6mdmpdrg" path="res://assets/Asset game/Soal Kuis/soal 4/ssoal-1.png" id="5_orr4g"]
+
+[node name="Jawaban" type="Node2D"]
+
+[node name="1-4" type="Sprite2D" parent="."]
+position = Vector2(824, 352)
+scale = Vector2(0.835366, 0.835366)
+texture = ExtResource("1_tg0qw")
+
+[node name="2-4" type="Sprite2D" parent="."]
+position = Vector2(384, 352)
+scale = Vector2(0.944444, 0.944444)
+texture = ExtResource("2_51co5")
+
+[node name="3-4" type="Sprite2D" parent="."]
+position = Vector2(369, 253)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("3_wcnkc")
+
+[node name="4-4" type="Sprite2D" parent="."]
+position = Vector2(797, 274)
+scale = Vector2(0.951613, 0.951613)
+texture = ExtResource("4_87cm1")
+
+[node name="Ssoal-1" type="Sprite2D" parent="."]
+position = Vector2(576, 168)
+texture = ExtResource("5_orr4g")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+
+[node name="Button" type="Button" parent="Button"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 216.0
+offset_right = 224.0
+offset_bottom = 248.0
+
+[node name="Button2" type="Button" parent="Button"]
+offset_left = 624.0
+offset_top = 216.0
+offset_right = 656.0
+offset_bottom = 248.0
+
+[node name="Button3" type="Button" parent="Button"]
+offset_left = 192.0
+offset_top = 336.0
+offset_right = 224.0
+offset_bottom = 368.0
+
+[node name="Button4" type="Button" parent="Button"]
+offset_left = 624.0
+offset_top = 336.0
+offset_right = 656.0
+offset_bottom = 368.0

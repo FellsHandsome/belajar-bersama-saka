@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=3 uid="uid://egi5132534ab"]
+
+[ext_resource type="Texture2D" uid="uid://doth38cbyifll" path="res://assets/Asset game/Soal Kuis/soal 5/1-4.png" id="1_o1bo7"]
+[ext_resource type="Texture2D" uid="uid://b3p3y4eo2h7y5" path="res://assets/Asset game/Soal Kuis/soal 5/2-4.png" id="2_oj41c"]
+[ext_resource type="Texture2D" uid="uid://dyfrq7uqk55i" path="res://assets/Asset game/Soal Kuis/soal 5/3-4.png" id="3_bvvkm"]
+[ext_resource type="Texture2D" uid="uid://bd50ka73ocjcc" path="res://assets/Asset game/Soal Kuis/soal 5/4-4.png" id="4_8n746"]
+[ext_resource type="Texture2D" uid="uid://c632lmd47ubyk" path="res://assets/Asset game/Soal Kuis/soal 5/ssoaal-1.png" id="5_omwuh"]
+
+[node name="Jawaban" type="Node2D"]
+
+[node name="1-4" type="Sprite2D" parent="."]
+position = Vector2(312, 270)
+scale = Vector2(0.830645, 0.830645)
+texture = ExtResource("1_o1bo7")
+
+[node name="2-4" type="Sprite2D" parent="."]
+position = Vector2(795, 285)
+scale = Vector2(0.861664, 1)
+texture = ExtResource("2_oj41c")
+
+[node name="3-4" type="Sprite2D" parent="."]
+position = Vector2(336, 406)
+texture = ExtResource("3_bvvkm")
+
+[node name="4-4" type="Sprite2D" parent="."]
+position = Vector2(744, 424)
+texture = ExtResource("4_8n746")
+
+[node name="Ssoaal-1" type="Sprite2D" parent="."]
+position = Vector2(568, 192)
+texture = ExtResource("5_omwuh")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+
+[node name="Button" type="Button" parent="Button"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 216.0
+offset_right = 192.0
+offset_bottom = 248.0
+
+[node name="Button2" type="Button" parent="Button"]
+offset_left = 536.0
+offset_top = 216.0
+offset_right = 568.0
+offset_bottom = 248.0
+
+[node name="Button3" type="Button" parent="Button"]
+offset_left = 160.0
+offset_top = 336.0
+offset_right = 192.0
+offset_bottom = 368.0
+
+[node name="Button4" type="Button" parent="Button"]
+offset_left = 536.0
+offset_top = 336.0
+offset_right = 568.0
+offset_bottom = 368.0

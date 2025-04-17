@@ -20,23 +20,23 @@ offset_right = 1152.0
 offset_bottom = 648.0
 
 [node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(316, 371)
+position = Vector2(445, 371)
 texture = ExtResource("1_dlqa2")
 
 [node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(810, 370)
+position = Vector2(939, 370)
 texture = ExtResource("2_mn03k")
 
 [node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(312, 496)
+position = Vector2(441, 496)
 texture = ExtResource("3_5wa44")
 
 [node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(824, 496)
+position = Vector2(953, 496)
 texture = ExtResource("4_xuqba")
 
 [node name="Pertanyaan-2" type="Sprite2D" parent="."]
-position = Vector2(624.471, 179.5)
+position = Vector2(640, 248)
 scale = Vector2(1.13107, 1.13107)
 texture = ExtResource("5_udj7c")
 
@@ -47,32 +47,32 @@ script = ExtResource("6_rgtle")
 
 [node name="Button" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 136.0
+offset_left = 265.0
 offset_top = 264.0
-offset_right = 184.0
+offset_right = 313.0
 offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_my45m")
 
 [node name="Button2" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 136.0
+offset_left = 265.0
 offset_top = 392.0
-offset_right = 184.0
+offset_right = 313.0
 offset_bottom = 440.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_my45m")
 
 [node name="Button3" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 648.0
+offset_left = 777.0
 offset_top = 264.0
-offset_right = 696.0
+offset_right = 825.0
 offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_my45m")
 
 [node name="Button 4" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 648.0
+offset_left = 777.0
 offset_top = 392.0
-offset_right = 696.0
+offset_right = 825.0
 offset_bottom = 440.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_my45m")

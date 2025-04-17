@@ -44,7 +44,6 @@ expand_icon = true
 
 [node name="Click" type="AudioStreamPlayer" parent="Tebak gambar"]
 stream = ExtResource("4_yr8n5")
-stream_paused = true
 
 [node name="Sambung ayat" type="Button" parent="."]
 layout_mode = 1

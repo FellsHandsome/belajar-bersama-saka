@@ -16,23 +16,23 @@ corner_radius_bottom_left = 50
 [node name="imla soal 9" type="Node2D"]
 
 [node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(312, 368)
+position = Vector2(441, 368)
 texture = ExtResource("1_eur16")
 
 [node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(848, 368)
+position = Vector2(977, 368)
 texture = ExtResource("2_l581j")
 
 [node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(328, 496)
+position = Vector2(457, 496)
 texture = ExtResource("3_db7cu")
 
 [node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(824, 496)
+position = Vector2(953, 496)
 texture = ExtResource("4_11e3j")
 
 [node name="Prtanyaan-2" type="Sprite2D" parent="."]
-position = Vector2(552, 176)
+position = Vector2(632, 248)
 texture = ExtResource("5_mp55e")
 
 [node name="MainButton" type="Button" parent="."]
@@ -42,32 +42,32 @@ script = ExtResource("6_p6ig1")
 
 [node name="Button" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 136.0
+offset_left = 265.0
 offset_top = 264.0
-offset_right = 184.0
+offset_right = 313.0
 offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_htga7")
 
 [node name="Button2" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 136.0
+offset_left = 265.0
 offset_top = 392.0
-offset_right = 184.0
+offset_right = 313.0
 offset_bottom = 440.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_htga7")
 
 [node name="Button3" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 648.0
+offset_left = 777.0
 offset_top = 264.0
-offset_right = 696.0
+offset_right = 825.0
 offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_htga7")
 
 [node name="Button4" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 648.0
+offset_left = 777.0
 offset_top = 392.0
-offset_right = 696.0
+offset_right = 825.0
 offset_bottom = 440.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_htga7")

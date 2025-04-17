@@ -34,23 +34,23 @@ corner_radius_bottom_left = 50
 [node name="imla soal 4" type="Node2D"]
 
 [node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(293, 403)
+position = Vector2(423, 403)
 texture = ExtResource("1_8odf1")
 
 [node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(797, 403)
+position = Vector2(927, 403)
 texture = ExtResource("2_mq3x2")
 
 [node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(277, 528)
+position = Vector2(407, 528)
 texture = ExtResource("3_7cuwn")
 
 [node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(814, 530)
+position = Vector2(944, 530)
 texture = ExtResource("4_2fqwx")
 
 [node name="Prtanyaan-2" type="Sprite2D" parent="."]
-position = Vector2(552.362, 187.875)
+position = Vector2(552, 240)
 scale = Vector2(1.11124, 1.11124)
 texture = ExtResource("5_mlb5w")
 
@@ -61,35 +61,35 @@ script = ExtResource("6_ui15n")
 
 [node name="Button" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 136.0
+offset_left = 266.0
 offset_top = 264.0
-offset_right = 184.0
+offset_right = 314.0
 offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_g2u2w")
 
 [node name="Button2" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 136.0
+offset_left = 266.0
 offset_top = 392.0
-offset_right = 184.0
+offset_right = 314.0
 offset_bottom = 440.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_5hnns")
 expand_icon = true
 
 [node name="Button3" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 648.0
+offset_left = 778.0
 offset_top = 264.0
-offset_right = 696.0
+offset_right = 826.0
 offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_bg7bn")
 expand_icon = true
 
 [node name="Button4" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 648.0
+offset_left = 778.0
 offset_top = 392.0
-offset_right = 696.0
+offset_right = 826.0
 offset_bottom = 440.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_ojbjx")
 expand_icon = true

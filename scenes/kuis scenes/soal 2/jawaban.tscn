@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://unli61dnv28w"]
+
+[ext_resource type="Texture2D" uid="uid://cjlkg5xyt58ua" path="res://assets/Asset game/Soal Kuis/soal 2/1-4.png" id="1_kxg18"]
+[ext_resource type="Texture2D" uid="uid://b3ef3gu4pckhd" path="res://assets/Asset game/Soal Kuis/soal 2/2-4.png" id="2_isgqh"]
+[ext_resource type="Texture2D" uid="uid://c0fclbblx2hil" path="res://assets/Asset game/Soal Kuis/soal 2/3-4.png" id="3_5o4sn"]
+[ext_resource type="Texture2D" uid="uid://dgt18nvlodjra" path="res://assets/Asset game/Soal Kuis/soal 2/4-4.png" id="4_cdm52"]
+[ext_resource type="Texture2D" uid="uid://dpvgggxwjda5" path="res://assets/Asset game/Soal Kuis/soal 2/pertanyaan-1.png" id="5_7falh"]
+
+[node name="Jawaban" type="Node2D"]
+
+[node name="1-4" type="Sprite2D" parent="."]
+position = Vector2(344, 248)
+scale = Vector2(0.686047, 0.686047)
+texture = ExtResource("1_kxg18")
+
+[node name="2-4" type="Sprite2D" parent="."]
+position = Vector2(853, 248)
+scale = Vector2(0.686047, 0.686047)
+texture = ExtResource("2_isgqh")
+
+[node name="3-4" type="Sprite2D" parent="."]
+position = Vector2(393, 376)
+scale = Vector2(0.686046, 0.686047)
+texture = ExtResource("3_5o4sn")
+
+[node name="4-4" type="Sprite2D" parent="."]
+position = Vector2(832, 376)
+scale = Vector2(0.686046, 0.686047)
+texture = ExtResource("4_cdm52")
+
+[node name="Pertanyaan-1" type="Sprite2D" parent="."]
+position = Vector2(576, 168)
+scale = Vector2(0.94964, 0.94964)
+texture = ExtResource("5_7falh")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+
+[node name="Button" type="Button" parent="Button"]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 232.0
+offset_right = 184.0
+offset_bottom = 264.0
+
+[node name="Button2" type="Button" parent="Button"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 648.0
+offset_top = 232.0
+offset_right = 680.0
+offset_bottom = 264.0
+
+[node name="Button3" type="Button" parent="Button"]
+offset_left = 152.0
+offset_top = 360.0
+offset_right = 184.0
+offset_bottom = 392.0
+
+[node name="Button4" type="Button" parent="Button"]
+offset_left = 648.0
+offset_top = 360.0
+offset_right = 680.0
+offset_bottom = 392.0

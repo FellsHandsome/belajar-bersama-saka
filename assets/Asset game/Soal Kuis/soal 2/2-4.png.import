@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tugqqta8ovwx"
-path="res://.godot/imported/image__3_-removebg-preview.png-a6836e6582e664dee439d90e5da2faa5.ctex"
+uid="uid://b3ef3gu4pckhd"
+path="res://.godot/imported/2-4.png-c6f6bdb93c417fb2c92956924373af49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Asset game/sprite/image__3_-removebg-preview.png"
-dest_files=["res://.godot/imported/image__3_-removebg-preview.png-a6836e6582e664dee439d90e5da2faa5.ctex"]
+source_file="res://assets/Asset game/Soal Kuis/soal 2/2-4.png"
+dest_files=["res://.godot/imported/2-4.png-c6f6bdb93c417fb2c92956924373af49.ctex"]
 
 [params]
 

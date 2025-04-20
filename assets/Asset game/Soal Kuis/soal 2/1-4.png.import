@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk6c6rgadicpb"
-path="res://.godot/imported/saka-removebg-preview.png-f74cc1f868bfa11a1de82958da9a9219.ctex"
+uid="uid://cjlkg5xyt58ua"
+path="res://.godot/imported/1-4.png-531719b841aade1bc52d09081bd96e27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Asset game/sprite/saka-removebg-preview.png"
-dest_files=["res://.godot/imported/saka-removebg-preview.png-f74cc1f868bfa11a1de82958da9a9219.ctex"]
+source_file="res://assets/Asset game/Soal Kuis/soal 2/1-4.png"
+dest_files=["res://.godot/imported/1-4.png-531719b841aade1bc52d09081bd96e27.ctex"]
 
 [params]
 

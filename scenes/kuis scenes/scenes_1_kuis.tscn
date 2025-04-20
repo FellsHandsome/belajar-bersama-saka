@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://by5rp3gnqooh8"]
 
-[ext_resource type="Script" uid="uid://1xftxrkgwftt" path="res://scripts/kuis scripts/scenes_1_kuis.gd" id="1_s81fi"]
-[ext_resource type="Texture2D" uid="uid://cftqkv28y21xi" path="res://assets/Asset game/lagi lagi background/Papan 3.png" id="2_hsels"]
-[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_7ob38"]
-[ext_resource type="Texture2D" uid="uid://yrn62nfj35c1" path="res://assets/Asset game/New Button Update/BUTTONBERIKUNYA-4.png" id="4_lyjpr"]
-[ext_resource type="PackedScene" uid="uid://bfh36lheu87d1" path="res://scenes/countdown_timer.tscn" id="5_a63w0"]
+[ext_resource type="Script" uid="uid://1xftxrkgwftt" path="res://scripts/kuis scripts/scenes_1_kuis.gd" id="1_hsels"]
+[ext_resource type="Texture2D" uid="uid://cftqkv28y21xi" path="res://assets/Asset game/lagi lagi background/Papan 3.png" id="2_lyjpr"]
+[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_22bpn"]
+[ext_resource type="Texture2D" uid="uid://yrn62nfj35c1" path="res://assets/Asset game/New Button Update/BUTTONBERIKUNYA-4.png" id="4_ys3aw"]
+[ext_resource type="Script" uid="uid://c13el44c5k0qj" path="res://scenes/kuis scenes/countdown_timer.gd" id="5_v8oib"]
 
 [node name="scenes 1 kuis" type="Control"]
 layout_mode = 3
@@ -13,13 +13,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_s81fi")
+script = ExtResource("1_hsels")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
-texture = ExtResource("2_hsels")
+texture = ExtResource("2_lyjpr")
 expand_mode = 1
 
 [node name="Button" type="Button" parent="TextureRect"]
@@ -28,7 +28,7 @@ offset_left = 112.0
 offset_top = 72.0
 offset_right = 192.0
 offset_bottom = 152.0
-icon = ExtResource("3_7ob38")
+icon = ExtResource("3_22bpn")
 flat = true
 expand_icon = true
 
@@ -38,10 +38,27 @@ offset_left = 872.0
 offset_top = 544.0
 offset_right = 1134.0
 offset_bottom = 624.0
-icon = ExtResource("4_lyjpr")
+icon = ExtResource("4_ys3aw")
 flat = true
 expand_icon = true
 
-[node name="CountdownTimer" parent="." instance=ExtResource("5_a63w0")]
+[node name="CountdownTimer" type="Node" parent="."]
+script = ExtResource("5_v8oib")
+
+[node name="Panel" type="Panel" parent="CountdownTimer"]
+offset_left = 950.0
+offset_top = 76.0
+offset_right = 1016.0
+offset_bottom = 116.0
+
+[node name="Label" type="Label" parent="CountdownTimer"]
+offset_left = 963.0
+offset_top = 85.0
+offset_right = 1003.0
+offset_bottom = 108.0
+text = "00:00"
+
+[node name="Timer" type="Timer" parent="CountdownTimer"]
+wait_time = 60.0
 
 [connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

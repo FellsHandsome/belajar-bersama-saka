@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cqlshxgb488aj" path="res://assets/Asset game/sambung ayat/imla/soal 3/C-4.png" id="3_88dfa"]
 [ext_resource type="Texture2D" uid="uid://cokhfc7533dra" path="res://assets/Asset game/sambung ayat/imla/soal 3/d-4.png" id="4_21vm2"]
 [ext_resource type="Texture2D" uid="uid://rwy3qr55ioak" path="res://assets/Asset game/sambung ayat/imla/soal 3/prtanyaan-2.png" id="5_rpjas"]
-[ext_resource type="Script" path="res://scenes/sambung ayat scenes/imla/soal 3/button.gd" id="6_hmvh4"]
+[ext_resource type="Script" uid="uid://7chq8ir8n0as" path="res://scenes/sambung ayat scenes/imla/soal 3/button.gd" id="6_hmvh4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exqug"]
 corner_radius_top_left = 50

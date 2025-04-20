@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://l0nk0re3u0ru"]
+
+[ext_resource type="Texture2D" uid="uid://beqoa0yld0fuu" path="res://assets/Asset game/Soal Kuis/soal 2/kisahnabike2-2.png" id="1_omcn6"]
+
+[node name="Soal2" type="Node2D"]
+
+[node name="Kisahnabike2-2" type="Sprite2D" parent="."]
+position = Vector2(592, 248)
+texture = ExtResource("1_omcn6")

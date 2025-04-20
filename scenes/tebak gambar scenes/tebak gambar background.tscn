@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://d0mfn7h4teupa"]
+[gd_scene load_steps=6 format=3 uid="uid://d0mfn7h4teupa"]
 
 [ext_resource type="Script" uid="uid://cdrluyqfcvufr" path="res://scenes/tebak gambar scenes/tebak_gambar_background.gd" id="1_rjy88"]
 [ext_resource type="Texture2D" uid="uid://7nmmgf6brqjw" path="res://assets/Asset game/background/bckoundhiju5-1.png" id="1_x8s24"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_x8mll"]
 [ext_resource type="Texture2D" uid="uid://cww4pfveax6vg" path="res://assets/Asset game/button/buttonberikutnya-2.png" id="4_yg55v"]
+[ext_resource type="Script" uid="uid://58a5two60uh7" path="res://scenes/tebak gambar scenes/countdown_timer.gd" id="5_tjsn5"]
 
 [node name="TebakGambarBackground" type="Control"]
 layout_mode = 3
@@ -40,5 +41,24 @@ offset_bottom = 632.0
 icon = ExtResource("4_yg55v")
 flat = true
 expand_icon = true
+
+[node name="CountdownTimer" type="Node" parent="."]
+script = ExtResource("5_tjsn5")
+
+[node name="Panel" type="Panel" parent="CountdownTimer"]
+offset_left = 1038.0
+offset_top = 26.0
+offset_right = 1106.0
+offset_bottom = 71.0
+
+[node name="Label" type="Label" parent="CountdownTimer"]
+offset_left = 1051.0
+offset_top = 36.0
+offset_right = 1091.0
+offset_bottom = 59.0
+text = "00:00"
+
+[node name="Timer" type="Timer" parent="CountdownTimer"]
+wait_time = 60.0
 
 [connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

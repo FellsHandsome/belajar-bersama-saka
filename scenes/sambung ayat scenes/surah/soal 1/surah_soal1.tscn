@@ -22,16 +22,15 @@ corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
 [node name="surah soal1" type="Node2D"]
-position = Vector2(-4, -4)
 
 [node name="PertanyaanNo1-2" type="Sprite2D" parent="."]
-position = Vector2(576, 176)
-scale = Vector2(1.1231, 1.1231)
+position = Vector2(553.924, 224.687)
+scale = Vector2(1.03047, 1.00825)
 texture = ExtResource("1_qt05b")
 
 [node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(324, 316)
-scale = Vector2(0.902778, 0.902778)
+position = Vector2(392, 320)
+scale = Vector2(0.93079, 0.959326)
 texture = ExtResource("2_l4cyh")
 
 [node name="B-4" type="Sprite2D" parent="."]
@@ -40,13 +39,13 @@ scale = Vector2(0.886905, 0.886905)
 texture = ExtResource("3_8jhfl")
 
 [node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(397, 448)
+position = Vector2(464, 448)
 scale = Vector2(0.980159, 0.980159)
 texture = ExtResource("4_h8fhw")
 
 [node name="D-4" type="Sprite2D" parent="."]
 position = Vector2(816, 448)
-scale = Vector2(0.880952, 0.880952)
+scale = Vector2(0.904762, 0.948413)
 texture = ExtResource("5_c7ts0")
 
 [node name="MainButton" type="Button" parent="."]
@@ -60,9 +59,9 @@ metadata/_edit_use_anchors_ = true
 [node name="Button" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 2.0
+anchor_left = 10.0
 anchor_top = 3.0
-anchor_right = 2.0
+anchor_right = 10.0
 anchor_bottom = 3.0
 offset_left = 120.0
 offset_top = 240.0
@@ -74,14 +73,12 @@ metadata/_edit_use_anchors_ = true
 [node name="Button2" type="Button" parent="MainButton"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 2.0
-anchor_top = 7.125
-anchor_right = 2.0
-anchor_bottom = 7.125
-offset_left = 120.0
-offset_top = 335.0
-offset_right = 171.0
-offset_bottom = 385.0
+anchor_left = -2.0
+anchor_right = -2.0
+offset_left = 216.0
+offset_top = 392.0
+offset_right = 267.0
+offset_bottom = 442.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_dusl1")
 metadata/_edit_use_anchors_ = true
 

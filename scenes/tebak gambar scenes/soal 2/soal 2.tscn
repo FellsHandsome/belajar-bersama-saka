@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://dsjb1i71k1g2e"]
 
-[ext_resource type="Texture2D" uid="uid://bl8r2sohg8y1o" path="res://assets/Asset game/tebak gambar/Nabi Isa.png" id="1_li80j"]
+[ext_resource type="Texture2D" uid="uid://c8fk5y6eue1w7" path="res://assets/Asset game/tebak gambar/Nabi Isa.png" id="1_li80j"]
 
 [node name="Soal2" type="Node2D"]
 
 [node name="NabiIsa" type="Sprite2D" parent="."]
-position = Vector2(576, 288)
-scale = Vector2(0.715084, 0.622222)
+position = Vector2(576, 324)
+scale = Vector2(0.919393, 0.9)
 texture = ExtResource("1_li80j")

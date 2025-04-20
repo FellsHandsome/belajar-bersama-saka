@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://c71psdcjihp4o"]
+
+[ext_resource type="Texture2D" uid="uid://crjjkjnngc4uk" path="res://assets/Asset game/Soal Kuis/soal 6/1-4.png" id="1_c0qoy"]
+[ext_resource type="Texture2D" uid="uid://bqvomgm6yehmq" path="res://assets/Asset game/Soal Kuis/soal 6/2-4.png" id="2_nme03"]
+[ext_resource type="Texture2D" uid="uid://4ige2i8848mu" path="res://assets/Asset game/Soal Kuis/soal 6/3-4.png" id="3_4fcst"]
+[ext_resource type="Texture2D" uid="uid://xxlxat46wuo3" path="res://assets/Asset game/Soal Kuis/soal 6/4-4.png" id="4_3dhex"]
+[ext_resource type="Texture2D" uid="uid://che6jp46t2ipp" path="res://assets/Asset game/Soal Kuis/soal 6/soaaaaaaaaalll-1.png" id="5_icdp2"]
+
+[node name="Jawaban" type="Node2D"]
+
+[node name="1-4" type="Sprite2D" parent="."]
+position = Vector2(815, 320)
+texture = ExtResource("1_c0qoy")
+
+[node name="2-4" type="Sprite2D" parent="."]
+position = Vector2(320, 440)
+texture = ExtResource("2_nme03")
+
+[node name="3-4" type="Sprite2D" parent="."]
+position = Vector2(798, 440)
+texture = ExtResource("3_4fcst")
+
+[node name="4-4" type="Sprite2D" parent="."]
+position = Vector2(352, 338)
+texture = ExtResource("4_3dhex")
+
+[node name="Soaaaaaaaaalll-1" type="Sprite2D" parent="."]
+position = Vector2(568, 240)
+texture = ExtResource("5_icdp2")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+
+[node name="Button" type="Button" parent="Button"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 216.0
+offset_right = 192.0
+offset_bottom = 248.0
+
+[node name="Button2" type="Button" parent="Button"]
+offset_left = 576.0
+offset_top = 216.0
+offset_right = 608.0
+offset_bottom = 248.0
+
+[node name="Button3" type="Button" parent="Button"]
+offset_left = 160.0
+offset_top = 336.0
+offset_right = 192.0
+offset_bottom = 368.0
+
+[node name="Button4" type="Button" parent="Button"]
+offset_left = 576.0
+offset_top = 336.0
+offset_right = 608.0
+offset_bottom = 368.0

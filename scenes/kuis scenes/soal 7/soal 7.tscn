@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://6c2wpsfbp22l"]
+
+[ext_resource type="Texture2D" uid="uid://b0nphalu3y8jx" path="res://assets/Asset game/Soal Kuis/soal 7/kisah-2.png" id="1_oco76"]
+
+[node name="Soal7" type="Node2D"]
+
+[node name="Kisah-2" type="Sprite2D" parent="."]
+position = Vector2(576, 312)
+scale = Vector2(0.750524, 0.821932)
+texture = ExtResource("1_oco76")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://fercpfq1dbmp"
+path="res://.godot/imported/button-305770.mp3-3a37c719862de9aeeb83d1d7a7d9eef4.mp3str"
+
+[deps]
+
+source_file="res://assets/Asset game/Musik/button-305770.mp3"
+dest_files=["res://.godot/imported/button-305770.mp3-3a37c719862de9aeeb83d1d7a7d9eef4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

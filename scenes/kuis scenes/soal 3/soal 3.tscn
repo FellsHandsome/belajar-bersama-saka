@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk6emvtp67d2r"]
+
+[ext_resource type="Texture2D" uid="uid://de20bhihnoir2" path="res://assets/Asset game/Soal Kuis/soal 3/kisahnabi-2.png" id="1_4cq3k"]
+
+[node name="Soal3" type="Node2D"]
+
+[node name="Kisahnabi-2" type="Sprite2D" parent="."]
+position = Vector2(576, 224)
+scale = Vector2(0.821428, 0.821428)
+texture = ExtResource("1_4cq3k")

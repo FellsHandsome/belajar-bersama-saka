@@ -32,7 +32,7 @@ position = Vector2(936, 496)
 texture = ExtResource("5_krvvx")
 
 [node name="Prtanyaan-2" type="Sprite2D" parent="."]
-position = Vector2(570.924, 191.625)
+position = Vector2(576, 256)
 scale = Vector2(1.2737, 1.2737)
 texture = ExtResource("6_p6v7d")
 

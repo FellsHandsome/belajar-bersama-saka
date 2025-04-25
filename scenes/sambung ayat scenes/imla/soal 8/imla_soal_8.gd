@@ -1,101 +1,110 @@
 extends Node2D
-
-# Referensi ke SoalManager
 @onready var soal_manager = $"../../../SoalManager"
-
-# Nomor soal ini
 @export var nomor_soal: int = 1
+var jawaban_terpilih: String = ""
 
-# Opsi jawaban (sesuaikan berdasarkan node di scene)
-# Asumsikan setiap opsi adalah button, sprite, atau area yang bisa diklik
-@onready var opsi_a = $OpsiA
-@onready var opsi_b = $OpsiB
-@onready var opsi_c = $OpsiC
-@onready var opsi_d = $OpsiD
+# Cari node dengan nama yang benar
+# Sesuaikan dengan nama node yang sebenarnya di scene Anda
+@onready var opsi_a = $A  # Jika node pilihan A sebenarnya bernama "A"
+@onready var opsi_b = $B  # Jika node pilihan B sebenarnya bernama "B"
+@onready var opsi_c = $C  # Jika node pilihan C sebenarnya bernama "C"
+@onready var opsi_d = $D  # Jika node pilihan D sebenarnya bernama "D"
 
 func _ready():
-	# Connect signals
-	_setup_opsi_signals()
+	print("ImLaSoal", nomor_soal, "_ready() called")
+	# Debug untuk memeriksa node yang ditemukan
+	print("Node OpsiA found:", opsi_a != null)
+	print("Node OpsiB found:", opsi_b != null)
+	print("Node OpsiC found:", opsi_c != null)
+	print("Node OpsiD found:", opsi_d != null)
 	
-	# Restore jawaban jika ada
+	setup_opsi_signals()
 	restore_jawaban()
 
-# Setup signals untuk opsi
-func _setup_opsi_signals():
-	# Untuk setiap opsi, kita perlu menyesuaikan berdasarkan tipe node
-	_setup_opsi_signal(opsi_a, "A")
-	_setup_opsi_signal(opsi_b, "B")
-	_setup_opsi_signal(opsi_c, "C")
-	_setup_opsi_signal(opsi_d, "D")
+func setup_opsi_signals():
+	setup_opsi_signal(opsi_a, "a")
+	setup_opsi_signal(opsi_b, "b")
+	setup_opsi_signal(opsi_c, "c")
+	setup_opsi_signal(opsi_d, "d")
 
-# Setup signal untuk satu opsi
-func _setup_opsi_signal(opsi_node, jawaban):
+func setup_opsi_signal(opsi_node, jawaban):
 	if not opsi_node:
+		print("Opsi node", jawaban, "tidak ditemukan")
 		return
 		
 	if opsi_node is Button:
-		# Jika opsi adalah button
-		opsi_node.pressed.connect(func(): _on_opsi_pressed(jawaban))
-	elif opsi_node is Sprite2D:
-		# Jika opsi adalah sprite, tambahkan area2D untuk deteksi klik
-		opsi_node.set_process_input(true)
+		# Disconnect existing connections first to avoid duplicates
+		if opsi_node.is_connected("pressed", Callable(self, "on_opsi_pressed")):
+			opsi_node.pressed.disconnect(Callable(self, "on_opsi_pressed"))
 		
-		# Tambahkan area2D untuk deteksi klik jika belum ada
+		opsi_node.pressed.connect(func(): on_opsi_pressed(jawaban))
+		print("Setup signal untuk Button", jawaban)
+	elif opsi_node is Sprite2D:
+		opsi_node.set_process_input(true)
 		var area = opsi_node.get_node_or_null("ClickArea")
 		if not area:
 			area = Area2D.new()
 			area.name = "ClickArea"
 			opsi_node.add_child(area)
-			
 			var collision = CollisionShape2D.new()
 			collision.shape = RectangleShape2D.new()
-			# Sesuaikan ukuran dengan ukuran sprite
 			if opsi_node.texture:
 				collision.shape.extents = opsi_node.texture.get_size() / 2
 			else:
-				collision.shape.extents = Vector2(50, 50) # Default jika tidak ada texture
+				collision.shape.extents = Vector2(50, 50)
 			area.add_child(collision)
-			
-			# Connect signal
-			area.input_event.connect(func(_viewport, event, _shape_idx): 
+			area.input_event.connect(func(_v, event, _i):
 				if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-					_on_opsi_pressed(jawaban)
+					on_opsi_pressed(jawaban)
 			)
+			print("Setup signal untuk Sprite2D", jawaban)
 
-# Ketika opsi ditekan
-func _on_opsi_pressed(jawaban: String):
-	# Reset tampilan semua opsi
+func on_opsi_pressed(jawaban: String):
+	print("Opsi", jawaban, "dipilih untuk soal", nomor_soal)
 	reset_opsi()
 	
+	# Pastikan jawaban disimpan dalam lowercase
+	jawaban_terpilih = jawaban.to_lower()
+	
 	# Highlight opsi yang dipilih
-	highlight_opsi(jawaban)
+	highlight_opsi(jawaban.to_upper())
 	
-	# Set jawaban ke SoalManager
 	if soal_manager:
-		soal_manager.set_jawaban(nomor_soal, jawaban)
+		# Gunakan fungsi set_jawaban
+		soal_manager.set_jawaban(nomor_soal, jawaban_terpilih)
+		print("Jawaban", jawaban_terpilih, "dikirim ke SoalManager untuk soal", nomor_soal)
+	else:
+		print("ERROR: SoalManager tidak ditemukan!")
 
-# Reset tampilan semua opsi
 func reset_opsi():
-	var opsi_list = [opsi_a, opsi_b, opsi_c, opsi_d]
-	for opsi in opsi_list:
+	for opsi in [opsi_a, opsi_b, opsi_c, opsi_d]:
 		if opsi:
-			opsi.modulate = Color(1, 1, 1, 1) # Reset warna
+			opsi.modulate = Color(1, 1, 1, 1)
 
-# Highlight opsi yang dipilih
-func highlight_opsi(opsi_huruf: String):
-	var target_opsi
-	match opsi_huruf:
-		"A": target_opsi = opsi_a
-		"B": target_opsi = opsi_b
-		"C": target_opsi = opsi_c
-		"D": target_opsi = opsi_d
-	
+func highlight_opsi(huruf: String):
+	var opsi_dict = {
+		"A": opsi_a,
+		"B": opsi_b,
+		"C": opsi_c,
+		"D": opsi_d
+	}
+	var target_opsi = opsi_dict.get(huruf, null)
 	if target_opsi:
-		target_opsi.modulate = Color(0.8, 1, 0.8, 1) # Highlight dengan warna hijau
+		target_opsi.modulate = Color(0.8, 1, 0.8, 1)
+		print("Opsi", huruf, "dihighlight")
+	else:
+		print("ERROR: Opsi", huruf, "tidak ditemukan untuk highlight")
 
-# Restore jawaban jika sebelumnya sudah dijawab
 func restore_jawaban():
-	if soal_manager:
+	if soal_manager and soal_manager.jawaban_user.has(nomor_soal):
 		var jawaban = soal_manager.jawaban_user[nomor_soal]
 		if jawaban != "":
-			highlight_opsi(jawaban)
+			jawaban_terpilih = jawaban
+			highlight_opsi(jawaban.to_upper())
+			print("Restore jawaban", jawaban, "untuk soal", nomor_soal)
+
+func get_jawaban_terpilih() -> String:
+	return jawaban_terpilih
+
+func set_nomor_soal(nomor: int):
+	nomor_soal = nomor

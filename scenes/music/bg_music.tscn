@@ -1,3 +1,0 @@
-[gd_scene format=3 uid="uid://chprl7ej5ul2k"]
-
-[node name="BgMusic" type="AudioStreamPlayer"]

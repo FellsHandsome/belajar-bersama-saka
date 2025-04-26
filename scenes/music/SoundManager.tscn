@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bae32lp37ehal"]
+
+[ext_resource type="AudioStream" uid="uid://sx72jgyx0ne4" path="res://assets/Asset game/Musik/middle-eastern-arabian-night-version-5-very-short-SBA-300504727-preview.ogg" id="1_4xmub"]
+
+[node name="SoundManager" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_4xmub")
+autoplay = true

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cftqkv28y21xi" path="res://assets/Asset game/lagi lagi background/Papan 3.png" id="2_lyjpr"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_22bpn"]
 [ext_resource type="Texture2D" uid="uid://yrn62nfj35c1" path="res://assets/Asset game/New Button Update/BUTTONBERIKUNYA-4.png" id="4_ys3aw"]
-[ext_resource type="Script" uid="uid://c13el44c5k0qj" path="res://scenes/kuis scenes/countdown_timer.gd" id="5_v8oib"]
+[ext_resource type="Script" path="res://scenes/kuis scenes/countdown_timer.gd" id="5_v8oib"]
 
 [node name="scenes 1 kuis" type="Control"]
 layout_mode = 3

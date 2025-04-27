@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://4702a1ucjsij"]
+
+[ext_resource type="Texture2D" uid="uid://csps87rea3rxg" path="res://assets/Asset game/lagi lagi background/Papan 1.png" id="1_nheya"]
+[ext_resource type="Texture2D" uid="uid://bn0gsakbgdd0x" path="res://assets/Asset game/New Button Update/button kirim-4.png" id="2_7enjd"]
+[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_7enjd"]
+
+[node name="MainImla" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_nheya")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 752.0
+offset_top = 528.0
+offset_right = 1070.0
+offset_bottom = 624.0
+icon = ExtResource("2_7enjd")
+flat = true
+expand_icon = true
+
+[node name="Button Back" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 120.0
+offset_bottom = 112.0
+icon = ExtResource("3_7enjd")
+flat = true
+expand_icon = true

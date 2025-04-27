@@ -18,7 +18,7 @@ func _on_back_button_pressed() -> void:
 
 func _on_imla_pressed() -> void:
 	SoundManager.play_button_click_sound()
-	get_tree().change_scene_to_file("res://scenes/sambung ayat scenes/imla/imla_background.tscn")
+	get_tree().change_scene_to_file("res://scenes/sambung ayat scenes/imla/Main_Imla.tscn")
 
 
 func _on_surah_button_pressed() -> void:

@@ -4,6 +4,14 @@
 
 [node name="Soal1" type="Node2D"]
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 96.0
+offset_top = 360.0
+offset_right = 192.0
+offset_bottom = 400.0
+
 [node name="NabiAdam" type="Sprite2D" parent="."]
 position = Vector2(576, 324)
 scale = Vector2(0.919393, 0.9)

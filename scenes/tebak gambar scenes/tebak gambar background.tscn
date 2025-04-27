@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://7nmmgf6brqjw" path="res://assets/Asset game/background/bckoundhiju5-1.png" id="1_x8s24"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_x8mll"]
 [ext_resource type="Texture2D" uid="uid://cww4pfveax6vg" path="res://assets/Asset game/button/buttonberikutnya-2.png" id="4_yg55v"]
-[ext_resource type="Script" uid="uid://58a5two60uh7" path="res://scenes/tebak gambar scenes/countdown_timer.gd" id="5_tjsn5"]
+[ext_resource type="Script" path="res://scenes/tebak gambar scenes/countdown_timer.gd" id="5_tjsn5"]
 
 [node name="TebakGambarBackground" type="Control"]
 layout_mode = 3

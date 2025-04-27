@@ -59,7 +59,7 @@ grow_vertical = 2
 texture = ExtResource("2_dwcpo")
 expand_mode = 1
 
-[node name="Suara button" type="Button" parent="TextureRect2"]
+[node name="Button Suara" type="Button" parent="TextureRect2"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -74,7 +74,7 @@ icon = ExtResource("3_xap4c")
 flat = true
 expand_icon = true
 
-[node name="Label" type="Label" parent="TextureRect2/Suara button"]
+[node name="Label" type="Label" parent="TextureRect2/Button Suara"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -88,7 +88,7 @@ grow_vertical = 2
 text = "Suara"
 label_settings = SubResource("LabelSettings_sfryd")
 
-[node name="Music button" type="Button" parent="TextureRect2"]
+[node name="Button Music" type="Button" parent="TextureRect2"]
 layout_mode = 0
 offset_left = 624.247
 offset_top = 199.229
@@ -98,7 +98,7 @@ icon = ExtResource("4_a2qbh")
 flat = true
 expand_icon = true
 
-[node name="Label" type="Label" parent="TextureRect2/Music button"]
+[node name="Label" type="Label" parent="TextureRect2/Button Music"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -183,7 +183,7 @@ grow_vertical = 2
 text = "Email"
 label_settings = SubResource("LabelSettings_tn1e7")
 
-[node name="Back button" type="Button" parent="TextureRect2"]
+[node name="Button Back" type="Button" parent="TextureRect2"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.092
@@ -196,4 +196,6 @@ icon = ExtResource("9_lc8yc")
 flat = true
 expand_icon = true
 
-[connection signal="pressed" from="TextureRect2/Back button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="TextureRect2/Button Suara" to="." method="_on_button_suara_pressed"]
+[connection signal="pressed" from="TextureRect2/Button Music" to="." method="_on_button_music_pressed"]
+[connection signal="pressed" from="TextureRect2/Button Back" to="." method="_on_button_back_pressed"]

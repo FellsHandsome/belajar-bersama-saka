@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://sx72jgyx0ne4"
+path="res://.godot/imported/middle-eastern-arabian-night-version-5-very-short-SBA-300504727-preview.ogg-c406046594978ade0b01332734324400.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Asset game/Musik/middle-eastern-arabian-night-version-5-very-short-SBA-300504727-preview.ogg"
+dest_files=["res://.godot/imported/middle-eastern-arabian-night-version-5-very-short-SBA-300504727-preview.ogg-c406046594978ade0b01332734324400.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

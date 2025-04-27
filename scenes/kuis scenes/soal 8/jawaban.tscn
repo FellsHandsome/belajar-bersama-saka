@@ -40,6 +40,7 @@ offset_bottom = 8.0
 flat = true
 
 [node name="Button" type="Button" parent="MainButton"]
+layout_mode = 0
 offset_left = 185.0
 offset_top = 213.0
 offset_right = 226.0
@@ -47,6 +48,7 @@ offset_bottom = 254.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_uamte")
 
 [node name="Button2" type="Button" parent="MainButton"]
+layout_mode = 0
 offset_left = 634.0
 offset_top = 214.0
 offset_right = 675.0
@@ -54,6 +56,7 @@ offset_bottom = 255.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_uamte")
 
 [node name="Button3" type="Button" parent="MainButton"]
+layout_mode = 0
 offset_left = 178.0
 offset_top = 319.0
 offset_right = 219.0
@@ -61,6 +64,7 @@ offset_bottom = 360.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_uamte")
 
 [node name="Button4" type="Button" parent="MainButton"]
+layout_mode = 0
 offset_left = 640.0
 offset_top = 324.0
 offset_right = 681.0

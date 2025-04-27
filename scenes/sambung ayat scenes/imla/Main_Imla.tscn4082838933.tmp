@@ -54,30 +54,37 @@ script = ExtResource("4_0nej1")
 [node name="imlasoal2" parent="CanvasGroup" instance=ExtResource("5_7dhh7")]
 visible = false
 script = ExtResource("6_aamxw")
+nomor_soal = null
 
 [node name="imlasoal3" parent="CanvasGroup" instance=ExtResource("7_v12la")]
 visible = false
 script = ExtResource("8_qh8fs")
+nomor_soal = null
 
 [node name="imlasoal4" parent="CanvasGroup" instance=ExtResource("9_8n8c5")]
 visible = false
 script = ExtResource("10_m3po4")
+nomor_soal = null
 
 [node name="imlasoal5" parent="CanvasGroup" instance=ExtResource("11_8h2e0")]
 visible = false
 script = ExtResource("12_uyo4r")
+nomor_soal = null
 
 [node name="imlasoal6" parent="CanvasGroup" instance=ExtResource("13_slr3m")]
 visible = false
 script = ExtResource("14_bmbmp")
+nomor_soal = null
 
 [node name="imlasoal7" parent="CanvasGroup" instance=ExtResource("15_ptana")]
 visible = false
 script = ExtResource("16_kwaru")
+nomor_soal = null
 
 [node name="imlasoal8" parent="CanvasGroup" instance=ExtResource("17_bq071")]
 visible = false
 script = ExtResource("18_e5d03")
+nomor_soal = null
 
 [node name="Button" type="Button" parent="CanvasGroup"]
 offset_left = 752.0
@@ -160,10 +167,10 @@ anchor_left = 0.894
 anchor_top = 0.105
 anchor_right = 0.894
 anchor_bottom = 0.105
-offset_left = -142.888
-offset_top = 56.96
-offset_right = -21.8879
-offset_bottom = 96.96
+offset_left = -149.888
+offset_top = 73.96
+offset_right = -20.8879
+offset_bottom = 113.96
 
 [node name="Label" type="Label" parent="CountdownTimer"]
 anchors_preset = -1
@@ -171,10 +178,10 @@ anchor_left = 0.806
 anchor_top = 0.218
 anchor_right = 0.876
 anchor_bottom = 0.278
-offset_left = -12.5121
-offset_top = -16.264
-offset_right = -21.152
-offset_bottom = -16.144
+offset_left = -46.5121
+offset_top = -0.264008
+offset_right = -55.152
+offset_bottom = -0.144012
 theme_override_font_sizes/font_size = 28
 text = "00:00"
 
@@ -184,4 +191,3 @@ one_shot = true
 autostart = true
 
 [connection signal="pressed" from="CanvasGroup/Button" to="SoalManager" method="_on_next_button_pressed"]
-[connection signal="pressed" from="NilaiScene/Button" to="NilaiScene" method="_on_button_pressed"]

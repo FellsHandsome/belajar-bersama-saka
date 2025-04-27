@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dwhhv6klxmdrr"]
+[gd_scene load_steps=33 format=3 uid="uid://dwhhv6klxmdrr"]
 
 [ext_resource type="Script" uid="uid://bv7qi0dbksfe2" path="res://scenes/sambung ayat scenes/imla/soal_manager.gd" id="1_koqc8"]
 [ext_resource type="Texture2D" uid="uid://csps87rea3rxg" path="res://assets/Asset game/lagi lagi background/Papan 1.png" id="1_mbj64"]
@@ -13,20 +13,25 @@
 [ext_resource type="PackedScene" uid="uid://b12vjxr821vkt" path="res://scenes/sambung ayat scenes/imla/soal 7/imla_soal_7.tscn" id="11_g8aos"]
 [ext_resource type="PackedScene" uid="uid://bh8bj6bjtbt5q" path="res://scenes/sambung ayat scenes/imla/soal 8/imla_soal_8.tscn" id="12_bt06l"]
 [ext_resource type="Script" uid="uid://c2abqyehjqhky" path="res://scenes/sambung ayat scenes/imla/soal 2/imla_soal_2.gd" id="13_6hoqt"]
+[ext_resource type="Script" uid="uid://ch01plorjx0xa" path="res://scenes/sambung ayat scenes/imla/nilai_scene.gd" id="13_208hl"]
+[ext_resource type="Texture2D" uid="uid://b78cgrdqt7tei" path="res://assets/Asset game/background/bcrounpolos1-1.png" id="14_wseyb"]
+[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="15_441tx"]
 [ext_resource type="Script" uid="uid://bmf7lufwxxc23" path="res://scenes/sambung ayat scenes/imla/soal 3/imla_soal_3.gd" id="15_pf10s"]
+[ext_resource type="Texture2D" uid="uid://btuv12i2evkm7" path="res://assets/Asset game/nilai/PUTIH TULANG BUTTON NILAI-2.png" id="16_i1ilx"]
+[ext_resource type="Texture2D" uid="uid://pv3ycndiwrw7" path="res://assets/Asset game/Bintang/bintgaburevisi-1.png" id="17_03xdd"]
 [ext_resource type="Script" uid="uid://bv4b7a3kn5evh" path="res://scenes/sambung ayat scenes/imla/soal 4/imla_soal_4.gd" id="17_yxj0j"]
 [ext_resource type="Script" uid="uid://bbah2rssniqiy" path="res://scenes/sambung ayat scenes/imla/countdown_timer.gd" id="18_208hl"]
+[ext_resource type="Texture2D" uid="uid://5slnoba3o3tj" path="res://assets/Asset game/nilai/buttonillai-1.png" id="18_vnkkn"]
 [ext_resource type="Script" uid="uid://d3sir7s4cuj3s" path="res://scenes/sambung ayat scenes/imla/soal 5/imla_soal_5.gd" id="19_tn4al"]
-[ext_resource type="Script" uid="uid://ch01plorjx0xa" path="res://scenes/sambung ayat scenes/imla/nilai_scene.gd" id="20_6hoqt"]
-[ext_resource type="Texture2D" uid="uid://b78cgrdqt7tei" path="res://assets/Asset game/background/bcrounpolos1-1.png" id="20_d6lwf"]
-[ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="21_6hoqt"]
 [ext_resource type="Script" uid="uid://cptdlsfcqkrq2" path="res://scenes/sambung ayat scenes/imla/soal 6/imla_soal_6.gd" id="21_g1i4u"]
-[ext_resource type="Texture2D" uid="uid://btuv12i2evkm7" path="res://assets/Asset game/nilai/PUTIH TULANG BUTTON NILAI-2.png" id="22_pf10s"]
 [ext_resource type="Script" uid="uid://dhi82avi07trw" path="res://scenes/sambung ayat scenes/imla/soal 7/imla_soal_7.gd" id="23_t1uoy"]
-[ext_resource type="Texture2D" uid="uid://pv3ycndiwrw7" path="res://assets/Asset game/Bintang/bintgaburevisi-1.png" id="23_yxj0j"]
-[ext_resource type="Texture2D" uid="uid://c3n34cse0dj8u" path="res://assets/Asset game/Bintang/bintgkuningrvisi2-1.png" id="24_tn4al"]
-[ext_resource type="Texture2D" uid="uid://5slnoba3o3tj" path="res://assets/Asset game/nilai/buttonillai-1.png" id="25_g1i4u"]
 [ext_resource type="Script" uid="uid://c411n0le5kdxc" path="res://scenes/sambung ayat scenes/imla/soal 8/imla_soal_8.gd" id="25_nyvkq"]
+[ext_resource type="PackedScene" uid="uid://coh0w6u6vlqgw" path="res://scenes/notification scenes/notification_coba_lagi.tscn" id="27_yxj0j"]
+[ext_resource type="PackedScene" uid="uid://cv7k37dv0mwfk" path="res://scenes/notification scenes/notification_pintar.tscn" id="28_tn4al"]
+[ext_resource type="PackedScene" uid="uid://devbn6720wp3b" path="res://scenes/notification scenes/notification_hebat.tscn" id="29_g1i4u"]
+[ext_resource type="PackedScene" uid="uid://be06hv7jxqfmt" path="res://scenes/nilai/B1.tscn" id="29_t1uoy"]
+[ext_resource type="PackedScene" uid="uid://cby7t7wwuyx0l" path="res://scenes/nilai/B2.tscn" id="30_nyvkq"]
+[ext_resource type="PackedScene" uid="uid://crt5n5qk8kruc" path="res://scenes/nilai/B3.tscn" id="31_2jiir"]
 
 [node name="Main_Imla" type="Control"]
 layout_mode = 3
@@ -49,6 +54,7 @@ script = ExtResource("1_koqc8")
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
 
 [node name="imlasoal1" parent="CanvasGroup" instance=ExtResource("6_rled6")]
+visible = false
 script = ExtResource("11_d6lwf")
 
 [node name="imlasoal2" parent="CanvasGroup" instance=ExtResource("7_5adpw")]
@@ -79,6 +85,18 @@ script = ExtResource("23_t1uoy")
 visible = false
 script = ExtResource("25_nyvkq")
 
+[node name="NotificationHebat" parent="CanvasGroup" instance=ExtResource("29_g1i4u")]
+visible = false
+position = Vector2(590, 287)
+
+[node name="NotificationPintar" parent="CanvasGroup" instance=ExtResource("28_tn4al")]
+visible = false
+position = Vector2(581, 291)
+
+[node name="NotificationCobaLagi" parent="CanvasGroup" instance=ExtResource("27_yxj0j")]
+visible = false
+position = Vector2(576, 305)
+
 [node name="Button" type="Button" parent="CanvasGroup"]
 offset_left = 816.0
 offset_top = 520.0
@@ -90,16 +108,17 @@ expand_icon = true
 metadata/_edit_use_anchors_ = true
 
 [node name="NilaiScene" type="Control" parent="."]
-visible = false
+layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("20_6hoqt")
+script = ExtResource("13_208hl")
 
 [node name="TextureRect" type="TextureRect" parent="NilaiScene"]
+layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
-texture = ExtResource("20_d6lwf")
+texture = ExtResource("14_wseyb")
 expand_mode = 1
 
 [node name="Button" type="Button" parent="NilaiScene/TextureRect"]
@@ -108,52 +127,46 @@ offset_left = 15.0
 offset_top = 13.0
 offset_right = 94.0
 offset_bottom = 94.0
-icon = ExtResource("21_6hoqt")
+icon = ExtResource("15_441tx")
 flat = true
 expand_icon = true
 
 [node name="Assetsnillai-3" type="Sprite2D" parent="NilaiScene/TextureRect"]
 position = Vector2(576, 136)
 scale = Vector2(0.22081, 0.22081)
-texture = ExtResource("22_pf10s")
+texture = ExtResource("16_i1ilx")
 
-[node name="Bintang 1" type="Sprite2D" parent="NilaiScene/TextureRect"]
+[node name="Bintang1" type="Sprite2D" parent="NilaiScene/TextureRect"]
 visible = false
 position = Vector2(576, 368)
 scale = Vector2(0.190611, 0.190611)
-texture = ExtResource("23_yxj0j")
+texture = ExtResource("17_03xdd")
 
-[node name="Bintang 2" type="Sprite2D" parent="NilaiScene/TextureRect"]
+[node name="Bintang2" type="Sprite2D" parent="NilaiScene/TextureRect"]
 visible = false
 position = Vector2(384, 432)
 scale = Vector2(0.156674, 0.156674)
-texture = ExtResource("23_yxj0j")
+texture = ExtResource("17_03xdd")
 
-[node name="Bintang 3" type="Sprite2D" parent="NilaiScene/TextureRect"]
+[node name="Bintang3" type="Sprite2D" parent="NilaiScene/TextureRect"]
 visible = false
 position = Vector2(784, 432)
 scale = Vector2(0.151159, 0.151159)
-texture = ExtResource("23_yxj0j")
-
-[node name="BintangKuning1" type="Sprite2D" parent="NilaiScene/TextureRect"]
-position = Vector2(384, 432)
-scale = Vector2(0.154977, 0.154977)
-texture = ExtResource("24_tn4al")
-
-[node name="BintangKuning2" type="Sprite2D" parent="NilaiScene/TextureRect"]
-position = Vector2(576, 368)
-scale = Vector2(0.188767, 0.188767)
-texture = ExtResource("24_tn4al")
-
-[node name="BintangKuning3" type="Sprite2D" parent="NilaiScene/TextureRect"]
-position = Vector2(784, 432)
-scale = Vector2(0.152697, 0.152697)
-texture = ExtResource("24_tn4al")
+texture = ExtResource("17_03xdd")
 
 [node name="Buttonillai-1" type="Sprite2D" parent="NilaiScene/TextureRect"]
 position = Vector2(576, 120)
 scale = Vector2(0.206467, 0.206467)
-texture = ExtResource("25_g1i4u")
+texture = ExtResource("18_vnkkn")
+
+[node name="B1" parent="NilaiScene/TextureRect" instance=ExtResource("29_t1uoy")]
+visible = false
+
+[node name="B2" parent="NilaiScene/TextureRect" instance=ExtResource("30_nyvkq")]
+visible = false
+
+[node name="B3" parent="NilaiScene/TextureRect" instance=ExtResource("31_2jiir")]
+visible = false
 
 [node name="CountdownTimer" type="Node" parent="."]
 script = ExtResource("18_208hl")
@@ -163,7 +176,6 @@ offset_left = 901.0
 offset_top = 127.0
 offset_right = 1017.0
 offset_bottom = 170.0
-metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CountdownTimer"]
 offset_left = 916.0
@@ -171,10 +183,10 @@ offset_top = 137.0
 offset_right = 957.0
 offset_bottom = 160.0
 text = "00:00"
-metadata/_edit_use_anchors_ = true
 
 [node name="Timer" type="Timer" parent="CountdownTimer"]
 wait_time = 60.0
 
-[connection signal="pressed" from="CanvasGroup/Button" to="SoalManager" method="_on_next_button_pressed"]
+[connection signal="tree_entered" from="SoalManager" to="SoalManager" method="_on_soal_manager_tree_entered"]
+[connection signal="pressed" from="CanvasGroup/Button" to="SoalManager" method="_on_button_pressed"]
 [connection signal="pressed" from="NilaiScene/TextureRect/Button" to="NilaiScene" method="_on_button_pressed"]

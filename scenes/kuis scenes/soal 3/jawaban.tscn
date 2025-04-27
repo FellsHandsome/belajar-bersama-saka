@@ -1,10 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://6s6ku3c0e45a"]
+[gd_scene load_steps=7 format=3 uid="uid://6s6ku3c0e45a"]
 
 [ext_resource type="Texture2D" uid="uid://0xi3xi4sqvxe" path="res://assets/Asset game/Soal Kuis/soal 3/1-4.png" id="2_i57ei"]
 [ext_resource type="Texture2D" uid="uid://b03m7kdg1ca3c" path="res://assets/Asset game/Soal Kuis/soal 3/2-4.png" id="3_7dtgd"]
 [ext_resource type="Texture2D" uid="uid://c86bwthy0lg7a" path="res://assets/Asset game/Soal Kuis/soal 3/3-4.png" id="4_jyqx2"]
 [ext_resource type="Texture2D" uid="uid://bywxyctn6e8du" path="res://assets/Asset game/Soal Kuis/soal 3/4-4.png" id="5_6e1yb"]
 [ext_resource type="Texture2D" uid="uid://di3qp6ictq5v8" path="res://assets/Asset game/Soal Kuis/soal 3/soal-1.png" id="6_3kf41"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gst2n"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [node name="Jawaban" type="Node2D"]
 
@@ -33,39 +39,35 @@ position = Vector2(568, 168)
 scale = Vector2(0.810323, 0.854316)
 texture = ExtResource("6_3kf41")
 
-[node name="Button" type="Button" parent="."]
+[node name="MainButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 
-[node name="Button" type="Button" parent="Button"]
-layout_mode = 0
-offset_left = 224.0
-offset_top = 216.0
-offset_right = 256.0
-offset_bottom = 248.0
+[node name="Button" type="Button" parent="MainButton"]
+offset_left = 205.0
+offset_top = 212.0
+offset_right = 246.0
+offset_bottom = 253.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_gst2n")
 
-[node name="Button2" type="Button" parent="Button"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -7.0
-anchor_top = -6.75
-anchor_right = -7.0
-anchor_bottom = -6.75
-offset_left = 720.0
-offset_top = 270.0
-offset_right = 752.0
-offset_bottom = 302.0
+[node name="Button2" type="Button" parent="MainButton"]
+offset_left = 636.0
+offset_top = 208.0
+offset_right = 677.0
+offset_bottom = 249.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_gst2n")
 
-[node name="Button3" type="Button" parent="Button"]
-layout_mode = 0
-offset_left = 224.0
-offset_top = 336.0
-offset_right = 256.0
+[node name="Button3" type="Button" parent="MainButton"]
+offset_left = 201.0
+offset_top = 327.0
+offset_right = 242.0
 offset_bottom = 368.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_gst2n")
 
-[node name="Button4" type="Button" parent="Button"]
-offset_left = 664.0
-offset_top = 336.0
-offset_right = 696.0
-offset_bottom = 368.0
+[node name="Button4" type="Button" parent="MainButton"]
+offset_left = 636.0
+offset_top = 332.0
+offset_right = 677.0
+offset_bottom = 373.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_gst2n")

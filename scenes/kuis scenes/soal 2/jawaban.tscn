@@ -1,10 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://unli61dnv28w"]
+[gd_scene load_steps=7 format=3 uid="uid://unli61dnv28w"]
 
 [ext_resource type="Texture2D" uid="uid://cjlkg5xyt58ua" path="res://assets/Asset game/Soal Kuis/soal 2/1-4.png" id="1_kxg18"]
 [ext_resource type="Texture2D" uid="uid://b3ef3gu4pckhd" path="res://assets/Asset game/Soal Kuis/soal 2/2-4.png" id="2_isgqh"]
 [ext_resource type="Texture2D" uid="uid://c0fclbblx2hil" path="res://assets/Asset game/Soal Kuis/soal 2/3-4.png" id="3_5o4sn"]
 [ext_resource type="Texture2D" uid="uid://dgt18nvlodjra" path="res://assets/Asset game/Soal Kuis/soal 2/4-4.png" id="4_cdm52"]
 [ext_resource type="Texture2D" uid="uid://dpvgggxwjda5" path="res://assets/Asset game/Soal Kuis/soal 2/pertanyaan-1.png" id="5_7falh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kxg18"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [node name="Jawaban" type="Node2D"]
 
@@ -33,34 +39,35 @@ position = Vector2(576, 168)
 scale = Vector2(0.94964, 0.94964)
 texture = ExtResource("5_7falh")
 
-[node name="Button" type="Button" parent="."]
+[node name="MainButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 
-[node name="Button" type="Button" parent="Button"]
-layout_mode = 0
-offset_left = 152.0
-offset_top = 232.0
-offset_right = 184.0
-offset_bottom = 264.0
+[node name="Button" type="Button" parent="MainButton"]
+offset_left = 136.0
+offset_top = 221.0
+offset_right = 177.0
+offset_bottom = 262.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_kxg18")
 
-[node name="Button2" type="Button" parent="Button"]
-layout_mode = 1
-anchors_preset = -1
-offset_left = 648.0
-offset_top = 232.0
-offset_right = 680.0
-offset_bottom = 264.0
+[node name="Button2" type="Button" parent="MainButton"]
+offset_left = 633.0
+offset_top = 229.0
+offset_right = 674.0
+offset_bottom = 270.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_kxg18")
 
-[node name="Button3" type="Button" parent="Button"]
-offset_left = 152.0
-offset_top = 360.0
-offset_right = 184.0
+[node name="Button3" type="Button" parent="MainButton"]
+offset_left = 134.0
+offset_top = 352.0
+offset_right = 175.0
+offset_bottom = 393.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_kxg18")
+
+[node name="Button4" type="Button" parent="MainButton"]
+offset_left = 632.0
+offset_top = 351.0
+offset_right = 673.0
 offset_bottom = 392.0
-
-[node name="Button4" type="Button" parent="Button"]
-offset_left = 648.0
-offset_top = 360.0
-offset_right = 680.0
-offset_bottom = 392.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_kxg18")

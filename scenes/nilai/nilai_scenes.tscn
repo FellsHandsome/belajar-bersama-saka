@@ -1,6 +1,5 @@
-[gd_scene load_steps=8 format=3 uid="uid://dm6ofa8d2jy8t"]
+[gd_scene load_steps=7 format=3 uid="uid://dm6ofa8d2jy8t"]
 
-[ext_resource type="Script" uid="uid://dnbn0p8n1j4dh" path="res://scenes/nilai/nilai_scenes.gd" id="1_8re0k"]
 [ext_resource type="Texture2D" uid="uid://b78cgrdqt7tei" path="res://assets/Asset game/background/bcrounpolos1-1.png" id="1_kcfnq"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="4_k7l8o"]
 [ext_resource type="Texture2D" uid="uid://btuv12i2evkm7" path="res://assets/Asset game/nilai/PUTIH TULANG BUTTON NILAI-2.png" id="4_sqc0p"]
@@ -15,7 +14,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_8re0k")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -40,31 +38,34 @@ scale = Vector2(0.22081, 0.22081)
 texture = ExtResource("4_sqc0p")
 
 [node name="Bintang 1" type="Sprite2D" parent="TextureRect"]
+visible = false
 position = Vector2(576, 368)
 scale = Vector2(0.190611, 0.190611)
 texture = ExtResource("5_f7kjn")
 
 [node name="Bintang 2" type="Sprite2D" parent="TextureRect"]
+visible = false
 position = Vector2(384, 432)
 scale = Vector2(0.156674, 0.156674)
 texture = ExtResource("5_f7kjn")
 
 [node name="Bintang 3" type="Sprite2D" parent="TextureRect"]
+visible = false
 position = Vector2(784, 432)
 scale = Vector2(0.151159, 0.151159)
 texture = ExtResource("5_f7kjn")
 
-[node name="Bintgkuningrvisi2-1" type="Sprite2D" parent="TextureRect"]
+[node name="BintangKuning1" type="Sprite2D" parent="TextureRect"]
 position = Vector2(384, 432)
 scale = Vector2(0.154977, 0.154977)
 texture = ExtResource("6_imwru")
 
-[node name="Bintgkuningrvisi2-2" type="Sprite2D" parent="TextureRect"]
+[node name="BintangKuning2" type="Sprite2D" parent="TextureRect"]
 position = Vector2(576, 368)
 scale = Vector2(0.188767, 0.188767)
 texture = ExtResource("6_imwru")
 
-[node name="Bintgkuningrvisi2-3" type="Sprite2D" parent="TextureRect"]
+[node name="BintangKuning3" type="Sprite2D" parent="TextureRect"]
 position = Vector2(784, 432)
 scale = Vector2(0.152697, 0.152697)
 texture = ExtResource("6_imwru")
@@ -73,5 +74,3 @@ texture = ExtResource("6_imwru")
 position = Vector2(576, 120)
 scale = Vector2(0.206467, 0.206467)
 texture = ExtResource("6_0twbr")
-
-[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

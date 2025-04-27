@@ -1,10 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://egi5132534ab"]
+[gd_scene load_steps=7 format=3 uid="uid://egi5132534ab"]
 
 [ext_resource type="Texture2D" uid="uid://doth38cbyifll" path="res://assets/Asset game/Soal Kuis/soal 5/1-4.png" id="1_o1bo7"]
 [ext_resource type="Texture2D" uid="uid://b3p3y4eo2h7y5" path="res://assets/Asset game/Soal Kuis/soal 5/2-4.png" id="2_oj41c"]
 [ext_resource type="Texture2D" uid="uid://dyfrq7uqk55i" path="res://assets/Asset game/Soal Kuis/soal 5/3-4.png" id="3_bvvkm"]
 [ext_resource type="Texture2D" uid="uid://bd50ka73ocjcc" path="res://assets/Asset game/Soal Kuis/soal 5/4-4.png" id="4_8n746"]
 [ext_resource type="Texture2D" uid="uid://c632lmd47ubyk" path="res://assets/Asset game/Soal Kuis/soal 5/ssoaal-1.png" id="5_omwuh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o1bo7"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [node name="Jawaban" type="Node2D"]
 
@@ -36,26 +42,29 @@ offset_bottom = 8.0
 flat = true
 
 [node name="Button" type="Button" parent="Button"]
-layout_mode = 0
-offset_left = 160.0
-offset_top = 216.0
-offset_right = 192.0
-offset_bottom = 248.0
+offset_left = 144.0
+offset_top = 214.0
+offset_right = 185.0
+offset_bottom = 255.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1bo7")
 
 [node name="Button2" type="Button" parent="Button"]
-offset_left = 536.0
-offset_top = 216.0
-offset_right = 568.0
+offset_left = 519.0
+offset_top = 207.0
+offset_right = 560.0
 offset_bottom = 248.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1bo7")
 
 [node name="Button3" type="Button" parent="Button"]
-offset_left = 160.0
-offset_top = 336.0
-offset_right = 192.0
+offset_left = 145.0
+offset_top = 327.0
+offset_right = 186.0
 offset_bottom = 368.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1bo7")
 
 [node name="Button4" type="Button" parent="Button"]
-offset_left = 536.0
-offset_top = 336.0
-offset_right = 568.0
-offset_bottom = 368.0
+offset_left = 524.0
+offset_top = 330.0
+offset_right = 565.0
+offset_bottom = 371.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1bo7")

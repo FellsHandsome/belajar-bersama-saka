@@ -183,7 +183,7 @@ grow_vertical = 2
 text = "Email"
 label_settings = SubResource("LabelSettings_tn1e7")
 
-[node name="Back button" type="Button" parent="TextureRect2"]
+[node name="Button Back" type="Button" parent="TextureRect2"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.092
@@ -198,4 +198,4 @@ expand_icon = true
 
 [connection signal="pressed" from="TextureRect2/Button Suara" to="." method="_on_button_suara_pressed"]
 [connection signal="pressed" from="TextureRect2/Button Music" to="." method="_on_button_music_pressed"]
-[connection signal="pressed" from="TextureRect2/Back button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="TextureRect2/Button Back" to="." method="_on_button_back_pressed"]

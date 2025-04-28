@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjgvs7in4ga14"
-path="res://.godot/imported/b-4.png-3381d01a8831b80434f68bb3b0d5d58f.ctex"
+uid="uid://bm64qe8054u03"
+path="res://.godot/imported/c-1.png-f38ce411a3e2516dcf26da1c47e56add.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Asset game/sambung ayat/imla/soal 7/b-4.png"
-dest_files=["res://.godot/imported/b-4.png-3381d01a8831b80434f68bb3b0d5d58f.ctex"]
+source_file="res://assets/Asset game/sambung ayat/surah/soal 2/c-1.png"
+dest_files=["res://.godot/imported/c-1.png-f38ce411a3e2516dcf26da1c47e56add.ctex"]
 
 [params]
 

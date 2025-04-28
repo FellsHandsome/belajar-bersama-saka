@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://di5wrs55xjpa8"]
 
 [ext_resource type="Texture2D" uid="uid://b87qjpw6kmm0h" path="res://assets/Asset game/sambung ayat/imla/soal 6/a-4.png" id="1_srcgl"]
-[ext_resource type="Texture2D" uid="uid://njfana1yipw5" path="res://assets/Asset game/sambung ayat/imla/soal 6/b-4.png" id="2_rnacs"]
+[ext_resource type="Texture2D" uid="uid://dlxjg6woxf3gx" path="res://assets/Asset game/sambung ayat/imla/soal 7/b-1 [Recovered].png" id="2_2mnrp"]
 [ext_resource type="Texture2D" uid="uid://cr42k1mtcurwp" path="res://assets/Asset game/sambung ayat/imla/soal 6/C-4.png" id="3_o281n"]
 [ext_resource type="Texture2D" uid="uid://b7jmwgpmtnhw" path="res://assets/Asset game/sambung ayat/imla/soal 6/d-4.png" id="4_318g6"]
 [ext_resource type="Texture2D" uid="uid://bps26wsa7achh" path="res://assets/Asset game/sambung ayat/imla/soal 6/pertanyaan-2.png" id="5_cttw2"]
@@ -19,9 +19,10 @@ corner_radius_bottom_left = 50
 position = Vector2(402, 368)
 texture = ExtResource("1_srcgl")
 
-[node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(890, 368)
-texture = ExtResource("2_rnacs")
+[node name="B-1[recovered]" type="Sprite2D" parent="."]
+position = Vector2(871.403, 292.688)
+scale = Vector2(0.22856, 0.22856)
+texture = ExtResource("2_2mnrp")
 
 [node name="C-4" type="Sprite2D" parent="."]
 position = Vector2(410, 496)

@@ -68,6 +68,7 @@ func show_question(index):
 		print("Error: Node soal pada index", index, "tidak valid!")
 
 func _on_KirimButton_pressed():
+	SoundManager.play_button_click_sound()
 	print("Tombol Kirim ditekan! Pindah ke soal berikutnya.")
 	
 	# Pindah ke soal berikutnya

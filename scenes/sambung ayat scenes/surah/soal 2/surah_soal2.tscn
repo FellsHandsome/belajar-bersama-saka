@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=3 uid="uid://bvvfn0l3qwutq"]
+
+[ext_resource type="Texture2D" uid="uid://clfgce05tymwg" path="res://assets/Asset game/sambung ayat/surah/soal 2/A-4 (1).png" id="1_vjslc"]
+[ext_resource type="Texture2D" uid="uid://cg4nk7v8236r4" path="res://assets/Asset game/sambung ayat/surah/soal 2/b-4 (1).png" id="2_pr2yp"]
+[ext_resource type="Texture2D" uid="uid://bxsu0ud3m47s3" path="res://assets/Asset game/sambung ayat/surah/soal 2/D-4.png" id="3_1afib"]
+[ext_resource type="Texture2D" uid="uid://1j1ugfge3x1d" path="res://assets/Asset game/sambung ayat/surah/soal 2/No 2-1.png" id="4_dyc0r"]
+[ext_resource type="Texture2D" uid="uid://bm64qe8054u03" path="res://assets/Asset game/sambung ayat/surah/soal 2/c-1.png" id="5_pr2yp"]
+
+[node name="SurahSoal2" type="Node2D"]
+
+[node name="A-4(1)" type="Sprite2D" parent="."]
+position = Vector2(368, 384)
+texture = ExtResource("1_vjslc")
+
+[node name="B-4(1)" type="Sprite2D" parent="."]
+position = Vector2(864, 360)
+texture = ExtResource("2_pr2yp")
+
+[node name="D-4" type="Sprite2D" parent="."]
+position = Vector2(888, 488)
+scale = Vector2(0.678866, 1)
+texture = ExtResource("3_1afib")
+
+[node name="No2-1" type="Sprite2D" parent="."]
+position = Vector2(568, 184)
+scale = Vector2(0.272222, 0.272222)
+texture = ExtResource("4_dyc0r")
+
+[node name="C-1" type="Sprite2D" parent="."]
+position = Vector2(416, 488)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("5_pr2yp")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button" type="Button" parent="Button"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 328.0
+offset_right = 248.0
+offset_bottom = 376.0
+
+[node name="Button2" type="Button" parent="Button"]
+layout_mode = 0
+offset_left = 648.0
+offset_top = 328.0
+offset_right = 696.0
+offset_bottom = 376.0
+
+[node name="Button3" type="Button" parent="Button"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 456.0
+offset_right = 248.0
+offset_bottom = 504.0
+
+[node name="Button4" type="Button" parent="Button"]
+layout_mode = 0
+offset_left = 648.0
+offset_top = 456.0
+offset_right = 696.0
+offset_bottom = 504.0

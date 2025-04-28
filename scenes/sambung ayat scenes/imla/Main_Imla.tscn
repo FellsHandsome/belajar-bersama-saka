@@ -96,6 +96,7 @@ offset_bottom = 40.0
 script = ExtResource("20_f7hq7")
 
 [node name="TextureRect" type="TextureRect" parent="NilaiScene"]
+layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("21_iahsx")

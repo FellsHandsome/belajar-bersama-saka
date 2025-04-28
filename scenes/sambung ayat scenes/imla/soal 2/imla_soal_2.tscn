@@ -20,7 +20,7 @@ position = Vector2(416, 368)
 texture = ExtResource("2_u25hq")
 
 [node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(920, 368)
+position = Vector2(856, 368)
 texture = ExtResource("3_ecut7")
 
 [node name="C-4" type="Sprite2D" parent="."]
@@ -28,7 +28,7 @@ position = Vector2(408, 496)
 texture = ExtResource("4_kh05p")
 
 [node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(936, 496)
+position = Vector2(872, 496)
 texture = ExtResource("5_krvvx")
 
 [node name="Prtanyaan-2" type="Sprite2D" parent="."]
@@ -61,18 +61,18 @@ expand_icon = true
 
 [node name="Button3" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 776.0
+offset_left = 712.0
 offset_top = 264.0
-offset_right = 824.0
+offset_right = 760.0
 offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_g3boj")
 expand_icon = true
 
 [node name="Button4" type="Button" parent="MainButton"]
 layout_mode = 0
-offset_left = 776.0
+offset_left = 712.0
 offset_top = 392.0
-offset_right = 824.0
+offset_right = 760.0
 offset_bottom = 440.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_g3boj")
 expand_icon = true

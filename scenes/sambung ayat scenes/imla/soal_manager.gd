@@ -46,6 +46,7 @@ func set_jawaban(nomor_soal, jawaban):
 	var jawaban_yang_benar = jawaban_benar.get(nomor_soal, "").to_lower()
 	print("SET_JAWABAN: Jawaban benar?", jawaban_lower == jawaban_yang_benar)
 func _on_next_button_pressed():
+	SoundManager.play_button_click_sound()
 	print("\n--- NEXT BUTTON PRESSED ---")
 	var jawaban = jawaban_user.get(soal_aktif, "").strip_edges().to_lower()
 	var jawaban_yang_benar = jawaban_benar.get(soal_aktif, "").strip_edges().to_lower()

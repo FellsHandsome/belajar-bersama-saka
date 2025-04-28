@@ -53,5 +53,5 @@ expand_icon = true
 [node name="SoalManager" type="Node" parent="MainSurah"]
 script = ExtResource("2_mf1mr")
 
-[connection signal="pressed" from="MainSurah/Button" to="MainSurah/SoalManager" method="_on_KirimButton_pressed"]
 [connection signal="pressed" from="MainSurah/Button" to="MainSurah/SoalManager" method="_on_next_question_button_pressed"]
+[connection signal="pressed" from="MainSurah/Button" to="MainSurah/SoalManager" method="_on_KirimButton_pressed"]

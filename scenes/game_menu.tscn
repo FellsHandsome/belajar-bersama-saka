@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://btnrq174qyq1t" path="res://assets/Asset game/New Background/Background 2.png" id="2_0b27c"]
 [ext_resource type="Texture2D" uid="uid://dvy010xih8ald" path="res://assets/Asset game/New Button Update/buttontebakgambar-4.png" id="3_aru3y"]
 [ext_resource type="Texture2D" uid="uid://bhqq82sydnrct" path="res://assets/Asset game/New Button Update/buttonsambungayat-4.png" id="4_0b27c"]
-[ext_resource type="AudioStream" uid="uid://fercpfq1dbmp" path="res://assets/Asset game/Musik/button-305770.mp3" id="4_yr8n5"]
 [ext_resource type="Texture2D" uid="uid://bhpyqwgiycqs5" path="res://assets/Asset game/New Button Update/buttonkuis-4.png" id="5_yr8n5"]
+[ext_resource type="Texture2D" uid="uid://ch0fia1ytc8ol" path="res://assets/Asset game/button/setings-3.png" id="7_0b27c"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="7_tqiah"]
 
 [node name="game menu" type="Control"]
@@ -43,7 +43,6 @@ flat = true
 expand_icon = true
 
 [node name="Click" type="AudioStreamPlayer" parent="Tebak gambar"]
-stream = ExtResource("4_yr8n5")
 
 [node name="Sambung ayat" type="Button" parent="."]
 layout_mode = 1
@@ -61,7 +60,6 @@ flat = true
 expand_icon = true
 
 [node name="Click" type="AudioStreamPlayer" parent="Sambung ayat"]
-stream = ExtResource("4_yr8n5")
 
 [node name="Kuis" type="Button" parent="."]
 layout_mode = 1
@@ -79,7 +77,6 @@ flat = true
 expand_icon = true
 
 [node name="Click" type="AudioStreamPlayer" parent="Kuis"]
-stream = ExtResource("4_yr8n5")
 
 [node name="Back Button" type="Button" parent="."]
 layout_mode = 1
@@ -95,9 +92,19 @@ flat = true
 expand_icon = true
 
 [node name="Click" type="AudioStreamPlayer" parent="Back Button"]
-stream = ExtResource("4_yr8n5")
+
+[node name="Button Setting" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1056.0
+offset_top = 16.0
+offset_right = 1133.0
+offset_bottom = 93.0
+icon = ExtResource("7_0b27c")
+flat = true
+expand_icon = true
 
 [connection signal="pressed" from="Tebak gambar" to="." method="_on_tebak_gambar_pressed"]
 [connection signal="pressed" from="Sambung ayat" to="." method="_on_sambung_ayat_pressed"]
 [connection signal="pressed" from="Kuis" to="." method="_on_kuis_pressed"]
 [connection signal="pressed" from="Back Button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Button Setting" to="." method="_on_button_setting_pressed"]

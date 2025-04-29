@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ccd6bou8juekf"
+path="res://.godot/imported/night-of-egypt-4805.ogg-f8ab21bbf857af2f2569fd69f1b48b63.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Asset game/Musik/night-of-egypt-4805.ogg"
+dest_files=["res://.godot/imported/night-of-egypt-4805.ogg-f8ab21bbf857af2f2569fd69f1b48b63.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

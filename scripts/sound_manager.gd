@@ -6,7 +6,7 @@ var is_muted := false
 
 func _ready():
 	backsound_player = AudioStreamPlayer.new()
-	backsound_player.stream = load("res://assets/Asset game/Musik/middle-eastern-arabian-night-version-5-very-short-SBA-300504727-preview.ogg")
+	backsound_player.stream = load("res://assets/Asset game/Musik/night-of-egypt-4805.ogg")
 	add_child(backsound_player)
 	backsound_player.play()
 

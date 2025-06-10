@@ -57,53 +57,150 @@ offset_bottom = 54.0
 flat = true
 script = ExtResource("1_8ei28")
 
-[node name="BG" type="Control" parent="."]
+[node name="BG 1" type="Control" parent="."]
 anchors_preset = 0
 offset_right = 48.0
 offset_bottom = 54.0
 
-[node name="#1" type="PanelContainer" parent="BG"]
+[node name="#1" type="PanelContainer" parent="BG 1"]
 layout_mode = 0
 offset_right = 47.0
-offset_bottom = 55.0
+offset_bottom = 64.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_3wf6s")
 
-[node name="#2" type="PanelContainer" parent="BG"]
+[node name="#2" type="PanelContainer" parent="BG 1"]
 layout_mode = 0
 offset_left = 1.0
 offset_right = 46.0
-offset_bottom = 54.0
+offset_bottom = 62.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_s3801")
 
-[node name="#3" type="PanelContainer" parent="BG"]
+[node name="#3" type="PanelContainer" parent="BG 1"]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 1.0
 offset_right = 45.0
-offset_bottom = 53.0
+offset_bottom = 61.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_p4yr3")
 
-[node name="Boxes" type="VBoxContainer" parent="."]
+[node name="Boxes" type="VBoxContainer" parent="BG 1"]
 layout_mode = 0
 offset_left = 3.0
 offset_top = 6.0
 offset_right = 43.0
-offset_bottom = 46.0
+offset_bottom = 48.0
 
-[node name="Panel" type="PanelContainer" parent="Boxes"]
+[node name="Panel" type="PanelContainer" parent="BG 1/Boxes"]
 custom_minimum_size = Vector2(0, 7)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_o2if0")
 
-[node name="TitleLabel" type="Label" parent="Boxes/Panel"]
+[node name="TitleLabel" type="Label" parent="BG 1/Boxes/Panel"]
 layout_mode = 2
 text = "Character"
 label_settings = SubResource("LabelSettings_ay55d")
 
-[node name="PanelContainer" type="PanelContainer" parent="Boxes"]
-custom_minimum_size = Vector2(27, 29)
+[node name="TextureRect" type="TextureRect" parent="BG 1/Boxes/Panel"]
+layout_mode = 2
+expand_mode = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="BG 1/Boxes"]
+custom_minimum_size = Vector2(27, 39)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_olvpg")
 
-[node name="TextureRect" type="TextureRect" parent="Boxes/PanelContainer"]
+[node name="BG 2" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 56.0
+offset_right = 96.0
+offset_bottom = 40.0
+
+[node name="#1" type="PanelContainer" parent="BG 2"]
+offset_right = 47.0
+offset_bottom = 64.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3wf6s")
+
+[node name="#2" type="PanelContainer" parent="BG 2"]
+offset_left = 1.0
+offset_right = 46.0
+offset_bottom = 62.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_s3801")
+
+[node name="#3" type="PanelContainer" parent="BG 2"]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 45.0
+offset_bottom = 61.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_p4yr3")
+
+[node name="Boxes" type="VBoxContainer" parent="BG 2"]
+offset_left = 3.0
+offset_top = 6.0
+offset_right = 43.0
+offset_bottom = 48.0
+
+[node name="Panel" type="PanelContainer" parent="BG 2/Boxes"]
+custom_minimum_size = Vector2(0, 7)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_o2if0")
+
+[node name="TitleLabel" type="Label" parent="BG 2/Boxes/Panel"]
+layout_mode = 2
+text = "Character"
+label_settings = SubResource("LabelSettings_ay55d")
+
+[node name="PanelContainer" type="PanelContainer" parent="BG 2/Boxes"]
+custom_minimum_size = Vector2(27, 39)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_olvpg")
+
+[node name="TextureRect" type="TextureRect" parent="BG 2/Boxes/PanelContainer"]
+layout_mode = 2
+
+[node name="BG 3" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 112.0
+offset_right = 152.0
+offset_bottom = 40.0
+
+[node name="#1" type="PanelContainer" parent="BG 3"]
+offset_right = 47.0
+offset_bottom = 64.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3wf6s")
+
+[node name="#2" type="PanelContainer" parent="BG 3"]
+offset_left = 1.0
+offset_right = 46.0
+offset_bottom = 62.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_s3801")
+
+[node name="#3" type="PanelContainer" parent="BG 3"]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 45.0
+offset_bottom = 61.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_p4yr3")
+
+[node name="Boxes" type="VBoxContainer" parent="BG 3"]
+offset_left = 3.0
+offset_top = 6.0
+offset_right = 43.0
+offset_bottom = 48.0
+
+[node name="Panel" type="PanelContainer" parent="BG 3/Boxes"]
+custom_minimum_size = Vector2(0, 7)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_o2if0")
+
+[node name="TitleLabel" type="Label" parent="BG 3/Boxes/Panel"]
+layout_mode = 2
+text = "Character"
+label_settings = SubResource("LabelSettings_ay55d")
+
+[node name="PanelContainer" type="PanelContainer" parent="BG 3/Boxes"]
+custom_minimum_size = Vector2(27, 39)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_olvpg")
+
+[node name="TextureRect" type="TextureRect" parent="BG 3/Boxes/PanelContainer"]
 layout_mode = 2

@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dcagxhjemn4a5"]
+[gd_scene load_steps=3 format=3 uid="uid://dcagxhjemn4a5"]
 
 [ext_resource type="Texture2D" uid="uid://c44kh7qu1rrdu" path="res://assets/Asset game/tebak gambar/Nabi Sulaiman.png" id="1_30s1s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_joi7x"]
+font_size = 30
 
 [node name="Soal6" type="Node2D"]
 
@@ -8,3 +11,13 @@
 position = Vector2(576, 324)
 scale = Vector2(0.919394, 0.9)
 texture = ExtResource("1_30s1s")
+
+[node name="Soal" type="Label" parent="NabiSulaiman"]
+offset_left = -542.749
+offset_top = 30.0
+offset_right = -100.749
+offset_bottom = 117.0
+text = "Mukjizat siapakah yang ada di
+dalam gambar ini?"
+label_settings = SubResource("LabelSettings_joi7x")
+metadata/_edit_use_anchors_ = true

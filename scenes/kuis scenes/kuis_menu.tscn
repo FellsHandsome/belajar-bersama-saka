@@ -50,10 +50,10 @@ label_settings = SubResource("LabelSettings_e83go")
 
 [node name="Back Button" type="Button" parent="TextureRect"]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 32.0
-offset_right = 120.0
-offset_bottom = 114.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 90.0
 icon = ExtResource("5_s8c6q")
 flat = true
 expand_icon = true

@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cmy7237s67hto"]
+[gd_scene load_steps=3 format=3 uid="uid://cmy7237s67hto"]
 
 [ext_resource type="Texture2D" uid="uid://btgb5mdojem1h" path="res://assets/Asset game/tebak gambar/Nabi Musa.png" id="1_0a1o6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pmpi7"]
+font_size = 30
 
 [node name="Soal3" type="Node2D"]
 
@@ -8,3 +11,13 @@
 position = Vector2(575.843, 324)
 scale = Vector2(0.919644, 0.9)
 texture = ExtResource("1_0a1o6")
+
+[node name="Soal" type="Label" parent="NabiMusa"]
+offset_left = -573.965
+offset_top = 40.0
+offset_right = -131.965
+offset_bottom = 127.0
+text = "Mukjizat siapakah yang ada di
+dalam gambar ini?"
+label_settings = SubResource("LabelSettings_pmpi7")
+metadata/_edit_use_anchors_ = true

@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgrno57bisbdf"]
+[gd_scene load_steps=3 format=3 uid="uid://bgrno57bisbdf"]
 
 [ext_resource type="Texture2D" uid="uid://l2rqmewqeul4" path="res://assets/Asset game/tebak gambar/Peristiwa Isra Mi'raj Nabi Muhammad.png" id="1_gjs56"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fqfnr"]
+font_size = 30
 
 [node name="Soal8" type="Node2D"]
 
@@ -8,3 +11,13 @@
 position = Vector2(576, 324)
 scale = Vector2(0.919394, 0.9)
 texture = ExtResource("1_gjs56")
+
+[node name="Soal" type="Label" parent="PeristiwaIsraMi\'rajNabiMuhammad"]
+offset_left = -556.889
+offset_top = 22.2222
+offset_right = -114.889
+offset_bottom = 109.222
+text = "Nabi siapakah yang ada di
+dalam cerita ini?"
+label_settings = SubResource("LabelSettings_fqfnr")
+metadata/_edit_use_anchors_ = true

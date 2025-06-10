@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwb8yjwd8fur6"]
+[gd_scene load_steps=3 format=3 uid="uid://dwb8yjwd8fur6"]
 
 [ext_resource type="Texture2D" uid="uid://ba53yoti3yxa0" path="res://assets/Asset game/tebak gambar/Nabi Yunus.png" id="1_t3ttk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mofuu"]
+font_size = 30
 
 [node name="Soal7" type="Node2D"]
 
@@ -8,3 +11,13 @@
 position = Vector2(576, 324)
 scale = Vector2(0.919394, 0.9)
 texture = ExtResource("1_t3ttk")
+
+[node name="Soal" type="Label" parent="NabiYunus"]
+offset_left = -556.889
+offset_top = 22.2222
+offset_right = -114.889
+offset_bottom = 109.222
+text = "Nabi siapakah yang ada di
+dalam cerita ini?"
+label_settings = SubResource("LabelSettings_mofuu")
+metadata/_edit_use_anchors_ = true

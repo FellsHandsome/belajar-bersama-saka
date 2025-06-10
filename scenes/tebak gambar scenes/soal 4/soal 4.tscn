@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bcujwn1x55mfj"]
+[gd_scene load_steps=3 format=3 uid="uid://bcujwn1x55mfj"]
 
 [ext_resource type="Texture2D" uid="uid://dwnybm4fuery0" path="res://assets/Asset game/tebak gambar/Nabi Nuh.png" id="1_8e373"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ji55b"]
+font_size = 30
 
 [node name="Soal4" type="Node2D"]
 
@@ -8,3 +11,13 @@
 position = Vector2(576, 324)
 scale = Vector2(0.919394, 0.9)
 texture = ExtResource("1_8e373")
+
+[node name="Soal" type="Label" parent="NabiNuh"]
+offset_left = -548.187
+offset_top = 31.1111
+offset_right = -106.187
+offset_bottom = 118.111
+text = "Mukjizat siapakah yang ada di
+dalam gambar ini?"
+label_settings = SubResource("LabelSettings_ji55b")
+metadata/_edit_use_anchors_ = true

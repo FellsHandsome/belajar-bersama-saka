@@ -1,18 +1,60 @@
-[gd_scene load_steps=2 format=3 uid="uid://dgeor8hcbblsc"]
+[gd_scene load_steps=3 format=3 uid="uid://dgeor8hcbblsc"]
 
 [ext_resource type="Texture2D" uid="uid://bylt1o6x0cpnq" path="res://assets/Asset game/tebak gambar/Nabi Adam.png" id="1_rdc1t"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_qo2jv"]
+font_size = 30
+
 [node name="Soal1" type="Node2D"]
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Label" type="Label" parent="CanvasLayer"]
-offset_left = 96.0
-offset_top = 360.0
-offset_right = 192.0
-offset_bottom = 400.0
 
 [node name="NabiAdam" type="Sprite2D" parent="."]
 position = Vector2(576, 324)
 scale = Vector2(0.919393, 0.9)
 texture = ExtResource("1_rdc1t")
+
+[node name="Soal" type="Label" parent="NabiAdam"]
+offset_left = -556.889
+offset_top = 22.2222
+offset_right = -114.889
+offset_bottom = 109.222
+text = "Nabi siapakah yang ada di
+dalam cerita ini?"
+label_settings = SubResource("LabelSettings_qo2jv")
+metadata/_edit_use_anchors_ = true
+
+[node name="A" type="Button" parent="NabiAdam"]
+anchors_preset = -1
+anchor_left = -3.939
+anchor_top = -28.313
+anchor_right = -3.939
+anchor_bottom = -28.313
+offset_left = 4401.52
+offset_top = 20559.8
+offset_right = 4602.52
+offset_bottom = 20619.8
+text = "Nabi Adam"
+metadata/_edit_use_anchors_ = true
+
+[node name="B" type="Button" parent="NabiAdam"]
+offset_left = -273.006
+offset_top = 173.333
+offset_right = -73.0062
+offset_bottom = 233.333
+text = "Nabi Sulaiman"
+metadata/_edit_use_anchors_ = true
+
+[node name="C" type="Button" parent="NabiAdam"]
+offset_left = -532.96
+offset_top = 260.0
+offset_right = -332.96
+offset_bottom = 320.0
+text = "Nabi Nuh"
+metadata/_edit_use_anchors_ = true
+
+[node name="D" type="Button" parent="NabiAdam"]
+offset_left = -274.094
+offset_top = 258.889
+offset_right = -74.0939
+offset_bottom = 318.889
+text = "Nabi Isa"
+metadata/_edit_use_anchors_ = true

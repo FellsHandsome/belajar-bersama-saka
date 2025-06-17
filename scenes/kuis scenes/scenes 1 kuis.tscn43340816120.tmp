@@ -1,8 +1,8 @@
 [gd_scene load_steps=72 format=3 uid="uid://bcefskeys57hi"]
 
 [ext_resource type="Texture2D" uid="uid://cftqkv28y21xi" path="res://assets/Asset game/lagi lagi background/Papan 3.png" id="1_obyuk"]
+[ext_resource type="Script" uid="uid://c4fsoouly40sh" path="res://scripts/kuis scripts/scenes_1_kuis.gd" id="2_30ojs"]
 [ext_resource type="Texture2D" uid="uid://yrn62nfj35c1" path="res://assets/Asset game/New Button Update/BUTTONBERIKUNYA-4.png" id="2_bddx3"]
-[ext_resource type="Script" uid="uid://c7ga2t6ljawx" path="res://scripts/kuis scripts/soal_manager.gd" id="2_svpy7"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_0d4mk"]
 [ext_resource type="Script" uid="uid://bbah2rssniqiy" path="res://scenes/sambung ayat scenes/imla/countdown_timer.gd" id="3_30ojs"]
 [ext_resource type="Texture2D" uid="uid://ce36e4r7p8gtl" path="res://assets/Asset game/Soal Kuis/soal 1/1-2.png" id="4_qo5cj"]
@@ -121,14 +121,13 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_obyuk")
 expand_mode = 1
 
 [node name="SoalManager" type="Node" parent="."]
-script = ExtResource("2_svpy7")
+script = ExtResource("2_30ojs")
 
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
 
@@ -168,7 +167,6 @@ one_shot = true
 autostart = true
 
 [node name="Cerita1" type="Sprite2D" parent="CanvasGroup"]
-visible = false
 position = Vector2(568, 272)
 texture = ExtResource("4_qo5cj")
 
@@ -213,43 +211,44 @@ position = Vector2(576, 304)
 scale = Vector2(0.894906, 0.945829)
 texture = ExtResource("11_2ohdj")
 
-[node name="Soal" type="CanvasGroup" parent="CanvasGroup"]
+[node name="Soal" type="CanvasGroup" parent="."]
 
-[node name="SoalKuis1" type="Node2D" parent="CanvasGroup/Soal"]
+[node name="SoalKuis1" type="Node2D" parent="Soal"]
+visible = false
 
-[node name="Soal1" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis1"]
+[node name="Soal-1" type="Sprite2D" parent="Soal/SoalKuis1"]
 position = Vector2(576, 144)
 scale = Vector2(0.857143, 0.857143)
 texture = ExtResource("12_lkbgn")
 
-[node name="A" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis1/Soal1"]
+[node name="A" type="Sprite2D" parent="Soal/SoalKuis1/Soal-1"]
 position = Vector2(-364, 102.667)
 scale = Vector2(1.16667, 1.16667)
 texture = ExtResource("13_vgfvn")
 
-[node name="B" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis1/Soal1"]
+[node name="B" type="Sprite2D" parent="Soal/SoalKuis1/Soal-1"]
 position = Vector2(121.333, 93.3333)
 scale = Vector2(1.16667, 1.16667)
 texture = ExtResource("14_phyw3")
 
-[node name="C" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis1/Soal1"]
+[node name="C" type="Sprite2D" parent="Soal/SoalKuis1/Soal-1"]
 position = Vector2(-308, 261.333)
 scale = Vector2(1.16667, 1.16667)
 texture = ExtResource("15_cxq8e")
 
-[node name="D" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis1/Soal1"]
+[node name="D" type="Sprite2D" parent="Soal/SoalKuis1/Soal-1"]
 position = Vector2(261.333, 261.333)
 scale = Vector2(1.16667, 1.16667)
 texture = ExtResource("16_b42lu")
 
-[node name="MainButton" type="Button" parent="CanvasGroup/Soal/SoalKuis1"]
+[node name="MainButton" type="Button" parent="Soal/SoalKuis1"]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 script = ExtResource("17_lonht")
 metadata/_edit_use_anchors_ = true
 
-[node name="ButtonA" type="Button" parent="CanvasGroup/Soal/SoalKuis1/MainButton"]
+[node name="ButtonA" type="Button" parent="Soal/SoalKuis1/MainButton"]
 layout_mode = 0
 offset_left = 185.0
 offset_top = 213.0
@@ -258,7 +257,7 @@ offset_bottom = 254.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_wdcxo")
 metadata/_edit_use_anchors_ = true
 
-[node name="ButtonB" type="Button" parent="CanvasGroup/Soal/SoalKuis1/MainButton"]
+[node name="ButtonB" type="Button" parent="Soal/SoalKuis1/MainButton"]
 layout_mode = 0
 offset_left = 552.0
 offset_top = 212.0
@@ -267,7 +266,7 @@ offset_bottom = 253.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_wdcxo")
 metadata/_edit_use_anchors_ = true
 
-[node name="ButtonC" type="Button" parent="CanvasGroup/Soal/SoalKuis1/MainButton"]
+[node name="ButtonC" type="Button" parent="Soal/SoalKuis1/MainButton"]
 layout_mode = 0
 offset_left = 185.0
 offset_top = 345.0
@@ -276,7 +275,7 @@ offset_bottom = 386.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_wdcxo")
 metadata/_edit_use_anchors_ = true
 
-[node name="ButtonD" type="Button" parent="CanvasGroup/Soal/SoalKuis1/MainButton"]
+[node name="ButtonD" type="Button" parent="Soal/SoalKuis1/MainButton"]
 layout_mode = 0
 offset_left = 560.0
 offset_top = 343.0
@@ -285,35 +284,35 @@ offset_bottom = 384.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_wdcxo")
 metadata/_edit_use_anchors_ = true
 
-[node name="SoalKuis2" type="Node2D" parent="CanvasGroup/Soal"]
+[node name="SoalKuis2" type="Node2D" parent="Soal"]
 visible = false
 
-[node name="Soal2" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis2"]
+[node name="Soal2" type="Sprite2D" parent="Soal/SoalKuis2"]
 position = Vector2(576, 168)
 scale = Vector2(0.94964, 0.94964)
 texture = ExtResource("17_qopri")
 
-[node name="A" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis2/Soal2"]
+[node name="A" type="Sprite2D" parent="Soal/SoalKuis2/Soal2"]
 position = Vector2(-261.152, 84.2424)
 scale = Vector2(0.722429, 0.722429)
 texture = ExtResource("18_oet5g")
 
-[node name="B" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis2/Soal2"]
+[node name="B" type="Sprite2D" parent="Soal/SoalKuis2/Soal2"]
 position = Vector2(244.303, 75.8182)
 scale = Vector2(0.722429, 0.722429)
 texture = ExtResource("19_1mno4")
 
-[node name="C" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis2/Soal2"]
+[node name="C" type="Sprite2D" parent="Soal/SoalKuis2/Soal2"]
 position = Vector2(-202.182, 210.606)
 scale = Vector2(0.722428, 0.722429)
 texture = ExtResource("20_fotfi")
 
-[node name="D" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis2/Soal2"]
+[node name="D" type="Sprite2D" parent="Soal/SoalKuis2/Soal2"]
 position = Vector2(227.455, 210.606)
 scale = Vector2(0.722428, 0.722429)
 texture = ExtResource("21_vpm3w")
 
-[node name="MainButton" type="Button" parent="CanvasGroup/Soal/SoalKuis2/Soal2"]
+[node name="MainButton" type="Button" parent="Soal/SoalKuis2/Soal2"]
 offset_left = -606.546
 offset_top = -176.909
 offset_right = -598.546
@@ -321,7 +320,7 @@ offset_bottom = -168.909
 flat = true
 script = ExtResource("17_lonht")
 
-[node name="ButtonA" type="Button" parent="CanvasGroup/Soal/SoalKuis2/Soal2/MainButton"]
+[node name="ButtonA" type="Button" parent="Soal/SoalKuis2/Soal2/MainButton"]
 layout_mode = 0
 offset_left = 140.053
 offset_top = 236.932
@@ -329,7 +328,7 @@ offset_right = 181.053
 offset_bottom = 277.932
 theme_override_styles/normal = SubResource("StyleBoxFlat_umtxe")
 
-[node name="ButtonB" type="Button" parent="CanvasGroup/Soal/SoalKuis2/Soal2/MainButton"]
+[node name="ButtonB" type="Button" parent="Soal/SoalKuis2/Soal2/MainButton"]
 layout_mode = 0
 offset_left = 629.841
 offset_top = 229.0
@@ -337,7 +336,7 @@ offset_right = 670.841
 offset_bottom = 270.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_umtxe")
 
-[node name="ButtonC" type="Button" parent="CanvasGroup/Soal/SoalKuis2/Soal2/MainButton"]
+[node name="ButtonC" type="Button" parent="Soal/SoalKuis2/Soal2/MainButton"]
 layout_mode = 0
 offset_left = 143.212
 offset_top = 362.243
@@ -345,7 +344,7 @@ offset_right = 184.212
 offset_bottom = 403.243
 theme_override_styles/normal = SubResource("StyleBoxFlat_umtxe")
 
-[node name="ButtonD" type="Button" parent="CanvasGroup/Soal/SoalKuis2/Soal2/MainButton"]
+[node name="ButtonD" type="Button" parent="Soal/SoalKuis2/Soal2/MainButton"]
 layout_mode = 0
 offset_left = 634.106
 offset_top = 362.583
@@ -353,57 +352,55 @@ offset_right = 675.106
 offset_bottom = 403.583
 theme_override_styles/normal = SubResource("StyleBoxFlat_umtxe")
 
-[node name="SoalKuis3" type="Node2D" parent="CanvasGroup/Soal"]
+[node name="SoalKuis3" type="Node2D" parent="Soal"]
 visible = false
 
-[node name="Soal3" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis3"]
+[node name="Soal3" type="Sprite2D" parent="Soal/SoalKuis3"]
 position = Vector2(568, 168)
 scale = Vector2(0.810323, 0.854316)
 texture = ExtResource("22_h032p")
 
-[node name="A" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis3/Soal3"]
+[node name="A" type="Sprite2D" parent="Soal/SoalKuis3/Soal3"]
 position = Vector2(-325.796, 74.9137)
 scale = Vector2(1.07623, 1.02081)
 texture = ExtResource("23_30ojs")
 
-[node name="B" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis3/Soal3"]
+[node name="B" type="Sprite2D" parent="Soal/SoalKuis3/Soal3"]
 position = Vector2(329.498, 74.9137)
 scale = Vector2(1.07623, 1.02081)
 texture = ExtResource("24_lonht")
 
-[node name="C" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis3/Soal3"]
+[node name="C" type="Sprite2D" parent="Soal/SoalKuis3/Soal3"]
 position = Vector2(-325.796, 215.377)
 scale = Vector2(1.07623, 1.02081)
 texture = ExtResource("25_oa5sq")
 
-[node name="D" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis3/Soal3"]
+[node name="D" type="Sprite2D" parent="Soal/SoalKuis3/Soal3"]
 position = Vector2(207.325, 215.377)
 scale = Vector2(0.997305, 0.945949)
 texture = ExtResource("26_c0d6u")
 
-[node name="MainButton" type="Button" parent="CanvasGroup/Soal/SoalKuis3"]
+[node name="MainButton" type="Button" parent="Soal/SoalKuis3"]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 script = ExtResource("17_lonht")
 
-[node name="ButtonA" type="Button" parent="CanvasGroup/Soal/SoalKuis3/MainButton"]
-layout_mode = 0
+[node name="ButtonA" type="Button" parent="Soal/SoalKuis3/MainButton"]
 offset_left = 130.0
 offset_top = 224.0
 offset_right = 171.0
 offset_bottom = 265.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_umtxe")
 
-[node name="ButtonB" type="Button" parent="CanvasGroup/Soal/SoalKuis3/MainButton"]
-layout_mode = 0
+[node name="ButtonB" type="Button" parent="Soal/SoalKuis3/MainButton"]
 offset_left = 600.0
 offset_top = 216.0
 offset_right = 641.0
 offset_bottom = 257.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_umtxe")
 
-[node name="ButtonC" type="Button" parent="CanvasGroup/Soal/SoalKuis3/MainButton"]
+[node name="ButtonC" type="Button" parent="Soal/SoalKuis3/MainButton"]
 layout_mode = 0
 offset_left = 201.0
 offset_top = 327.0
@@ -411,7 +408,7 @@ offset_right = 242.0
 offset_bottom = 368.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_w4xed")
 
-[node name="ButtonD" type="Button" parent="CanvasGroup/Soal/SoalKuis3/MainButton"]
+[node name="ButtonD" type="Button" parent="Soal/SoalKuis3/MainButton"]
 layout_mode = 0
 offset_left = 636.0
 offset_top = 332.0
@@ -419,40 +416,40 @@ offset_right = 677.0
 offset_bottom = 373.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_w4xed")
 
-[node name="SoalKuis4" type="Node2D" parent="CanvasGroup/Soal"]
+[node name="SoalKuis4" type="Node2D" parent="Soal"]
 visible = false
 
-[node name="Soal4" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis4"]
+[node name="Soal4" type="Sprite2D" parent="Soal/SoalKuis4"]
 position = Vector2(576, 168)
 texture = ExtResource("27_36ihl")
 
-[node name="A" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis4/Soal4"]
+[node name="A" type="Sprite2D" parent="Soal/SoalKuis4/Soal4"]
 position = Vector2(-207, 85)
 scale = Vector2(0.9, 0.9)
 texture = ExtResource("28_svpy7")
 
-[node name="B" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis4/Soal4"]
+[node name="B" type="Sprite2D" parent="Soal/SoalKuis4/Soal4"]
 position = Vector2(221, 106)
 scale = Vector2(0.951613, 0.951613)
 texture = ExtResource("29_6u165")
 
-[node name="C" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis4/Soal4"]
+[node name="C" type="Sprite2D" parent="Soal/SoalKuis4/Soal4"]
 position = Vector2(-192, 184)
 scale = Vector2(0.944444, 0.944444)
 texture = ExtResource("30_xapo2")
 
-[node name="D" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis4/Soal4"]
+[node name="D" type="Sprite2D" parent="Soal/SoalKuis4/Soal4"]
 position = Vector2(248, 184)
 scale = Vector2(0.835366, 0.835366)
 texture = ExtResource("31_jqgs1")
 
-[node name="MainButton" type="Button" parent="CanvasGroup/Soal/SoalKuis4"]
+[node name="MainButton" type="Button" parent="Soal/SoalKuis4"]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 script = ExtResource("17_lonht")
 
-[node name="ButtonA" type="Button" parent="CanvasGroup/Soal/SoalKuis4/MainButton"]
+[node name="ButtonA" type="Button" parent="Soal/SoalKuis4/MainButton"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 213.0
@@ -460,7 +457,7 @@ offset_right = 224.0
 offset_bottom = 254.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_a0nrp")
 
-[node name="ButtonB" type="Button" parent="CanvasGroup/Soal/SoalKuis4/MainButton"]
+[node name="ButtonB" type="Button" parent="Soal/SoalKuis4/MainButton"]
 layout_mode = 0
 offset_left = 607.0
 offset_top = 214.0
@@ -468,7 +465,7 @@ offset_right = 648.0
 offset_bottom = 255.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_a0nrp")
 
-[node name="ButtonC" type="Button" parent="CanvasGroup/Soal/SoalKuis4/MainButton"]
+[node name="ButtonC" type="Button" parent="Soal/SoalKuis4/MainButton"]
 layout_mode = 0
 offset_left = 182.0
 offset_top = 332.0
@@ -476,7 +473,7 @@ offset_right = 223.0
 offset_bottom = 373.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_a0nrp")
 
-[node name="ButtonD" type="Button" parent="CanvasGroup/Soal/SoalKuis4/MainButton"]
+[node name="ButtonD" type="Button" parent="Soal/SoalKuis4/MainButton"]
 layout_mode = 0
 offset_left = 609.0
 offset_top = 327.0
@@ -484,38 +481,38 @@ offset_right = 650.0
 offset_bottom = 368.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_a0nrp")
 
-[node name="SoalKuis5" type="Node2D" parent="CanvasGroup/Soal"]
+[node name="SoalKuis5" type="Node2D" parent="Soal"]
 visible = false
 
-[node name="Soal5" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis5"]
+[node name="Soal5" type="Sprite2D" parent="Soal/SoalKuis5"]
 position = Vector2(568, 192)
 texture = ExtResource("32_e7vxd")
 
-[node name="A" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis5/Soal5"]
+[node name="A" type="Sprite2D" parent="Soal/SoalKuis5/Soal5"]
 position = Vector2(-256, 78)
 scale = Vector2(0.830645, 0.830645)
 texture = ExtResource("33_5ykbv")
 
-[node name="B" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis5/Soal5"]
+[node name="B" type="Sprite2D" parent="Soal/SoalKuis5/Soal5"]
 position = Vector2(227, 93)
 scale = Vector2(0.861664, 1)
 texture = ExtResource("34_w3fiw")
 
-[node name="C" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis5/Soal5"]
+[node name="C" type="Sprite2D" parent="Soal/SoalKuis5/Soal5"]
 position = Vector2(-232, 214)
 texture = ExtResource("35_i8ujt")
 
-[node name="D" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis5/Soal5"]
+[node name="D" type="Sprite2D" parent="Soal/SoalKuis5/Soal5"]
 position = Vector2(176, 232)
 texture = ExtResource("36_l2hjf")
 
-[node name="MainButton" type="Button" parent="CanvasGroup/Soal/SoalKuis5"]
+[node name="MainButton" type="Button" parent="Soal/SoalKuis5"]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 script = ExtResource("17_lonht")
 
-[node name="ButtonA" type="Button" parent="CanvasGroup/Soal/SoalKuis5/MainButton"]
+[node name="ButtonA" type="Button" parent="Soal/SoalKuis5/MainButton"]
 layout_mode = 0
 offset_left = 144.0
 offset_top = 214.0
@@ -523,7 +520,7 @@ offset_right = 185.0
 offset_bottom = 255.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_8cxp4")
 
-[node name="ButtonB" type="Button" parent="CanvasGroup/Soal/SoalKuis5/MainButton"]
+[node name="ButtonB" type="Button" parent="Soal/SoalKuis5/MainButton"]
 layout_mode = 0
 offset_left = 519.0
 offset_top = 207.0
@@ -531,7 +528,7 @@ offset_right = 560.0
 offset_bottom = 248.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_8cxp4")
 
-[node name="ButtonC" type="Button" parent="CanvasGroup/Soal/SoalKuis5/MainButton"]
+[node name="ButtonC" type="Button" parent="Soal/SoalKuis5/MainButton"]
 layout_mode = 0
 offset_left = 145.0
 offset_top = 327.0
@@ -539,7 +536,7 @@ offset_right = 186.0
 offset_bottom = 368.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_8cxp4")
 
-[node name="ButtonD" type="Button" parent="CanvasGroup/Soal/SoalKuis5/MainButton"]
+[node name="ButtonD" type="Button" parent="Soal/SoalKuis5/MainButton"]
 layout_mode = 0
 offset_left = 524.0
 offset_top = 330.0
@@ -547,36 +544,36 @@ offset_right = 565.0
 offset_bottom = 371.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_8cxp4")
 
-[node name="SoalKuis6" type="Node2D" parent="CanvasGroup/Soal"]
+[node name="SoalKuis6" type="Node2D" parent="Soal"]
 visible = false
 
-[node name="Soal6" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis6"]
+[node name="Soal6" type="Sprite2D" parent="Soal/SoalKuis6"]
 position = Vector2(568, 240)
 texture = ExtResource("37_c5rjn")
 
-[node name="A" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis6/Soal6"]
+[node name="A" type="Sprite2D" parent="Soal/SoalKuis6/Soal6"]
 position = Vector2(-216, 98)
 texture = ExtResource("38_pfipo")
 
-[node name="B" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis6/Soal6"]
+[node name="B" type="Sprite2D" parent="Soal/SoalKuis6/Soal6"]
 position = Vector2(247, 80)
 texture = ExtResource("39_smx4m")
 
-[node name="C" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis6/Soal6"]
+[node name="C" type="Sprite2D" parent="Soal/SoalKuis6/Soal6"]
 position = Vector2(-248, 200)
 texture = ExtResource("40_cm4o0")
 
-[node name="D" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis6/Soal6"]
+[node name="D" type="Sprite2D" parent="Soal/SoalKuis6/Soal6"]
 position = Vector2(230, 200)
 texture = ExtResource("41_lmktw")
 
-[node name="MainButton" type="Button" parent="CanvasGroup/Soal/SoalKuis6"]
+[node name="MainButton" type="Button" parent="Soal/SoalKuis6"]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 script = ExtResource("17_lonht")
 
-[node name="ButtonA" type="Button" parent="CanvasGroup/Soal/SoalKuis6/MainButton"]
+[node name="ButtonA" type="Button" parent="Soal/SoalKuis6/MainButton"]
 layout_mode = 0
 offset_left = 150.0
 offset_top = 213.0
@@ -584,7 +581,7 @@ offset_right = 191.0
 offset_bottom = 254.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_pd8k8")
 
-[node name="ButtonB" type="Button" parent="CanvasGroup/Soal/SoalKuis6/MainButton"]
+[node name="ButtonB" type="Button" parent="Soal/SoalKuis6/MainButton"]
 layout_mode = 0
 offset_left = 562.0
 offset_top = 212.0
@@ -592,7 +589,7 @@ offset_right = 603.0
 offset_bottom = 253.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_pd8k8")
 
-[node name="ButtonC" type="Button" parent="CanvasGroup/Soal/SoalKuis6/MainButton"]
+[node name="ButtonC" type="Button" parent="Soal/SoalKuis6/MainButton"]
 layout_mode = 0
 offset_left = 147.0
 offset_top = 329.0
@@ -600,7 +597,7 @@ offset_right = 188.0
 offset_bottom = 370.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_pd8k8")
 
-[node name="ButtonD" type="Button" parent="CanvasGroup/Soal/SoalKuis6/MainButton"]
+[node name="ButtonD" type="Button" parent="Soal/SoalKuis6/MainButton"]
 layout_mode = 0
 offset_left = 561.0
 offset_top = 328.0
@@ -608,36 +605,36 @@ offset_right = 602.0
 offset_bottom = 369.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_pd8k8")
 
-[node name="SoalKuis7" type="Node2D" parent="CanvasGroup/Soal"]
+[node name="SoalKuis7" type="Node2D" parent="Soal"]
 visible = false
 
-[node name="Soal7" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis7"]
+[node name="Soal7" type="Sprite2D" parent="Soal/SoalKuis7"]
 position = Vector2(576, 240)
 texture = ExtResource("42_xapvy")
 
-[node name="A" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis7/Soal7"]
+[node name="A" type="Sprite2D" parent="Soal/SoalKuis7/Soal7"]
 position = Vector2(-256, 88)
 texture = ExtResource("43_u21q3")
 
-[node name="B" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis7/Soal7"]
+[node name="B" type="Sprite2D" parent="Soal/SoalKuis7/Soal7"]
 position = Vector2(160, 64)
 texture = ExtResource("44_772w1")
 
-[node name="C" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis7/Soal7"]
+[node name="C" type="Sprite2D" parent="Soal/SoalKuis7/Soal7"]
 position = Vector2(-261, 192)
 texture = ExtResource("45_kl8ja")
 
-[node name="D" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis7/Soal7"]
+[node name="D" type="Sprite2D" parent="Soal/SoalKuis7/Soal7"]
 position = Vector2(181, 208)
 texture = ExtResource("46_ooj63")
 
-[node name="MainButton" type="Button" parent="CanvasGroup/Soal/SoalKuis7"]
+[node name="MainButton" type="Button" parent="Soal/SoalKuis7"]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 script = ExtResource("17_lonht")
 
-[node name="ButtonA" type="Button" parent="CanvasGroup/Soal/SoalKuis7/MainButton"]
+[node name="ButtonA" type="Button" parent="Soal/SoalKuis7/MainButton"]
 layout_mode = 0
 offset_left = 200.0
 offset_top = 216.0
@@ -645,7 +642,7 @@ offset_right = 241.0
 offset_bottom = 257.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_52n6q")
 
-[node name="ButtonB" type="Button" parent="CanvasGroup/Soal/SoalKuis7/MainButton"]
+[node name="ButtonB" type="Button" parent="Soal/SoalKuis7/MainButton"]
 layout_mode = 0
 offset_left = 640.0
 offset_top = 212.0
@@ -653,7 +650,7 @@ offset_right = 681.0
 offset_bottom = 253.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_52n6q")
 
-[node name="ButtonC" type="Button" parent="CanvasGroup/Soal/SoalKuis7/MainButton"]
+[node name="ButtonC" type="Button" parent="Soal/SoalKuis7/MainButton"]
 layout_mode = 0
 offset_left = 198.0
 offset_top = 339.0
@@ -661,7 +658,7 @@ offset_right = 239.0
 offset_bottom = 380.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_52n6q")
 
-[node name="ButtonD" type="Button" parent="CanvasGroup/Soal/SoalKuis7/MainButton"]
+[node name="ButtonD" type="Button" parent="Soal/SoalKuis7/MainButton"]
 layout_mode = 0
 offset_left = 641.0
 offset_top = 338.0
@@ -669,36 +666,36 @@ offset_right = 682.0
 offset_bottom = 379.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_52n6q")
 
-[node name="SoalKuis8" type="Node2D" parent="CanvasGroup/Soal"]
+[node name="SoalKuis8" type="Node2D" parent="Soal"]
 visible = false
 
-[node name="A" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis8"]
+[node name="A" type="Sprite2D" parent="Soal/SoalKuis8"]
 position = Vector2(380, 320)
 texture = ExtResource("47_h032p")
 
-[node name="B" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis8"]
+[node name="B" type="Sprite2D" parent="Soal/SoalKuis8"]
 position = Vector2(768, 320)
 texture = ExtResource("48_30ojs")
 
-[node name="C" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis8"]
+[node name="C" type="Sprite2D" parent="Soal/SoalKuis8"]
 position = Vector2(299, 432)
 texture = ExtResource("49_lonht")
 
-[node name="D" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis8"]
+[node name="D" type="Sprite2D" parent="Soal/SoalKuis8"]
 position = Vector2(758, 434)
 texture = ExtResource("50_oa5sq")
 
-[node name="Soal8" type="Sprite2D" parent="CanvasGroup/Soal/SoalKuis8"]
+[node name="Soal8" type="Sprite2D" parent="Soal/SoalKuis8"]
 position = Vector2(592, 232)
 texture = ExtResource("51_c0d6u")
 
-[node name="MainButton" type="Button" parent="CanvasGroup/Soal/SoalKuis8"]
+[node name="MainButton" type="Button" parent="Soal/SoalKuis8"]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 script = ExtResource("17_lonht")
 
-[node name="ButtonA" type="Button" parent="CanvasGroup/Soal/SoalKuis8/MainButton"]
+[node name="ButtonA" type="Button" parent="Soal/SoalKuis8/MainButton"]
 layout_mode = 0
 offset_left = 185.0
 offset_top = 213.0
@@ -706,7 +703,7 @@ offset_right = 226.0
 offset_bottom = 254.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_36ihl")
 
-[node name="ButtonB" type="Button" parent="CanvasGroup/Soal/SoalKuis8/MainButton"]
+[node name="ButtonB" type="Button" parent="Soal/SoalKuis8/MainButton"]
 layout_mode = 0
 offset_left = 634.0
 offset_top = 214.0
@@ -714,7 +711,7 @@ offset_right = 675.0
 offset_bottom = 255.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_36ihl")
 
-[node name="ButtonC" type="Button" parent="CanvasGroup/Soal/SoalKuis8/MainButton"]
+[node name="ButtonC" type="Button" parent="Soal/SoalKuis8/MainButton"]
 layout_mode = 0
 offset_left = 178.0
 offset_top = 319.0
@@ -722,7 +719,7 @@ offset_right = 219.0
 offset_bottom = 360.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_36ihl")
 
-[node name="ButtonD" type="Button" parent="CanvasGroup/Soal/SoalKuis8/MainButton"]
+[node name="ButtonD" type="Button" parent="Soal/SoalKuis8/MainButton"]
 layout_mode = 0
 offset_left = 640.0
 offset_top = 324.0
@@ -730,7 +727,7 @@ offset_right = 681.0
 offset_bottom = 365.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_36ihl")
 
-[node name="Button" type="Button" parent="CanvasGroup"]
+[node name="Button" type="Button" parent="Soal"]
 offset_left = 696.0
 offset_top = 528.0
 offset_right = 1016.0
@@ -739,17 +736,17 @@ icon = ExtResource("2_bddx3")
 flat = true
 expand_icon = true
 
-[node name="NotificationHebat" parent="CanvasGroup" instance=ExtResource("54_svpy7")]
+[node name="NotificationHebat" parent="Soal" instance=ExtResource("54_svpy7")]
 visible = false
-position = Vector2(576, 312)
+position = Vector2(592, 280)
 
-[node name="NotificationPintar" parent="CanvasGroup" instance=ExtResource("55_6u165")]
+[node name="NotificationPintar" parent="Soal" instance=ExtResource("55_6u165")]
 visible = false
-position = Vector2(576, 312)
+position = Vector2(576, 296)
 
-[node name="NotificationCobaLagi" parent="CanvasGroup" instance=ExtResource("56_xapo2")]
+[node name="NotificationCobaLagi" parent="Soal" instance=ExtResource("56_xapo2")]
 visible = false
-position = Vector2(576, 312)
+position = Vector2(576, 288)
 
 [node name="NilaiScene" type="Control" parent="."]
 visible = false
@@ -819,5 +816,3 @@ offset_bottom = 94.0
 icon = ExtResource("3_0d4mk")
 flat = true
 expand_icon = true
-
-[connection signal="pressed" from="CanvasGroup/Button" to="SoalManager" method="_on_btn_soal_pressed"]

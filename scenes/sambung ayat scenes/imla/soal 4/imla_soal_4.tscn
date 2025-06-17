@@ -13,13 +13,13 @@ corner_radius_top_right = 50
 corner_radius_bottom_right = 50
 corner_radius_bottom_left = 50
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hnns"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bg7bn"]
 corner_radius_top_left = 50
 corner_radius_top_right = 50
 corner_radius_bottom_right = 50
 corner_radius_bottom_left = 50
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bg7bn"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hnns"]
 corner_radius_top_left = 50
 corner_radius_top_right = 50
 corner_radius_bottom_right = 50
@@ -33,33 +33,37 @@ corner_radius_bottom_left = 50
 
 [node name="imla soal 4" type="Node2D"]
 
-[node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(423, 403)
-texture = ExtResource("1_8odf1")
-
-[node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(927, 403)
-texture = ExtResource("2_mq3x2")
-
-[node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(407, 528)
-texture = ExtResource("3_7cuwn")
-
-[node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(944, 530)
-texture = ExtResource("4_2fqwx")
-
-[node name="Prtanyaan-2" type="Sprite2D" parent="."]
+[node name="Soal4" type="Sprite2D" parent="."]
 position = Vector2(552, 240)
 scale = Vector2(1.11124, 1.11124)
 texture = ExtResource("5_mlb5w")
+
+[node name="A" type="Sprite2D" parent="Soal4"]
+position = Vector2(-116.087, 146.683)
+scale = Vector2(0.899896, 0.899896)
+texture = ExtResource("1_8odf1")
+
+[node name="B" type="Sprite2D" parent="Soal4"]
+position = Vector2(337.461, 146.683)
+scale = Vector2(0.899896, 0.899896)
+texture = ExtResource("2_mq3x2")
+
+[node name="C" type="Sprite2D" parent="Soal4"]
+position = Vector2(-130.485, 259.17)
+scale = Vector2(0.899896, 0.899896)
+texture = ExtResource("3_7cuwn")
+
+[node name="D" type="Sprite2D" parent="Soal4"]
+position = Vector2(352.759, 260.97)
+scale = Vector2(0.899896, 0.899896)
+texture = ExtResource("4_2fqwx")
 
 [node name="MainButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("6_ui15n")
 
-[node name="Button" type="Button" parent="MainButton"]
+[node name="ButtonA" type="Button" parent="MainButton"]
 layout_mode = 0
 offset_left = 266.0
 offset_top = 264.0
@@ -67,16 +71,7 @@ offset_right = 314.0
 offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_g2u2w")
 
-[node name="Button2" type="Button" parent="MainButton"]
-layout_mode = 0
-offset_left = 266.0
-offset_top = 392.0
-offset_right = 314.0
-offset_bottom = 440.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_5hnns")
-expand_icon = true
-
-[node name="Button3" type="Button" parent="MainButton"]
+[node name="ButtonB" type="Button" parent="MainButton"]
 layout_mode = 0
 offset_left = 778.0
 offset_top = 264.0
@@ -85,7 +80,16 @@ offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_bg7bn")
 expand_icon = true
 
-[node name="Button4" type="Button" parent="MainButton"]
+[node name="ButtonC" type="Button" parent="MainButton"]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 392.0
+offset_right = 314.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5hnns")
+expand_icon = true
+
+[node name="ButtonD" type="Button" parent="MainButton"]
 layout_mode = 0
 offset_left = 778.0
 offset_top = 392.0

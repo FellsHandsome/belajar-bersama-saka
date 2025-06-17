@@ -37,7 +37,7 @@ offset_right = -2.30396
 texture = ExtResource("2_5ko2w")
 expand_mode = 1
 
-[node name="Mulai" type="Button" parent="CanvasLayer"]
+[node name="Button" type="Button" parent="CanvasLayer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -51,7 +51,7 @@ icon = ExtResource("3_5ko2w")
 flat = true
 expand_icon = true
 
-[node name="Click" type="AudioStreamPlayer" parent="CanvasLayer/Mulai"]
+[node name="Click" type="AudioStreamPlayer" parent="CanvasLayer/Button"]
 stream = SubResource("AudioStreamMP3_5ko2w")
 volume_db = -2.81
 
@@ -74,4 +74,4 @@ vertical_alignment = 1
 autowrap_mode = 2
 uppercase = true
 
-[connection signal="pressed" from="CanvasLayer/Mulai" to="." method="_on_mulai_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

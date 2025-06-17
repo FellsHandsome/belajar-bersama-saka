@@ -22,21 +22,24 @@ position = Vector2(592, 216)
 scale = Vector2(1.1537, 1.3254)
 texture = ExtResource("2_35wie")
 
-[node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(392, 328)
+[node name="A-4" type="Sprite2D" parent="Prtnyaano1-2"]
+position = Vector2(-173.355, 84.5028)
+scale = Vector2(0.866776, 0.754489)
 texture = ExtResource("3_pkhvv")
 
-[node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(848, 368)
+[node name="B-4" type="Sprite2D" parent="Prtnyaano1-2"]
+position = Vector2(221.895, 114.682)
+scale = Vector2(0.866776, 0.754489)
 texture = ExtResource("4_kr6bs")
 
-[node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(400, 528)
+[node name="C-4" type="Sprite2D" parent="Prtnyaano1-2"]
+position = Vector2(-166.421, 235.401)
+scale = Vector2(0.866776, 0.754489)
 texture = ExtResource("5_yrk8q")
 
-[node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(872, 528)
-scale = Vector2(0.97191, 0.998282)
+[node name="D-4" type="Sprite2D" parent="Prtnyaano1-2"]
+position = Vector2(242.697, 235.401)
+scale = Vector2(0.842429, 0.753193)
 texture = ExtResource("6_ne45q")
 
 [node name="MainButton" type="Button" parent="."]
@@ -44,6 +47,7 @@ offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 script = ExtResource("7_60rx1")
+metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="MainButton"]
 layout_mode = 1

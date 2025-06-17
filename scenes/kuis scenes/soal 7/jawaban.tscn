@@ -14,53 +14,57 @@ corner_radius_bottom_left = 50
 
 [node name="Jawaban" type="Node2D"]
 
-[node name="1-4" type="Sprite2D" parent="."]
-position = Vector2(320, 328)
-texture = ExtResource("1_fhagp")
-
-[node name="2-4" type="Sprite2D" parent="."]
-position = Vector2(736, 304)
-texture = ExtResource("2_3gg8i")
-
-[node name="3-4" type="Sprite2D" parent="."]
-position = Vector2(315, 432)
-texture = ExtResource("3_gek86")
-
-[node name="4-4" type="Sprite2D" parent="."]
-position = Vector2(757, 448)
-texture = ExtResource("4_vojo1")
-
-[node name="Soal-1" type="Sprite2D" parent="."]
+[node name="Soal7" type="Sprite2D" parent="."]
 position = Vector2(576, 240)
 texture = ExtResource("5_ryp8w")
+
+[node name="A" type="Sprite2D" parent="Soal7"]
+position = Vector2(-256, 88)
+texture = ExtResource("1_fhagp")
+
+[node name="B" type="Sprite2D" parent="Soal7"]
+position = Vector2(160, 64)
+texture = ExtResource("2_3gg8i")
+
+[node name="C" type="Sprite2D" parent="Soal7"]
+position = Vector2(-261, 192)
+texture = ExtResource("3_gek86")
+
+[node name="D" type="Sprite2D" parent="Soal7"]
+position = Vector2(181, 208)
+texture = ExtResource("4_vojo1")
 
 [node name="MainButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
 flat = true
 
-[node name="Button" type="Button" parent="MainButton"]
+[node name="ButtonA" type="Button" parent="MainButton"]
+layout_mode = 0
 offset_left = 200.0
 offset_top = 216.0
 offset_right = 241.0
 offset_bottom = 257.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_fhagp")
 
-[node name="Button2" type="Button" parent="MainButton"]
+[node name="ButtonB" type="Button" parent="MainButton"]
+layout_mode = 0
 offset_left = 640.0
 offset_top = 212.0
 offset_right = 681.0
 offset_bottom = 253.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_fhagp")
 
-[node name="Button3" type="Button" parent="MainButton"]
+[node name="ButtonC" type="Button" parent="MainButton"]
+layout_mode = 0
 offset_left = 198.0
 offset_top = 339.0
 offset_right = 239.0
 offset_bottom = 380.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_fhagp")
 
-[node name="Button4" type="Button" parent="MainButton"]
+[node name="ButtonD" type="Button" parent="MainButton"]
+layout_mode = 0
 offset_left = 641.0
 offset_top = 338.0
 offset_right = 682.0

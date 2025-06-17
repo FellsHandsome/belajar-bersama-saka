@@ -33,26 +33,26 @@ corner_radius_bottom_left = 50
 
 [node name="imla soal 3" type="Node2D"]
 
-[node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(391, 368)
-texture = ExtResource("1_s3s12")
-
-[node name="B-4" type="Sprite2D" parent="."]
-position = Vector2(847, 400)
-texture = ExtResource("2_k6p1p")
-
-[node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(407, 536)
-texture = ExtResource("3_88dfa")
-
-[node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(839, 528)
-scale = Vector2(1, 0.994845)
-texture = ExtResource("4_21vm2")
-
-[node name="Prtanyaan-2" type="Sprite2D" parent="."]
+[node name="Soal3" type="Sprite2D" parent="."]
 position = Vector2(528, 240)
 texture = ExtResource("5_rpjas")
+
+[node name="A-4" type="Sprite2D" parent="Soal3"]
+position = Vector2(-137, 128)
+texture = ExtResource("1_s3s12")
+
+[node name="B-4" type="Sprite2D" parent="Soal3"]
+position = Vector2(319, 160)
+texture = ExtResource("2_k6p1p")
+
+[node name="C-4" type="Sprite2D" parent="Soal3"]
+position = Vector2(-121, 296)
+texture = ExtResource("3_88dfa")
+
+[node name="D-4" type="Sprite2D" parent="Soal3"]
+position = Vector2(311, 288)
+scale = Vector2(1, 0.994845)
+texture = ExtResource("4_21vm2")
 
 [node name="MainButton" type="Button" parent="."]
 offset_right = 8.0

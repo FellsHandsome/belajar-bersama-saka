@@ -15,33 +15,33 @@ corner_radius_bottom_left = 50
 
 [node name="imla soal 6" type="Node2D"]
 
-[node name="A-4" type="Sprite2D" parent="."]
-position = Vector2(402, 368)
+[node name="Soal6" type="Sprite2D" parent="."]
+position = Vector2(520, 240)
+texture = ExtResource("5_cttw2")
+
+[node name="A" type="Sprite2D" parent="Soal6"]
+position = Vector2(-118, 128)
 texture = ExtResource("1_srcgl")
 
-[node name="B-1[recovered]" type="Sprite2D" parent="."]
-position = Vector2(871.403, 292.688)
+[node name="B" type="Sprite2D" parent="Soal6"]
+position = Vector2(351.403, 52.688)
 scale = Vector2(0.22856, 0.22856)
 texture = ExtResource("2_2mnrp")
 
-[node name="C-4" type="Sprite2D" parent="."]
-position = Vector2(410, 496)
+[node name="C" type="Sprite2D" parent="Soal6"]
+position = Vector2(-110, 256)
 texture = ExtResource("3_o281n")
 
-[node name="D-4" type="Sprite2D" parent="."]
-position = Vector2(874, 496)
+[node name="D" type="Sprite2D" parent="Soal6"]
+position = Vector2(354, 256)
 texture = ExtResource("4_318g6")
-
-[node name="Pertanyaan-2" type="Sprite2D" parent="."]
-position = Vector2(520, 240)
-texture = ExtResource("5_cttw2")
 
 [node name="MainButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("6_t0k2j")
 
-[node name="Button" type="Button" parent="MainButton"]
+[node name="ButtonA" type="Button" parent="MainButton"]
 layout_mode = 0
 offset_left = 266.0
 offset_top = 264.0
@@ -49,15 +49,7 @@ offset_right = 314.0
 offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_r7ba6")
 
-[node name="Button2" type="Button" parent="MainButton"]
-layout_mode = 0
-offset_left = 266.0
-offset_top = 392.0
-offset_right = 314.0
-offset_bottom = 440.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_r7ba6")
-
-[node name="Button3" type="Button" parent="MainButton"]
+[node name="ButtonB" type="Button" parent="MainButton"]
 layout_mode = 0
 offset_left = 714.0
 offset_top = 264.0
@@ -65,7 +57,15 @@ offset_right = 762.0
 offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_r7ba6")
 
-[node name="Button4" type="Button" parent="MainButton"]
+[node name="ButtonC" type="Button" parent="MainButton"]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 392.0
+offset_right = 314.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_r7ba6")
+
+[node name="ButtonD" type="Button" parent="MainButton"]
 layout_mode = 0
 offset_left = 714.0
 offset_top = 392.0

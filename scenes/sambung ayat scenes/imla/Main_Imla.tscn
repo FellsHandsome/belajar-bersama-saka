@@ -1,32 +1,83 @@
-[gd_scene load_steps=28 format=3 uid="uid://4702a1ucjsij"]
+[gd_scene load_steps=59 format=3 uid="uid://4702a1ucjsij"]
 
 [ext_resource type="Texture2D" uid="uid://csps87rea3rxg" path="res://assets/Asset game/lagi lagi background/Papan 1.png" id="1_nheya"]
-[ext_resource type="Script" uid="uid://bv7qi0dbksfe2" path="res://scenes/sambung ayat scenes/imla/soal_manager.gd" id="2_3cd6e"]
 [ext_resource type="Texture2D" uid="uid://bn0gsakbgdd0x" path="res://assets/Asset game/New Button Update/button kirim-4.png" id="2_7enjd"]
+[ext_resource type="Script" uid="uid://4dprlg7ctr86" path="res://scripts/sambung ayat scripts/Imla/soal_manager.gd" id="2_ctiqc"]
 [ext_resource type="Texture2D" uid="uid://n1vp4b4hl0ru" path="res://assets/Asset game/button/buttonkembali-4.png" id="3_7enjd"]
-[ext_resource type="PackedScene" uid="uid://bp00kox3dq740" path="res://scenes/sambung ayat scenes/imla/soal 1/imla_soal_1.tscn" id="3_r4p4e"]
-[ext_resource type="Script" uid="uid://jgjb7a2j24gs" path="res://scenes/sambung ayat scenes/imla/soal 1/imla_soal_1.gd" id="4_0nej1"]
-[ext_resource type="PackedScene" uid="uid://8v3abkmw6hsv" path="res://scenes/sambung ayat scenes/imla/soal 2/imla_soal_2.tscn" id="5_7dhh7"]
-[ext_resource type="Script" uid="uid://c2abqyehjqhky" path="res://scenes/sambung ayat scenes/imla/soal 2/imla_soal_2.gd" id="6_aamxw"]
-[ext_resource type="PackedScene" uid="uid://dimq8qqkaa8tn" path="res://scenes/sambung ayat scenes/imla/soal 3/imla_soal_3.tscn" id="7_v12la"]
-[ext_resource type="Script" uid="uid://bmf7lufwxxc23" path="res://scenes/sambung ayat scenes/imla/soal 3/imla_soal_3.gd" id="8_qh8fs"]
-[ext_resource type="PackedScene" uid="uid://dooyxciaod7tm" path="res://scenes/sambung ayat scenes/imla/soal 4/imla_soal_4.tscn" id="9_8n8c5"]
-[ext_resource type="Script" uid="uid://bv4b7a3kn5evh" path="res://scenes/sambung ayat scenes/imla/soal 4/imla_soal_4.gd" id="10_m3po4"]
-[ext_resource type="PackedScene" uid="uid://doiiky1g3iagv" path="res://scenes/sambung ayat scenes/imla/soal 5/imla_soal_5.tscn" id="11_8h2e0"]
-[ext_resource type="Script" uid="uid://d3sir7s4cuj3s" path="res://scenes/sambung ayat scenes/imla/soal 5/imla_soal_5.gd" id="12_uyo4r"]
-[ext_resource type="PackedScene" uid="uid://di5wrs55xjpa8" path="res://scenes/sambung ayat scenes/imla/soal 6/imla_soal_6.tscn" id="13_slr3m"]
-[ext_resource type="Script" uid="uid://cptdlsfcqkrq2" path="res://scenes/sambung ayat scenes/imla/soal 6/imla_soal_6.gd" id="14_bmbmp"]
-[ext_resource type="PackedScene" uid="uid://b12vjxr821vkt" path="res://scenes/sambung ayat scenes/imla/soal 7/imla_soal_7.tscn" id="15_ptana"]
-[ext_resource type="Script" uid="uid://dhi82avi07trw" path="res://scenes/sambung ayat scenes/imla/soal 7/imla_soal_7.gd" id="16_kwaru"]
-[ext_resource type="PackedScene" uid="uid://bh8bj6bjtbt5q" path="res://scenes/sambung ayat scenes/imla/soal 8/imla_soal_8.tscn" id="17_bq071"]
-[ext_resource type="Script" uid="uid://c411n0le5kdxc" path="res://scenes/sambung ayat scenes/imla/soal 8/imla_soal_8.gd" id="18_e5d03"]
-[ext_resource type="Script" uid="uid://ch01plorjx0xa" path="res://scenes/sambung ayat scenes/imla/nilai_scene.gd" id="20_f7hq7"]
+[ext_resource type="Texture2D" uid="uid://4o63l1fr60xr" path="res://assets/Asset game/sambung ayat/imla/soal 1/prtnyaano1-2.png" id="3_7sumn"]
+[ext_resource type="Texture2D" uid="uid://cjcjwvmf7s67w" path="res://assets/Asset game/sambung ayat/imla/soal 1/A-4.png" id="4_8anv0"]
+[ext_resource type="Texture2D" uid="uid://tyqsf0am277" path="res://assets/Asset game/sambung ayat/imla/soal 1/b-4.png" id="5_8ageu"]
+[ext_resource type="Texture2D" uid="uid://ddy6n8snw07a8" path="res://assets/Asset game/sambung ayat/imla/soal 1/C-4.png" id="6_v2rwd"]
+[ext_resource type="Texture2D" uid="uid://ekfh2yflqbn2" path="res://assets/Asset game/sambung ayat/imla/soal 1/D-4.png" id="7_gmeij"]
+[ext_resource type="Script" uid="uid://ct5nldqim4vrf" path="res://scripts/sambung ayat scripts/Imla/main_button.gd" id="8_7sumn"]
+[ext_resource type="Texture2D" uid="uid://b2oc1f5m5r1il" path="res://assets/Asset game/sambung ayat/imla/soal 2/prtanyaan-2.png" id="8_scqyi"]
+[ext_resource type="Texture2D" uid="uid://dc4ij6lctrf4c" path="res://assets/Asset game/sambung ayat/imla/soal 2/a-4.png" id="9_2w3di"]
+[ext_resource type="Texture2D" uid="uid://7771k3vhhitj" path="res://assets/Asset game/sambung ayat/imla/soal 2/b-4.png" id="10_1lech"]
+[ext_resource type="Texture2D" uid="uid://c6yedqqmlh604" path="res://assets/Asset game/sambung ayat/imla/soal 2/C-4.png" id="11_xadi3"]
+[ext_resource type="Texture2D" uid="uid://boo3gtgoc821x" path="res://assets/Asset game/sambung ayat/imla/soal 2/d-4.png" id="12_eteoj"]
+[ext_resource type="Texture2D" uid="uid://rwy3qr55ioak" path="res://assets/Asset game/sambung ayat/imla/soal 3/prtanyaan-2.png" id="13_k4a54"]
+[ext_resource type="Texture2D" uid="uid://dmlsh41wkpdgq" path="res://assets/Asset game/sambung ayat/imla/soal 3/A-4.png" id="14_obaex"]
+[ext_resource type="Texture2D" uid="uid://cyiwqoiomlbwg" path="res://assets/Asset game/sambung ayat/imla/soal 3/b-4.png" id="15_mpgrs"]
+[ext_resource type="Texture2D" uid="uid://cqlshxgb488aj" path="res://assets/Asset game/sambung ayat/imla/soal 3/C-4.png" id="16_botp7"]
+[ext_resource type="Texture2D" uid="uid://cokhfc7533dra" path="res://assets/Asset game/sambung ayat/imla/soal 3/d-4.png" id="17_y1b6i"]
+[ext_resource type="Texture2D" uid="uid://dvoij6qiigp4" path="res://assets/Asset game/sambung ayat/imla/soal 4/prtanyaan-2.png" id="18_vqccl"]
+[ext_resource type="Texture2D" uid="uid://dl6ltsnkqai8f" path="res://assets/Asset game/sambung ayat/imla/soal 4/a-4.png" id="19_s38sy"]
+[ext_resource type="Texture2D" uid="uid://wsyricndawoh" path="res://assets/Asset game/sambung ayat/imla/soal 4/b-4.png" id="20_epo00"]
 [ext_resource type="Texture2D" uid="uid://b78cgrdqt7tei" path="res://assets/Asset game/background/bcrounpolos1-1.png" id="21_iahsx"]
+[ext_resource type="Texture2D" uid="uid://crdnc0j4krx3a" path="res://assets/Asset game/sambung ayat/imla/soal 4/C-4.png" id="21_ibwfb"]
+[ext_resource type="Texture2D" uid="uid://dqskhnhjrhipw" path="res://assets/Asset game/sambung ayat/imla/soal 4/D-4.png" id="22_lbo8q"]
+[ext_resource type="Texture2D" uid="uid://c0b14d7kmt6jx" path="res://assets/Asset game/sambung ayat/imla/soal 5/pertanyaan-2.png" id="23_dfb8n"]
 [ext_resource type="Texture2D" uid="uid://btuv12i2evkm7" path="res://assets/Asset game/nilai/PUTIH TULANG BUTTON NILAI-2.png" id="23_fda0o"]
 [ext_resource type="Texture2D" uid="uid://pv3ycndiwrw7" path="res://assets/Asset game/Bintang/bintgaburevisi-1.png" id="24_k06os"]
+[ext_resource type="Texture2D" uid="uid://b6epyhtil2bjj" path="res://assets/Asset game/sambung ayat/imla/soal 5/a-4.png" id="24_pycxi"]
+[ext_resource type="Texture2D" uid="uid://bhcpn8v1eaunt" path="res://assets/Asset game/sambung ayat/imla/soal 5/b-4.png" id="25_5yrva"]
 [ext_resource type="Texture2D" uid="uid://c3n34cse0dj8u" path="res://assets/Asset game/Bintang/bintgkuningrvisi2-1.png" id="25_gn6qk"]
 [ext_resource type="Texture2D" uid="uid://5slnoba3o3tj" path="res://assets/Asset game/nilai/buttonillai-1.png" id="26_2xi6u"]
+[ext_resource type="Texture2D" uid="uid://cpemh5ov0mfdy" path="res://assets/Asset game/sambung ayat/imla/soal 5/C-4.png" id="26_mek4r"]
 [ext_resource type="Script" uid="uid://bbah2rssniqiy" path="res://scenes/sambung ayat scenes/imla/countdown_timer.gd" id="27_ctiqc"]
+[ext_resource type="Texture2D" uid="uid://b35rtcvhnakp0" path="res://assets/Asset game/sambung ayat/imla/soal 5/d-4.png" id="27_lf8kb"]
+[ext_resource type="Texture2D" uid="uid://bps26wsa7achh" path="res://assets/Asset game/sambung ayat/imla/soal 6/pertanyaan-2.png" id="28_dmgit"]
+[ext_resource type="Texture2D" uid="uid://b87qjpw6kmm0h" path="res://assets/Asset game/sambung ayat/imla/soal 6/a-4.png" id="29_gqlgv"]
+[ext_resource type="Texture2D" uid="uid://dlxjg6woxf3gx" path="res://assets/Asset game/sambung ayat/imla/soal 7/b-1 [Recovered].png" id="30_0y70u"]
+[ext_resource type="Texture2D" uid="uid://cr42k1mtcurwp" path="res://assets/Asset game/sambung ayat/imla/soal 6/C-4.png" id="31_kwshc"]
+[ext_resource type="Texture2D" uid="uid://b7jmwgpmtnhw" path="res://assets/Asset game/sambung ayat/imla/soal 6/d-4.png" id="32_0c4rw"]
+[ext_resource type="Texture2D" uid="uid://deywb047vc7ir" path="res://assets/Asset game/sambung ayat/imla/soal 7/pertanyaan-2.png" id="33_sfrib"]
+[ext_resource type="Texture2D" uid="uid://dxes4drpa8an8" path="res://assets/Asset game/sambung ayat/imla/soal 7/a-4.png" id="34_kftan"]
+[ext_resource type="Texture2D" uid="uid://6b17wv5srp02" path="res://assets/Asset game/sambung ayat/imla/soal 7/C-4.png" id="35_n5vur"]
+[ext_resource type="Texture2D" uid="uid://bt3khtdxa6nnm" path="res://assets/Asset game/sambung ayat/imla/soal 7/d-4.png" id="36_0i7yv"]
+[ext_resource type="Texture2D" uid="uid://bip1wwyms65co" path="res://assets/Asset game/sambung ayat/imla/soal 8/pertanyaan-2.png" id="38_0l0pd"]
+[ext_resource type="Texture2D" uid="uid://jwp0qt0josf8" path="res://assets/Asset game/sambung ayat/imla/soal 8/a-4.png" id="39_c8j71"]
+[ext_resource type="Texture2D" uid="uid://cq1jje47ih4cd" path="res://assets/Asset game/sambung ayat/imla/soal 8/B-4.png" id="40_htx3r"]
+[ext_resource type="Texture2D" uid="uid://ci4tl061j8i0t" path="res://assets/Asset game/sambung ayat/imla/soal 8/C-4.png" id="41_xfkxm"]
+[ext_resource type="Texture2D" uid="uid://fy06pr45acgk" path="res://assets/Asset game/sambung ayat/imla/soal 8/d-4.png" id="42_tyy5o"]
+[ext_resource type="Script" uid="uid://nfhb1amh5oo2" path="res://scripts/sambung ayat scripts/Imla/nilai_scene.gd" id="44_7sumn"]
+[ext_resource type="PackedScene" uid="uid://devbn6720wp3b" path="res://scenes/notification scenes/notification_hebat.tscn" id="45_v2rwd"]
+[ext_resource type="PackedScene" uid="uid://cv7k37dv0mwfk" path="res://scenes/notification scenes/notification_pintar.tscn" id="46_gmeij"]
+[ext_resource type="PackedScene" uid="uid://coh0w6u6vlqgw" path="res://scenes/notification scenes/notification_coba_lagi.tscn" id="47_scqyi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7sumn"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8anv0"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ageu"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v2rwd"]
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [node name="MainImla" type="Control"]
 layout_mode = 3
@@ -44,40 +95,548 @@ texture = ExtResource("1_nheya")
 expand_mode = 1
 
 [node name="SoalManager" type="Node" parent="."]
-script = ExtResource("2_3cd6e")
+script = ExtResource("2_ctiqc")
 
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
 
-[node name="imlasoal1" parent="CanvasGroup" instance=ExtResource("3_r4p4e")]
-script = ExtResource("4_0nej1")
+[node name="CountdownTimer" type="Node" parent="CanvasGroup"]
+script = ExtResource("27_ctiqc")
 
-[node name="imlasoal2" parent="CanvasGroup" instance=ExtResource("5_7dhh7")]
-visible = false
-script = ExtResource("6_aamxw")
+[node name="Panel" type="Panel" parent="CanvasGroup/CountdownTimer"]
+anchors_preset = -1
+anchor_left = 0.894
+anchor_top = 0.105
+anchor_right = 0.894
+anchor_bottom = 0.105
+offset_left = -142.888
+offset_top = 56.96
+offset_right = -21.8879
+offset_bottom = 96.96
+metadata/_edit_use_anchors_ = true
 
-[node name="imlasoal3" parent="CanvasGroup" instance=ExtResource("7_v12la")]
-visible = false
-script = ExtResource("8_qh8fs")
+[node name="Label" type="Label" parent="CanvasGroup/CountdownTimer/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.806
+anchor_top = 0.218
+anchor_right = 0.876
+anchor_bottom = 0.278
+offset_left = -68.5261
+offset_top = -8.72001
+offset_right = -4.99603
+offset_bottom = 27.88
+theme_override_font_sizes/font_size = 28
+text = "00:00"
+metadata/_edit_use_anchors_ = true
 
-[node name="imlasoal4" parent="CanvasGroup" instance=ExtResource("9_8n8c5")]
-visible = false
-script = ExtResource("10_m3po4")
+[node name="Timer" type="Timer" parent="CanvasGroup/CountdownTimer"]
+wait_time = 60.0
+one_shot = true
+autostart = true
 
-[node name="imlasoal5" parent="CanvasGroup" instance=ExtResource("11_8h2e0")]
-visible = false
-script = ExtResource("12_uyo4r")
+[node name="Imlasoal1" type="Node2D" parent="CanvasGroup"]
 
-[node name="imlasoal6" parent="CanvasGroup" instance=ExtResource("13_slr3m")]
-visible = false
-script = ExtResource("14_bmbmp")
+[node name="Soal1" type="Sprite2D" parent="CanvasGroup/Imlasoal1"]
+position = Vector2(592, 216)
+scale = Vector2(1.1537, 1.3254)
+texture = ExtResource("3_7sumn")
 
-[node name="imlasoal7" parent="CanvasGroup" instance=ExtResource("15_ptana")]
-visible = false
-script = ExtResource("16_kwaru")
+[node name="A" type="Sprite2D" parent="CanvasGroup/Imlasoal1/Soal1"]
+position = Vector2(-173.355, 84.5028)
+scale = Vector2(0.866776, 0.754489)
+texture = ExtResource("4_8anv0")
 
-[node name="imlasoal8" parent="CanvasGroup" instance=ExtResource("17_bq071")]
+[node name="B" type="Sprite2D" parent="CanvasGroup/Imlasoal1/Soal1"]
+position = Vector2(221.895, 114.682)
+scale = Vector2(0.866776, 0.754489)
+texture = ExtResource("5_8ageu")
+
+[node name="C" type="Sprite2D" parent="CanvasGroup/Imlasoal1/Soal1"]
+position = Vector2(-166.421, 235.401)
+scale = Vector2(0.866776, 0.754489)
+texture = ExtResource("6_v2rwd")
+
+[node name="D" type="Sprite2D" parent="CanvasGroup/Imlasoal1/Soal1"]
+position = Vector2(242.697, 235.401)
+scale = Vector2(0.842429, 0.753193)
+texture = ExtResource("7_gmeij")
+
+[node name="MainButton" type="Button" parent="CanvasGroup/Imlasoal1"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("8_7sumn")
+
+[node name="ButtonA" type="Button" parent="CanvasGroup/Imlasoal1/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 264.0
+offset_right = 311.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7sumn")
+
+[node name="ButtonB" type="Button" parent="CanvasGroup/Imlasoal1/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 264.0
+offset_right = 759.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8anv0")
+
+[node name="ButtonC" type="Button" parent="CanvasGroup/Imlasoal1/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 392.0
+offset_right = 311.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ageu")
+
+[node name="ButtonD" type="Button" parent="CanvasGroup/Imlasoal1/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 392.0
+offset_right = 759.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_v2rwd")
+
+[node name="Imlasoal2" type="Node2D" parent="CanvasGroup"]
 visible = false
-script = ExtResource("18_e5d03")
+
+[node name="Soal2" type="Sprite2D" parent="CanvasGroup/Imlasoal2"]
+position = Vector2(576, 256)
+scale = Vector2(1.2737, 1.2737)
+texture = ExtResource("8_scqyi")
+
+[node name="A" type="Sprite2D" parent="CanvasGroup/Imlasoal2/Soal2"]
+position = Vector2(-125.618, 87.9328)
+scale = Vector2(0.785114, 0.785114)
+texture = ExtResource("9_2w3di")
+
+[node name="B" type="Sprite2D" parent="CanvasGroup/Imlasoal2/Soal2"]
+position = Vector2(219.832, 87.9328)
+scale = Vector2(0.785114, 0.785114)
+texture = ExtResource("10_1lech")
+
+[node name="C" type="Sprite2D" parent="CanvasGroup/Imlasoal2/Soal2"]
+position = Vector2(-131.899, 188.427)
+scale = Vector2(0.785114, 0.785114)
+texture = ExtResource("11_xadi3")
+
+[node name="D" type="Sprite2D" parent="CanvasGroup/Imlasoal2/Soal2"]
+position = Vector2(232.394, 188.427)
+scale = Vector2(0.785114, 0.785114)
+texture = ExtResource("12_eteoj")
+
+[node name="MainButton" type="Button" parent="CanvasGroup/Imlasoal2"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("8_7sumn")
+
+[node name="ButtonA" type="Button" parent="CanvasGroup/Imlasoal2/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 264.0
+offset_right = 311.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7sumn")
+
+[node name="ButtonB" type="Button" parent="CanvasGroup/Imlasoal2/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 264.0
+offset_right = 759.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8anv0")
+
+[node name="ButtonC" type="Button" parent="CanvasGroup/Imlasoal2/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 392.0
+offset_right = 311.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ageu")
+
+[node name="ButtonD" type="Button" parent="CanvasGroup/Imlasoal2/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 392.0
+offset_right = 759.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_v2rwd")
+
+[node name="Imlasoal3" type="Node2D" parent="CanvasGroup"]
+visible = false
+
+[node name="Soal3" type="Sprite2D" parent="CanvasGroup/Imlasoal3"]
+position = Vector2(528, 240)
+texture = ExtResource("13_k4a54")
+
+[node name="A" type="Sprite2D" parent="CanvasGroup/Imlasoal3/Soal3"]
+position = Vector2(-137, 128)
+texture = ExtResource("14_obaex")
+
+[node name="B" type="Sprite2D" parent="CanvasGroup/Imlasoal3/Soal3"]
+position = Vector2(319, 160)
+texture = ExtResource("15_mpgrs")
+
+[node name="C" type="Sprite2D" parent="CanvasGroup/Imlasoal3/Soal3"]
+position = Vector2(-121, 296)
+texture = ExtResource("16_botp7")
+
+[node name="D" type="Sprite2D" parent="CanvasGroup/Imlasoal3/Soal3"]
+position = Vector2(311, 288)
+scale = Vector2(1, 0.994845)
+texture = ExtResource("17_y1b6i")
+
+[node name="MainButton" type="Button" parent="CanvasGroup/Imlasoal3"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("8_7sumn")
+
+[node name="ButtonA" type="Button" parent="CanvasGroup/Imlasoal3/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 264.0
+offset_right = 311.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7sumn")
+
+[node name="ButtonB" type="Button" parent="CanvasGroup/Imlasoal3/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 264.0
+offset_right = 759.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8anv0")
+
+[node name="ButtonC" type="Button" parent="CanvasGroup/Imlasoal3/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 392.0
+offset_right = 311.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ageu")
+
+[node name="ButtonD" type="Button" parent="CanvasGroup/Imlasoal3/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 392.0
+offset_right = 759.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_v2rwd")
+
+[node name="Imlasoal4" type="Node2D" parent="CanvasGroup"]
+visible = false
+
+[node name="Soal4" type="Sprite2D" parent="CanvasGroup/Imlasoal4"]
+position = Vector2(552, 240)
+scale = Vector2(1.11124, 1.11124)
+texture = ExtResource("18_vqccl")
+
+[node name="A" type="Sprite2D" parent="CanvasGroup/Imlasoal4/Soal4"]
+position = Vector2(-116.087, 146.683)
+scale = Vector2(0.899896, 0.899896)
+texture = ExtResource("19_s38sy")
+
+[node name="B" type="Sprite2D" parent="CanvasGroup/Imlasoal4/Soal4"]
+position = Vector2(316.763, 143.983)
+scale = Vector2(0.899896, 0.899896)
+texture = ExtResource("20_epo00")
+
+[node name="C" type="Sprite2D" parent="CanvasGroup/Imlasoal4/Soal4"]
+position = Vector2(-130.485, 259.17)
+scale = Vector2(0.899896, 0.899896)
+texture = ExtResource("21_ibwfb")
+
+[node name="D" type="Sprite2D" parent="CanvasGroup/Imlasoal4/Soal4"]
+position = Vector2(331.162, 259.17)
+scale = Vector2(0.899896, 0.899896)
+texture = ExtResource("22_lbo8q")
+
+[node name="MainButton" type="Button" parent="CanvasGroup/Imlasoal4"]
+offset_left = 152.0
+offset_top = 120.0
+offset_right = 160.0
+offset_bottom = 128.0
+script = ExtResource("8_7sumn")
+
+[node name="ButtonA" type="Button" parent="CanvasGroup/Imlasoal4/MainButton"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 144.0
+offset_right = 168.0
+offset_bottom = 192.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7sumn")
+
+[node name="ButtonB" type="Button" parent="CanvasGroup/Imlasoal4/MainButton"]
+layout_mode = 0
+offset_left = 614.0
+offset_top = 144.0
+offset_right = 662.0
+offset_bottom = 192.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8anv0")
+
+[node name="ButtonC" type="Button" parent="CanvasGroup/Imlasoal4/MainButton"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 264.0
+offset_right = 168.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ageu")
+
+[node name="ButtonD" type="Button" parent="CanvasGroup/Imlasoal4/MainButton"]
+layout_mode = 0
+offset_left = 612.0
+offset_top = 272.0
+offset_right = 660.0
+offset_bottom = 320.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_v2rwd")
+
+[node name="Imlasoal5" type="Node2D" parent="CanvasGroup"]
+visible = false
+
+[node name="Soal5" type="Sprite2D" parent="CanvasGroup/Imlasoal5"]
+position = Vector2(640, 248)
+scale = Vector2(1.13107, 1.13107)
+texture = ExtResource("23_dfb8n")
+
+[node name="A" type="Sprite2D" parent="CanvasGroup/Imlasoal5/Soal5"]
+position = Vector2(-172.403, 108.747)
+scale = Vector2(0.884119, 0.884119)
+texture = ExtResource("24_pycxi")
+
+[node name="B" type="Sprite2D" parent="CanvasGroup/Imlasoal5/Soal5"]
+position = Vector2(198.043, 106.094)
+scale = Vector2(0.884119, 0.884119)
+texture = ExtResource("25_5yrva")
+
+[node name="C" type="Sprite2D" parent="CanvasGroup/Imlasoal5/Soal5"]
+position = Vector2(-175.94, 219.261)
+scale = Vector2(0.884119, 0.884119)
+texture = ExtResource("26_mek4r")
+
+[node name="D" type="Sprite2D" parent="CanvasGroup/Imlasoal5/Soal5"]
+position = Vector2(212.188, 219.261)
+scale = Vector2(0.884119, 0.884119)
+texture = ExtResource("27_lf8kb")
+
+[node name="MainButton" type="Button" parent="CanvasGroup/Imlasoal5"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("8_7sumn")
+
+[node name="ButtonA" type="Button" parent="CanvasGroup/Imlasoal5/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 264.0
+offset_right = 311.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7sumn")
+
+[node name="ButtonB" type="Button" parent="CanvasGroup/Imlasoal5/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 264.0
+offset_right = 759.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8anv0")
+
+[node name="ButtonC" type="Button" parent="CanvasGroup/Imlasoal5/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 392.0
+offset_right = 311.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ageu")
+
+[node name="ButtonD" type="Button" parent="CanvasGroup/Imlasoal5/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 392.0
+offset_right = 759.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_v2rwd")
+
+[node name="Imlasoal6" type="Node2D" parent="CanvasGroup"]
+visible = false
+
+[node name="Soal6" type="Sprite2D" parent="CanvasGroup/Imlasoal6"]
+position = Vector2(520, 240)
+texture = ExtResource("28_dmgit")
+
+[node name="A" type="Sprite2D" parent="CanvasGroup/Imlasoal6/Soal6"]
+position = Vector2(-118, 128)
+texture = ExtResource("29_gqlgv")
+
+[node name="B" type="Sprite2D" parent="CanvasGroup/Imlasoal6/Soal6"]
+position = Vector2(351.403, 52.688)
+scale = Vector2(0.22856, 0.22856)
+texture = ExtResource("30_0y70u")
+
+[node name="C" type="Sprite2D" parent="CanvasGroup/Imlasoal6/Soal6"]
+position = Vector2(-110, 256)
+texture = ExtResource("31_kwshc")
+
+[node name="D" type="Sprite2D" parent="CanvasGroup/Imlasoal6/Soal6"]
+position = Vector2(354, 256)
+texture = ExtResource("32_0c4rw")
+
+[node name="MainButton" type="Button" parent="CanvasGroup/Imlasoal6"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("8_7sumn")
+
+[node name="ButtonA" type="Button" parent="CanvasGroup/Imlasoal6/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 264.0
+offset_right = 311.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7sumn")
+
+[node name="ButtonB" type="Button" parent="CanvasGroup/Imlasoal6/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 264.0
+offset_right = 759.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8anv0")
+
+[node name="ButtonC" type="Button" parent="CanvasGroup/Imlasoal6/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 392.0
+offset_right = 311.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ageu")
+
+[node name="ButtonD" type="Button" parent="CanvasGroup/Imlasoal6/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 392.0
+offset_right = 759.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_v2rwd")
+
+[node name="Imlasoal7" type="Node2D" parent="CanvasGroup"]
+visible = false
+
+[node name="Soal7" type="Sprite2D" parent="CanvasGroup/Imlasoal7"]
+position = Vector2(504, 240)
+texture = ExtResource("33_sfrib")
+
+[node name="A" type="Sprite2D" parent="CanvasGroup/Imlasoal7/Soal7"]
+position = Vector2(-82, 128)
+texture = ExtResource("34_kftan")
+
+[node name="B" type="Sprite2D" parent="CanvasGroup/Imlasoal7/Soal7"]
+position = Vector2(368, 56)
+scale = Vector2(0.237055, 0.237055)
+texture = ExtResource("30_0y70u")
+
+[node name="C" type="Sprite2D" parent="CanvasGroup/Imlasoal7/Soal7"]
+position = Vector2(-66, 256)
+texture = ExtResource("35_n5vur")
+
+[node name="D" type="Sprite2D" parent="CanvasGroup/Imlasoal7/Soal7"]
+position = Vector2(374, 256)
+texture = ExtResource("36_0i7yv")
+
+[node name="MainButton" type="Button" parent="CanvasGroup/Imlasoal7"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("8_7sumn")
+
+[node name="ButtonA" type="Button" parent="CanvasGroup/Imlasoal7/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 264.0
+offset_right = 311.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7sumn")
+
+[node name="ButtonB" type="Button" parent="CanvasGroup/Imlasoal7/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 264.0
+offset_right = 759.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8anv0")
+
+[node name="ButtonC" type="Button" parent="CanvasGroup/Imlasoal7/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 392.0
+offset_right = 311.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ageu")
+
+[node name="ButtonD" type="Button" parent="CanvasGroup/Imlasoal7/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 392.0
+offset_right = 759.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_v2rwd")
+
+[node name="Imlasoal8" type="Node2D" parent="CanvasGroup"]
+visible = false
+
+[node name="Soal8" type="Sprite2D" parent="CanvasGroup/Imlasoal8"]
+position = Vector2(536, 248)
+texture = ExtResource("38_0l0pd")
+
+[node name="A" type="Sprite2D" parent="CanvasGroup/Imlasoal8/Soal8"]
+position = Vector2(-107, 116)
+texture = ExtResource("39_c8j71")
+
+[node name="B" type="Sprite2D" parent="CanvasGroup/Imlasoal8/Soal8"]
+position = Vector2(344, 120)
+texture = ExtResource("40_htx3r")
+
+[node name="C" type="Sprite2D" parent="CanvasGroup/Imlasoal8/Soal8"]
+position = Vector2(-120, 245)
+texture = ExtResource("41_xfkxm")
+
+[node name="D" type="Sprite2D" parent="CanvasGroup/Imlasoal8/Soal8"]
+position = Vector2(362, 243)
+texture = ExtResource("42_tyy5o")
+
+[node name="MainButton" type="Button" parent="CanvasGroup/Imlasoal8"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("8_7sumn")
+
+[node name="ButtonA" type="Button" parent="CanvasGroup/Imlasoal8/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 264.0
+offset_right = 311.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7sumn")
+
+[node name="ButtonB" type="Button" parent="CanvasGroup/Imlasoal8/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 264.0
+offset_right = 759.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8anv0")
+
+[node name="ButtonC" type="Button" parent="CanvasGroup/Imlasoal8/MainButton"]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 392.0
+offset_right = 311.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ageu")
+
+[node name="ButtonD" type="Button" parent="CanvasGroup/Imlasoal8/MainButton"]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 392.0
+offset_right = 759.0
+offset_bottom = 440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_v2rwd")
 
 [node name="Button" type="Button" parent="CanvasGroup"]
 offset_left = 752.0
@@ -88,12 +647,24 @@ icon = ExtResource("2_7enjd")
 flat = true
 expand_icon = true
 
+[node name="NotificationHebat" parent="CanvasGroup" instance=ExtResource("45_v2rwd")]
+visible = false
+position = Vector2(592, 280)
+
+[node name="NotificationPintar" parent="CanvasGroup" instance=ExtResource("46_gmeij")]
+visible = false
+position = Vector2(576, 296)
+
+[node name="NotificationCobaLagi" parent="CanvasGroup" instance=ExtResource("47_scqyi")]
+visible = false
+position = Vector2(576, 288)
+
 [node name="NilaiScene" type="Control" parent="."]
 visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("20_f7hq7")
+script = ExtResource("44_7sumn")
 
 [node name="TextureRect" type="TextureRect" parent="NilaiScene"]
 layout_mode = 0
@@ -101,6 +672,51 @@ offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("21_iahsx")
 expand_mode = 1
+
+[node name="Nilai" type="Sprite2D" parent="NilaiScene"]
+position = Vector2(576, 136)
+scale = Vector2(0.22081, 0.22081)
+texture = ExtResource("23_fda0o")
+
+[node name="BintangPutih1" type="Sprite2D" parent="NilaiScene"]
+position = Vector2(576, 368)
+scale = Vector2(0.190611, 0.190611)
+texture = ExtResource("24_k06os")
+
+[node name="BintangPutih2" type="Sprite2D" parent="NilaiScene"]
+position = Vector2(384, 432)
+scale = Vector2(0.156674, 0.156674)
+texture = ExtResource("24_k06os")
+
+[node name="BintangPutih3" type="Sprite2D" parent="NilaiScene"]
+position = Vector2(784, 432)
+scale = Vector2(0.151159, 0.151159)
+texture = ExtResource("24_k06os")
+
+[node name="BintangKuning1" type="Sprite2D" parent="NilaiScene"]
+position = Vector2(384, 432)
+scale = Vector2(0.154977, 0.154977)
+texture = ExtResource("25_gn6qk")
+
+[node name="BintangKuning2" type="Sprite2D" parent="NilaiScene"]
+position = Vector2(784, 432)
+scale = Vector2(0.157732, 0.157732)
+texture = ExtResource("25_gn6qk")
+
+[node name="BintangKuning3" type="Sprite2D" parent="NilaiScene"]
+position = Vector2(576, 368)
+scale = Vector2(0.19202, 0.19202)
+texture = ExtResource("25_gn6qk")
+
+[node name="BackgroundNilai" type="Sprite2D" parent="NilaiScene"]
+position = Vector2(576, 120)
+scale = Vector2(0.206467, 0.206467)
+texture = ExtResource("26_2xi6u")
+
+[node name="LabelNilai" type="Label" parent="NilaiScene"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
 
 [node name="Button" type="Button" parent="NilaiScene"]
 layout_mode = 0
@@ -112,77 +728,4 @@ icon = ExtResource("3_7enjd")
 flat = true
 expand_icon = true
 
-[node name="Assetsnillai-3" type="Sprite2D" parent="NilaiScene"]
-position = Vector2(576, 136)
-scale = Vector2(0.22081, 0.22081)
-texture = ExtResource("23_fda0o")
-
-[node name="Bintang1" type="Sprite2D" parent="NilaiScene"]
-position = Vector2(576, 368)
-scale = Vector2(0.190611, 0.190611)
-texture = ExtResource("24_k06os")
-
-[node name="Bintang2" type="Sprite2D" parent="NilaiScene"]
-position = Vector2(384, 432)
-scale = Vector2(0.156674, 0.156674)
-texture = ExtResource("24_k06os")
-
-[node name="Bintang3" type="Sprite2D" parent="NilaiScene"]
-position = Vector2(784, 432)
-scale = Vector2(0.151159, 0.151159)
-texture = ExtResource("24_k06os")
-
-[node name="BintangKuning1" type="Sprite2D" parent="NilaiScene"]
-position = Vector2(384, 432)
-scale = Vector2(0.154977, 0.154977)
-texture = ExtResource("25_gn6qk")
-
-[node name="BintangKuning2" type="Sprite2D" parent="NilaiScene"]
-position = Vector2(576, 368)
-scale = Vector2(0.188767, 0.188767)
-texture = ExtResource("25_gn6qk")
-
-[node name="BintangKuning3" type="Sprite2D" parent="NilaiScene"]
-position = Vector2(784, 432)
-scale = Vector2(0.152697, 0.152697)
-texture = ExtResource("25_gn6qk")
-
-[node name="Buttonillai-1" type="Sprite2D" parent="NilaiScene"]
-position = Vector2(576, 120)
-scale = Vector2(0.206467, 0.206467)
-texture = ExtResource("26_2xi6u")
-
-[node name="CountdownTimer" type="Node" parent="."]
-script = ExtResource("27_ctiqc")
-
-[node name="Panel" type="Panel" parent="CountdownTimer"]
-anchors_preset = -1
-anchor_left = 0.894
-anchor_top = 0.105
-anchor_right = 0.894
-anchor_bottom = 0.105
-offset_left = -142.888
-offset_top = 56.96
-offset_right = -21.8879
-offset_bottom = 96.96
-
-[node name="Label" type="Label" parent="CountdownTimer"]
-anchors_preset = -1
-anchor_left = 0.806
-anchor_top = 0.218
-anchor_right = 0.876
-anchor_bottom = 0.278
-offset_left = -12.5121
-offset_top = -16.264
-offset_right = -21.152
-offset_bottom = -16.144
-theme_override_font_sizes/font_size = 28
-text = "00:00"
-
-[node name="Timer" type="Timer" parent="CountdownTimer"]
-wait_time = 60.0
-one_shot = true
-autostart = true
-
-[connection signal="pressed" from="CanvasGroup/Button" to="SoalManager" method="_on_next_button_pressed"]
 [connection signal="pressed" from="NilaiScene/Button" to="NilaiScene" method="_on_button_pressed"]

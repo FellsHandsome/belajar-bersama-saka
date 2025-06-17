@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://crv05am2qbeqw"]
 
-[ext_resource type="Script" uid="uid://chxfnx1b4d06w" path="res://scenes/sambung ayat scenes/surah/soal 5/tampilan_setting.gd" id="1_hs5l1"]
+[ext_resource type="Script" path="res://scenes/sambung ayat scenes/surah/soal 5/tampilan_setting.gd" id="1_hs5l1"]
 [ext_resource type="Texture2D" uid="uid://bfrkeo1rqb30x" path="res://assets/Asset game/background/backrounddd pengaturan-2.png" id="2_dwcpo"]
 [ext_resource type="Texture2D" uid="uid://byca5wl1somtw" path="res://assets/Asset game/New Background/Background 3.png" id="2_jky0s"]
 [ext_resource type="Texture2D" uid="uid://bsqsf8c82vess" path="res://assets/Asset game/button/buttonsuara-2.png" id="3_xap4c"]

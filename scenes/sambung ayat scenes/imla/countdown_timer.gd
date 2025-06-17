@@ -1,35 +1,35 @@
 extends Node
-@export var waktu_soal: int = 60 # Waktu dalam detik untuk setiap soal
-@onready var timer = $Timer
-@onready var label_waktu = $Label
-var waktu_tersisa: float  # Ubah ke float untuk penghitungan yang lebih akurat
+
+@export var waktu_soal: int = 60
+@onready var timer: Timer = $Timer
+@onready var label_waktu = $Panel/Label
+var waktu_tersisa: float
+
 func _ready():
 	if timer:
 		timer.wait_time = 1.0
-		timer.one_shot = false  # Pastikan timer terus berjalan
+		timer.one_shot = false
 		timer.timeout.connect(_on_timer_timeout)
 		reset_waktu()
-		timer.start()
+
 func reset_waktu():
-	waktu_tersisa = float(waktu_soal)  # Konversi ke float
+	waktu_tersisa = float(waktu_soal)
 	update_label()
+	if timer:
+		timer.start()
+
 func _on_timer_timeout():
 	waktu_tersisa -= 1.0
 	update_label()
-	
 	if waktu_tersisa <= 0:
-		timer.stop()  # Hentikan timer saat waktu habis
-		var next_button = $"../CanvasGroup/Button"
+		timer.stop()
+		var next_button = get_node("../Button")
 		if next_button:
 			next_button.pressed.emit()
 		reset_waktu()
-		timer.start()  # Mulai lagi timer untuk soal berikutnya
+
 func update_label():
 	if label_waktu:
 		var minutes = int(waktu_tersisa) / 60
 		var seconds = int(waktu_tersisa) % 60
 		label_waktu.text = "%02d:%02d" % [minutes, seconds]
-# Tambahan untuk memastikan timer tetap update
-func _process(delta):
-	if timer and timer.is_stopped() and waktu_tersisa > 0:
-		timer.start()
